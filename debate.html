@@ -5,15 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Debate — Virtuosic 2K26</title>
-    <meta name="description" content="Debate event details — Virtuosic 2K26, SSPM's College of Engineering, Kankavli.">
+    <meta name="description" content="Debate Competition — Virtuosic 2K26, SSPM's College of Engineering, Kankavli.">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>tailwind.config = { theme: { extend: { colors: { dark: { 900: '#000000', 800: '#0A0A0A', 700: '#111111' } } } } }</script>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
     <style>
-        .accent-bar { width: 40px; height: 3px; background: linear-gradient(90deg, #F59E0B, #06B6D4); border-radius: 2px; }
-        .bar-fill { transition: width 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
-        .section-divider { height: 1px; background: linear-gradient(90deg, transparent, #F59E0B4D, transparent); }
+        .prize-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .prize-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(245, 158, 11, 0.3), transparent);
+        }
+
+        .accent-bar {
+            width: 40px;
+            height: 3px;
+            background: linear-gradient(90deg, #F59E0B, #EAB308);
+            border-radius: 2px;
+        }
+
+        .resource-item {
+            border-left: 2px solid #F59E0B;
+        }
+
+        .coord-card {
+            transition: transform 0.3s ease;
+        }
+
+        .coord-card:hover {
+            transform: scale(1.02);
+        }
+
+        .judging-bar {
+            transition: width 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
     </style>
 </head>
 
@@ -27,7 +61,7 @@
         <!-- ═══ TOP BAR ═══ -->
         <header class="flex items-center justify-between px-5 py-4">
             <a href="competition.html"
-                class="flex items-center gap-2 text-zinc-500 hover:text-purple-400 transition-colors">
+                class="flex items-center gap-2 text-zinc-500 hover:text-amber-400 transition-colors">
                 <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
                     stroke-linecap="round" stroke-linejoin="round">
                     <polyline points="15 18 9 12 15 6" />
@@ -41,39 +75,346 @@
 
             <!-- Title -->
             <div class="mb-2">
-                <span class="inline-block px-3 py-1 rounded-full text-[10px] font-bold font-space uppercase tracking-widest mb-3"
-                    style="background: #F59E0B26; color: #F59E0B; border: 1px solid #F59E0B40;">
-                    🎤 Coming Soon
+                <span
+                    class="inline-block px-3 py-1 rounded-full text-[10px] font-bold font-space uppercase tracking-widest mb-3"
+                    style="background: rgba(245,158,11,0.15); color: #F59E0B; border: 1px solid rgba(245,158,11,0.25);">
+                    🎤 Public Speaking
                 </span>
             </div>
-            <h1 class="font-anton text-[2.5rem] leading-[0.95] text-white uppercase tracking-wide mb-4"
-                style="text-shadow: 0 0 40px #F59E0B4D;">
-                Debate
-            </h1>
+            <div class="mb-4">
 
-            <div class="section-divider mb-8"></div>
+                <!-- MAIN TITLE -->
+                <h1 class="font-anton text-[2.8rem] leading-[0.9] uppercase tracking-wide"
+                    style="text-shadow: 0 0 40px rgba(245,158,11,0.3);">
+                    <span
+                        class="bg-gradient-to-r from-amber-400 via-yellow-500 to-orange-400 text-transparent bg-clip-text">DEBATE</span>
+                </h1>
 
-            <!-- Coming Soon Banner -->
-            <div class="mb-8 py-16 text-center">
-                <div class="text-6xl mb-6">🎤</div>
-                <div class="font-anton text-3xl text-white uppercase tracking-wider mb-4"
-                    style="text-shadow: 0 0 40px #F59E0B4D;">
-                    DETAILS<br>
-                    <span class="font-outfit font-thin text-2xl italic tracking-tight" style="color: #F59E0B;">coming soon.</span>
+                <!-- SUB TITLE -->
+                <div class="flex items-center gap-3 mt-2">
+                    <div class="h-[2px] w-8 bg-gradient-to-r from-amber-500 to-yellow-400"></div>
+                    <p class="text-[11px] font-space uppercase tracking-[3px] text-zinc-500">ARGUE • ANALYZE • IMPACT
+                    </p>
+                    <div class="h-[2px] w-8 bg-gradient-to-r from-yellow-400 to-amber-500"></div>
                 </div>
-                <p class="text-sm text-zinc-600 mt-4 max-w-[280px] mx-auto leading-relaxed">
-                    Full event details, rules, judging criteria, and coordinator info will be updated shortly.
-                </p>
+
+            </div>
+            <p class="text-[14px] text-zinc-400 leading-relaxed mb-6">
+                Where Ideas Clash and Minds Shine. Engage in thought-provoking debates on contemporary topics
+                across technology, society, and innovation.
+            </p>
+
+            <!-- Info Blocks -->
+            <div class="flex gap-3 overflow-x-auto pb-3 mb-6"
+                style="scrollbar-width:none;-webkit-overflow-scrolling:touch;">
+                <div
+                    class="flex-shrink-0 rounded-xl p-4 min-w-[130px] bg-amber-500/[0.04] border border-amber-500/20 backdrop-blur-sm">
+                    <div class="text-2xl mb-2">🏫</div>
+                    <div class="font-space text-[9px] text-zinc-600 uppercase tracking-[2px] font-bold mb-1">Venue
+                    </div>
+                    <div class="font-outfit text-sm font-extrabold text-white leading-tight">Seminar<br>Hall No. 1</div>
+                </div>
+                <div
+                    class="flex-shrink-0 rounded-xl p-4 min-w-[120px] bg-yellow-500/[0.04] border border-yellow-500/20 backdrop-blur-sm">
+                    <div class="text-2xl mb-2">💰</div>
+                    <div class="font-space text-[9px] text-zinc-600 uppercase tracking-[2px] font-bold mb-1">Entry Fee
+                    </div>
+                    <div class="font-outfit text-lg font-extrabold text-white">₹100</div>
+                    <div class="text-[10px] text-zinc-600">per participant</div>
+                </div>
+                <div
+                    class="flex-shrink-0 rounded-xl p-4 min-w-[120px] bg-orange-500/[0.04] border border-orange-500/20 backdrop-blur-sm">
+                    <div class="text-2xl mb-2">👥</div>
+                    <div class="font-space text-[9px] text-zinc-600 uppercase tracking-[2px] font-bold mb-1">
+                        Participation</div>
+                    <div class="font-outfit text-sm font-extrabold text-white leading-tight">Individual<br>or Team of 2
+                    </div>
+                </div>
             </div>
 
-            <div class="section-divider mb-8"></div>
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ PRIZES ═══ -->
+            <section class="mb-8">
+                <h2
+                    class="font-outfit text-xl font-extrabold text-white flex items-center gap-3 mb-5 uppercase tracking-wide">
+                    <span class="text-2xl">🏆</span> Prizes
+                </h2>
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="prize-card rounded-2xl p-5 text-center border-2 border-yellow-500/30 bg-yellow-500/[0.04]"
+                        style="box-shadow: 0 0 25px rgba(251,191,36,0.2);">
+                        <div class="text-4xl mb-2">🥇</div>
+                        <div class="font-space text-[9px] text-zinc-500 uppercase tracking-widest font-bold mb-1">1st
+                            Prize</div>
+                        <div class="font-outfit text-2xl font-black text-yellow-400">₹1000</div>
+                    </div>
+                    <div class="prize-card rounded-2xl p-5 text-center border-2 border-slate-400/30 bg-slate-500/[0.04]"
+                        style="box-shadow: 0 0 25px rgba(148,163,184,0.15);">
+                        <div class="text-4xl mb-2">🥈</div>
+                        <div class="font-space text-[9px] text-zinc-500 uppercase tracking-widest font-bold mb-1">2nd
+                            Prize</div>
+                        <div class="font-outfit text-2xl font-black text-slate-300">₹750</div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ BANNER ═══ -->
+            <div class="mb-8 py-6 text-center">
+                <div class="text-center leading-[0.9] uppercase select-none">
+                    <div class="font-anton text-[2.5rem] md:text-[3.5rem] text-white tracking-wide">
+                        ARGUE • ANALYZE
+                    </div>
+                    <div
+                        class="font-anton text-[2.5rem] md:text-[3.5rem] tracking-wide bg-gradient-to-r from-amber-400 via-yellow-500 to-orange-400 text-transparent bg-clip-text">
+                        IMPACT.
+                    </div>
+                </div>
+                <p class="text-sm text-zinc-500 mt-3 font-outfit italic">Where ideas clash and minds shine</p>
+            </div>
+
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ ABOUT ═══ -->
+            <section class="mb-8">
+                <h2
+                    class="font-outfit text-xl font-extrabold text-white flex items-center gap-3 mb-4 uppercase tracking-wide">
+                    <div class="accent-bar"></div> About the Event
+                </h2>
+                <p class="text-[14px] text-zinc-400 leading-[1.9]">
+                    The Debate Competition at Virtuosic 2K26 is designed to bring forward the power of ideas,
+                    critical thinking, and effective communication. Participants will engage in thought-provoking
+                    debates on contemporary topics across technology, society, and innovation. The event aims to
+                    enhance public speaking skills, logical reasoning, and confidence while encouraging healthy
+                    intellectual discussions. It provides a platform for students to express their perspectives,
+                    challenge viewpoints, and develop strong argumentative skills.
+                </p>
+            </section>
+
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ RULES ═══ -->
+            <section class="mb-8">
+                <h2
+                    class="font-outfit text-xl font-extrabold text-white flex items-center gap-3 mb-5 uppercase tracking-wide">
+                    <div class="accent-bar"></div> Competition Rules
+                </h2>
+                <div class="grid grid-cols-1 gap-3">
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #F59E0B;">01</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Participation can be individual or in a team of
+                            2 members.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #F59E0B;">02</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Topics will be provided on the spot / prior to
+                            the event (as per rules).</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #F59E0B;">03</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Each participant/team will get fixed time for
+                            speaking (for/against topic).</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #F59E0B;">04</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">In team participation, both members must
+                            contribute equally.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #F59E0B;">05</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Use of offensive or inappropriate language will
+                            lead to disqualification.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #F59E0B;">06</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Participants must maintain decorum and respect
+                            others' viewpoints.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #F59E0B;">07</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Decision of judges will be final and binding.
+                        </p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #F59E0B;">08</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Any form of malpractice or unfair means will
+                            lead to disqualification.</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ JUDGING CRITERIA ═══ -->
+            <section class="mb-8">
+                <h2
+                    class="font-outfit text-xl font-extrabold text-white flex items-center gap-3 mb-5 uppercase tracking-wide">
+                    <div class="accent-bar"></div> Judging Criteria
+                </h2>
+                <div class="space-y-4">
+                    <!-- Content & Knowledge -->
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-sm font-semibold text-zinc-300">Content & Knowledge</span>
+                            <span class="font-outfit text-sm font-bold text-amber-400">20</span>
+                        </div>
+                        <div class="h-2.5 bg-white/[0.04] rounded-full overflow-hidden">
+                            <div class="h-full rounded-full bg-gradient-to-r from-amber-600 to-yellow-400 judging-bar"
+                                style="width: 20%;"></div>
+                        </div>
+                    </div>
+                    <!-- Clarity of Thought -->
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-sm font-semibold text-zinc-300">Clarity of Thought</span>
+                            <span class="font-outfit text-sm font-bold text-yellow-400">20</span>
+                        </div>
+                        <div class="h-2.5 bg-white/[0.04] rounded-full overflow-hidden">
+                            <div class="h-full rounded-full bg-gradient-to-r from-yellow-600 to-amber-400 judging-bar"
+                                style="width: 20%;"></div>
+                        </div>
+                    </div>
+                    <!-- Confidence & Delivery -->
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-sm font-semibold text-zinc-300">Confidence & Delivery</span>
+                            <span class="font-outfit text-sm font-bold text-orange-400">15</span>
+                        </div>
+                        <div class="h-2.5 bg-white/[0.04] rounded-full overflow-hidden">
+                            <div class="h-full rounded-full bg-gradient-to-r from-orange-600 to-amber-400 judging-bar"
+                                style="width: 15%;"></div>
+                        </div>
+                    </div>
+                    <!-- Relevance to Topic -->
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-sm font-semibold text-zinc-300">Relevance to Topic</span>
+                            <span class="font-outfit text-sm font-bold text-yellow-500">15</span>
+                        </div>
+                        <div class="h-2.5 bg-white/[0.04] rounded-full overflow-hidden">
+                            <div class="h-full rounded-full bg-gradient-to-r from-yellow-600 to-orange-400 judging-bar"
+                                style="width: 15%;"></div>
+                        </div>
+                    </div>
+                    <!-- Argument Strength -->
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-sm font-semibold text-zinc-300">Argument Strength</span>
+                            <span class="font-outfit text-sm font-bold text-amber-500">15</span>
+                        </div>
+                        <div class="h-2.5 bg-white/[0.04] rounded-full overflow-hidden">
+                            <div class="h-full rounded-full bg-gradient-to-r from-amber-600 to-orange-400 judging-bar"
+                                style="width: 15%;"></div>
+                        </div>
+                    </div>
+                    <!-- Team Coordination -->
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-sm font-semibold text-zinc-300">Team Coordination (for teams)</span>
+                            <span class="font-outfit text-sm font-bold text-orange-500">15</span>
+                        </div>
+                        <div class="h-2.5 bg-white/[0.04] rounded-full overflow-hidden">
+                            <div class="h-full rounded-full bg-gradient-to-r from-orange-600 to-yellow-400 judging-bar"
+                                style="width: 15%;"></div>
+                        </div>
+                    </div>
+                    <!-- Total -->
+                    <div class="flex justify-between items-center pt-4 mt-2 border-t border-white/[0.06]">
+                        <span class="font-outfit text-lg font-black text-white uppercase tracking-wide">Total</span>
+                        <span class="font-outfit text-lg font-black"
+                            style="color: #F59E0B; text-shadow: 0 0 15px rgba(245,158,11,0.4);">100 Points</span>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ RESOURCES PROVIDED ═══ -->
+            <section class="mb-8">
+                <h2
+                    class="font-outfit text-xl font-extrabold text-white flex items-center gap-3 mb-5 uppercase tracking-wide">
+                    <div class="accent-bar"></div> Resources Provided
+                </h2>
+                <div class="space-y-3">
+                    <div class="resource-item pl-4 py-2">
+                        <p class="text-sm text-zinc-400 flex items-center gap-2"><span class="text-amber-400">✦</span>
+                            Stage and mic setup</p>
+                    </div>
+                    <div class="resource-item pl-4 py-2">
+                        <p class="text-sm text-zinc-400 flex items-center gap-2"><span class="text-amber-400">✦</span>
+                            Timer / bell indication</p>
+                    </div>
+                    <div class="resource-item pl-4 py-2">
+                        <p class="text-sm text-zinc-400 flex items-center gap-2"><span class="text-amber-400">✦</span>
+                            Certificates for participants</p>
+                    </div>
+                    <div class="resource-item pl-4 py-2">
+                        <p class="text-sm text-zinc-400 flex items-center gap-2"><span class="text-amber-400">✦</span>
+                            Judges panel for evaluation</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ SUPPORT / COORDINATORS ═══ -->
+            <section class="mb-6">
+                <h2
+                    class="font-outfit text-xl font-extrabold text-white flex items-center gap-3 mb-5 uppercase tracking-wide">
+                    <div class="accent-bar"></div> Support
+                </h2>
+                <div class="space-y-4">
+                    <div
+                        class="coord-card glass-card rounded-2xl p-4 flex items-center gap-5 border border-amber-500/10">
+                        <img src="profilephoto/Sanika-Sawant.jpeg" alt="Sanika Suhas Sawant"
+                            class="w-28 h-28 rounded-2xl object-cover shrink-0"
+                            style="border: 1px solid rgba(245,158,11,0.3);">
+                        <div class="flex-1 min-w-0 text-left">
+                            <h4 class="font-outfit text-lg font-bold text-white mb-1 tracking-tight">Sanika Sawant</h4>
+                            <p class="font-space text-[10px] text-amber-400 font-bold uppercase tracking-[2px] mb-2">
+                                Coordinator
+                            </p>
+                            <a href="tel:+917208108501"
+                                class="block text-[12px] text-zinc-500 mb-0.5 hover:text-amber-400 transition-colors">
+                                📞 7208108501
+                            </a>
+                            <a href="mailto:sanikasawant1735@gmail.com"
+                                class="block text-[11px] text-zinc-500 break-all hover:text-yellow-400 transition-colors">
+                                ✉️ sanikasawant1735@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        class="coord-card glass-card rounded-2xl p-4 flex items-center gap-5 border border-amber-500/10">
+                        <img src="profilephoto/Xavier-Fernandes .jpeg" alt="Xavier Agnel Fernandes"
+                            class="w-28 h-28 rounded-2xl object-cover shrink-0"
+                            style="border: 1px solid rgba(245,158,11,0.3);">
+                        <div class="flex-1 min-w-0 text-left">
+                            <h4 class="font-outfit text-lg font-bold text-white mb-1 tracking-tight">Xavier Fernandes
+                            </h4>
+                            <p class="font-space text-[10px] text-amber-400 font-bold uppercase tracking-[2px] mb-2">
+                                Co-Coordinator
+                            </p>
+                            <a href="tel:+919307863916"
+                                class="block text-[12px] text-zinc-500 mb-0.5 hover:text-amber-400 transition-colors">
+                                📞 9307863916
+                            </a>
+                            <a href="mailto:xavierfernandis276@gmail.com"
+                                class="block text-[11px] text-zinc-500 break-all hover:text-yellow-400 transition-colors">
+                                ✉️ xavierfernandis276@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
         </div>
 
         <!-- ═══ FLOATING REGISTER ═══ -->
         <button id="floating-register"
             class="fixed bottom-[88px] left-1/2 -translate-x-1/2 z-40 px-10 py-4 rounded-full font-outfit text-sm font-black uppercase tracking-[3px] overflow-hidden"
-            style="background: #F59E0B; color: #000; box-shadow: 0 0 25px #F59E0B55, 0 0 60px #F59E0B1F;"
+            style="background: linear-gradient(135deg, #F59E0B, #EAB308); color: #000; box-shadow: 0 0 25px rgba(245,158,11,0.35), 0 0 60px rgba(234,179,8,0.15);"
             onclick="window.open('https://forms.gle/VHUhXGmEX5BnDqrW8', '_blank')">
             Register Now
         </button>
@@ -90,13 +431,13 @@
                 <span class="font-space text-[9px] font-bold uppercase tracking-widest text-zinc-600">Home</span>
             </a>
             <a href="competition.html" class="relative flex flex-col items-center gap-1 px-4 py-2 nav-active">
-                <svg class="w-[22px] h-[22px] text-purple-400"
-                    style="filter: drop-shadow(0 0 8px rgba(168,85,247,0.5));" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg class="w-[22px] h-[22px] text-amber-400" style="filter: drop-shadow(0 0 8px rgba(245,158,11,0.5));"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
                     <polygon
                         points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
                 </svg>
-                <span class="font-space text-[9px] font-bold uppercase tracking-widest text-purple-400">Events</span>
+                <span class="font-space text-[9px] font-bold uppercase tracking-widest text-amber-400">Events</span>
             </a>
             <a href="contact.html" class="flex flex-col items-center gap-1 px-4 py-2">
                 <svg class="w-[22px] h-[22px] text-zinc-600" viewBox="0 0 24 24" fill="none" stroke="currentColor"
