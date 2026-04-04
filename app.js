@@ -135,7 +135,7 @@ const CONTACT_DATA = {
       phone: '+918600730728',
       email: 'uzairshaikh.2034@gmail.com',
       initials: 'US',
-      photo: 'profilephoto/uzair-shaikh.jpeg'
+      photo: 'profilephoto/Uzair-Shaikh.jpeg'
     },
     {
       name: 'Vaishnavi Shivprasad Ghare',
@@ -143,7 +143,7 @@ const CONTACT_DATA = {
       phone: '+919307535959',
       email: 'vaishnavighare531@gmail.com',
       initials: 'VG',
-      photo: 'profilephoto/vaishnavi-ghare.jpeg'
+      photo: 'profilephoto/Vaishnavi-Ghare.jpeg'
     },
     {
       name: 'Jigisha Darshan Mhapasekar',
@@ -151,7 +151,7 @@ const CONTACT_DATA = {
       phone: '+919699424099',
       email: 'jigishadmhapasekar@gmail.com',
       initials: 'JM',
-      photo: 'profilephoto/jigisha-mhapasekar.jpeg'
+      photo: 'profilephoto/Jigisha-Mhapasekar.jpeg'
     },
     {
       name: 'Vasudev Santosh Narvekar',
@@ -159,7 +159,7 @@ const CONTACT_DATA = {
       phone: '+919420863918',
       email: 'vasudevnarvekar737@gmail.com',
       initials: 'VN',
-      photo: 'profilephoto/vasudev-narvekar.jpeg'
+      photo: 'profilephoto/Vasudev-Narvekar.jpeg'
     },
     {
       name: 'Sanika Suhas Sawant',
@@ -167,7 +167,7 @@ const CONTACT_DATA = {
       phone: '+917208108501',
       email: 'sanikasawant1735@gmail.com',
       initials: 'SS',
-      photo: 'profilephoto/sanika-sawant.jpeg'
+      photo: 'profilephoto/Sanika-Sawant.jpeg'
     },
     {
       name: 'Xavier Agnel Fernandes',
@@ -179,11 +179,11 @@ const CONTACT_DATA = {
     },
     {
       name: 'Vicky Ishwar Rathod',
-      event: 'LAN Gaming',
+      event: 'LAN Gaming(Free-Fire)',
       phone: '+918169222207',
       email: 'rathodvickey71@gmail.com',
       initials: 'VR',
-      photo: 'profilephoto/vicky-rathod.jpeg'
+      photo: 'profilephoto/Vicky-Rathod.jpeg'
     },
     {
       name: 'Roshan Bhikaji Sawant',
@@ -199,7 +199,7 @@ const CONTACT_DATA = {
       phone: '+919421536963',
       email: 'parabdanesh9@gmail.com',
       initials: 'DP',
-      photo: 'profilephoto/danish-parab.jpeg'
+      photo: 'profilephoto/Danesh-Parab.jpeg'
     },
     {
       name: 'Maaz AbuTalib Khan',
@@ -207,7 +207,7 @@ const CONTACT_DATA = {
       phone: '+9193325579949',
       email: 'khanmaaz7684@gmail.com',
       initials: 'MK',
-      photo: 'profilephoto/maaz-khan.jpeg'
+      photo: 'profilephoto/Maaz-Khan.jpeg'
     },
     {
       name: 'Kamakshi Rajendra Keluskar',
@@ -215,7 +215,7 @@ const CONTACT_DATA = {
       phone: '+918149584764',
       email: 'kamakshikeluskar@gmail.com',
       initials: 'KK',
-      photo: 'profilephoto/kamakshi-keluskar.jpeg'
+      photo: 'profilephoto/Kamakshi-Keluskar.jpeg'
     },
     {
       name: 'Bhargawi Sanjay Kavatkar',
@@ -223,7 +223,7 @@ const CONTACT_DATA = {
       phone: '+9196997020262',
       email: 'bhargawikavatkar@gmail.com',
       initials: 'BK',
-      photo: 'profilephoto/bhargawi-kavatkar.jpeg'
+      photo: 'profilephoto/Bhargawi-Kavatkar.jpeg'
     },
     {
       name: 'Govind Mahesh Sawant',
@@ -231,7 +231,7 @@ const CONTACT_DATA = {
       phone: '+919421287164',
       email: 'sawantgovind76@gmail.com',
       initials: 'GS',
-      photo: 'profilephoto/govind-sawant.jpeg'
+      photo: 'profilephoto/Govind-Sawant.jpeg'
     },
     {
       name: 'Mufid Rizwan Shaikh',
@@ -247,7 +247,7 @@ const CONTACT_DATA = {
       phone: '+917038683384',
       email: 'rahulgawas790@gmail.com',
       initials: 'RG',
-      photo: 'profilephoto/rahul-gawas.jpeg'
+      photo: 'profilephoto/Rahul-Gawas.jpeg'
     },
     {
       name: 'Sanika Shashikant Mhatugade',
@@ -255,7 +255,7 @@ const CONTACT_DATA = {
       phone: '+917774010816',
       email: 'sanumhatugade2411@gmail.com',
       initials: 'SM',
-      photo: 'profilephoto/sanika-mhatugade.jpeg'
+      photo: 'profilephoto/Sanika-Mhatugade.jpeg'
     },
     {
       name: 'Narendra Ratnakar Gurav',
@@ -263,7 +263,7 @@ const CONTACT_DATA = {
       phone: '+919137663880',
       email: 'narendragurav2005@gmail.com',
       initials: 'NG',
-      photo: 'profilephoto/Narendra-gurav.jpg'
+      photo: 'profilephoto/Narendra-Gurav.jpg'
     },
     {
       name: 'Rajas Taneshwar Gawas',
@@ -271,7 +271,7 @@ const CONTACT_DATA = {
       phone: '+919890959211',
       email: 'narendragurav2005@gmail.com',
       initials: 'RG',
-      photo: 'profilephoto/rajas-gawas.jpeg'
+      photo: 'profilephoto/Rajas-Gawas.jpeg'
     },
     {
       name: 'Varun Prabhakar Karle',
@@ -279,7 +279,23 @@ const CONTACT_DATA = {
       phone: '+91 95296 65461',
       email: 'karlevarun@gmail.com',
       initials: 'VK',
-      photo: 'profilephoto/varun-karle.jpeg'
+      photo: 'profilephoto/Varun-Karle.jpeg'
+    },
+    {
+      name: 'Anushka Pandurang Sawant',
+      event: 'Directo',
+      phone: '+91 93569 70062',
+      email: 'anushka.s9642@gmail.com',
+      initials: 'AS',
+      photo: 'profilephoto/Anushka-Sawant.jpeg'
+    },
+     {
+      name: 'Pallavi Parashram Varake',
+      event: 'Directo',
+      phone: '+91 80103 16075',
+      email: 'pallavivarake6075@gmail.com',
+      initials: 'AS',
+      photo: 'profilephoto/Pallavi-Varake.jpeg'
     }
   ]
 };
