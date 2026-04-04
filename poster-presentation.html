@@ -5,15 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Poster Presentation — Virtuosic 2K26</title>
-    <meta name="description" content="Poster Presentation event details — Virtuosic 2K26, SSPM's College of Engineering, Kankavli.">
+    <meta name="description"
+        content="Poster Presentation — National Level Competition — Virtuosic 2K26, SSPM's College of Engineering, Kankavli.">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>tailwind.config = { theme: { extend: { colors: { dark: { 900: '#000000', 800: '#0A0A0A', 700: '#111111' } } } } }</script>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
     <style>
-        .accent-bar { width: 40px; height: 3px; background: linear-gradient(90deg, #06B6D4, #06B6D4); border-radius: 2px; }
-        .bar-fill { transition: width 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
-        .section-divider { height: 1px; background: linear-gradient(90deg, transparent, #06B6D44D, transparent); }
+        .prize-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .prize-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(6, 182, 212, 0.3), transparent);
+        }
+
+        .accent-bar {
+            width: 40px;
+            height: 3px;
+            background: linear-gradient(90deg, #06B6D4, #0EA5E9);
+            border-radius: 2px;
+        }
+
+        .resource-item {
+            border-left: 2px solid #06B6D4;
+        }
+
+        .coord-card {
+            transition: transform 0.3s ease;
+        }
+
+        .coord-card:hover {
+            transform: scale(1.02);
+        }
     </style>
 </head>
 
@@ -27,7 +58,7 @@
         <!-- ═══ TOP BAR ═══ -->
         <header class="flex items-center justify-between px-5 py-4">
             <a href="competition.html"
-                class="flex items-center gap-2 text-zinc-500 hover:text-purple-400 transition-colors">
+                class="flex items-center gap-2 text-zinc-500 hover:text-cyan-400 transition-colors">
                 <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
                     stroke-linecap="round" stroke-linejoin="round">
                     <polyline points="15 18 9 12 15 6" />
@@ -41,39 +72,269 @@
 
             <!-- Title -->
             <div class="mb-2">
-                <span class="inline-block px-3 py-1 rounded-full text-[10px] font-bold font-space uppercase tracking-widest mb-3"
-                    style="background: #06B6D426; color: #06B6D4; border: 1px solid #06B6D440;">
-                    📊 Coming Soon
+                <span
+                    class="inline-block px-3 py-1 rounded-full text-[10px] font-bold font-space uppercase tracking-widest mb-3"
+                    style="background: rgba(6,182,212,0.15); color: #06B6D4; border: 1px solid rgba(6,182,212,0.25);">
+                    📊 National Level
                 </span>
             </div>
-            <h1 class="font-anton text-[2.5rem] leading-[0.95] text-white uppercase tracking-wide mb-4"
-                style="text-shadow: 0 0 40px #06B6D44D;">
-                Poster Presentation
-            </h1>
+            <div class="mb-4">
 
-            <div class="section-divider mb-8"></div>
+                <!-- MAIN TITLE -->
+                <h1 class="font-anton text-[2.3rem] leading-[0.9] uppercase tracking-wide"
+                    style="text-shadow: 0 0 40px rgba(6,182,212,0.3);">
+                    <span class="text-white">POSTER</span><br>
+                    <span
+                        class="bg-gradient-to-r from-cyan-400 via-sky-500 to-blue-500 text-transparent bg-clip-text">PRESENTATION</span>
+                </h1>
 
-            <!-- Coming Soon Banner -->
-            <div class="mb-8 py-16 text-center">
-                <div class="text-6xl mb-6">📊</div>
-                <div class="font-anton text-3xl text-white uppercase tracking-wider mb-4"
-                    style="text-shadow: 0 0 40px #06B6D44D;">
-                    DETAILS<br>
-                    <span class="font-outfit font-thin text-2xl italic tracking-tight" style="color: #06B6D4;">coming soon.</span>
+                <!-- SUB TITLE -->
+                <div class="flex items-center gap-3 mt-2">
+                    <div class="h-[2px] w-8 bg-gradient-to-r from-cyan-500 to-sky-400"></div>
+                    <p class="text-[11px] font-space uppercase tracking-[3px] text-zinc-500">REDEFINING BRILLIANCE</p>
+                    <div class="h-[2px] w-8 bg-gradient-to-r from-sky-400 to-cyan-500"></div>
                 </div>
-                <p class="text-sm text-zinc-600 mt-4 max-w-[280px] mx-auto leading-relaxed">
-                    Full event details, rules, judging criteria, and coordinator info will be updated shortly.
-                </p>
+
+            </div>
+            <p class="text-[14px] text-zinc-400 leading-relaxed mb-6">
+                Visually present your ideas, research, and innovations through impactful and well-designed posters.
+            </p>
+
+            <!-- Info Blocks -->
+            <div class="flex gap-3 overflow-x-auto pb-3 mb-6"
+                style="scrollbar-width:none;-webkit-overflow-scrolling:touch;">
+                <div
+                    class="flex-shrink-0 rounded-xl p-4 min-w-[130px] bg-cyan-500/[0.04] border border-cyan-500/20 backdrop-blur-sm">
+                    <div class="text-2xl mb-2">🏫</div>
+                    <div class="font-space text-[9px] text-zinc-600 uppercase tracking-[2px] font-bold mb-1">Venue
+                    </div>
+                    <div class="font-outfit text-sm font-extrabold text-white leading-tight">SSPM's<br>COE, Kankavli
+                    </div>
+                </div>
+                <div
+                    class="flex-shrink-0 rounded-xl p-4 min-w-[120px] bg-sky-500/[0.04] border border-sky-500/20 backdrop-blur-sm">
+                    <div class="text-2xl mb-2">💰</div>
+                    <div class="font-space text-[9px] text-zinc-600 uppercase tracking-[2px] font-bold mb-1">Entry Fee
+                    </div>
+                    <div class="font-outfit text-lg font-extrabold text-white">₹100</div>
+                    <div class="text-[10px] text-zinc-600">per group</div>
+                </div>
+                <div
+                    class="flex-shrink-0 rounded-xl p-4 min-w-[120px] bg-blue-500/[0.04] border border-blue-500/20 backdrop-blur-sm">
+                    <div class="text-2xl mb-2">👥</div>
+                    <div class="font-space text-[9px] text-zinc-600 uppercase tracking-[2px] font-bold mb-1">Team Size
+                    </div>
+                    <div class="font-outfit text-lg font-extrabold text-white">Max 2</div>
+                    <div class="text-[10px] text-zinc-600">members</div>
+                </div>
+                <div
+                    class="flex-shrink-0 rounded-xl p-4 min-w-[120px] bg-cyan-500/[0.04] border border-cyan-500/20 backdrop-blur-sm">
+                    <div class="text-2xl mb-2">📐</div>
+                    <div class="font-space text-[9px] text-zinc-600 uppercase tracking-[2px] font-bold mb-1">Poster
+                        Size</div>
+                    <div class="font-outfit text-lg font-extrabold text-white">A3</div>
+                    <div class="text-[10px] text-zinc-600">standard</div>
+                </div>
             </div>
 
-            <div class="section-divider mb-8"></div>
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ PRIZES ═══ -->
+            <section class="mb-8">
+                <h2
+                    class="font-outfit text-xl font-extrabold text-white flex items-center gap-3 mb-5 uppercase tracking-wide">
+                    <span class="text-2xl">🏆</span> Prize Pool
+                </h2>
+                <div class="grid grid-cols-3 gap-3">
+                    <div class="prize-card rounded-2xl p-4 text-center border-2 border-yellow-500/30 bg-yellow-500/[0.04]"
+                        style="box-shadow: 0 0 25px rgba(251,191,36,0.2);">
+                        <div class="text-3xl mb-2">🥇</div>
+                        <div class="font-space text-[8px] text-zinc-500 uppercase tracking-widest font-bold mb-1">1st
+                        </div>
+                        <div class="font-outfit text-lg font-black text-yellow-400">₹2000</div>
+                    </div>
+                    <div class="prize-card rounded-2xl p-4 text-center border-2 border-slate-400/30 bg-slate-500/[0.04]"
+                        style="box-shadow: 0 0 25px rgba(148,163,184,0.15);">
+                        <div class="text-3xl mb-2">🥈</div>
+                        <div class="font-space text-[8px] text-zinc-500 uppercase tracking-widest font-bold mb-1">2nd
+                        </div>
+                        <div class="font-outfit text-lg font-black text-slate-300">₹1500</div>
+                    </div>
+                    <div class="prize-card rounded-2xl p-4 text-center border-2 border-amber-600/30 bg-amber-600/[0.04]"
+                        style="box-shadow: 0 0 25px rgba(217,119,6,0.1);">
+                        <div class="text-3xl mb-2">🥉</div>
+                        <div class="font-space text-[8px] text-zinc-500 uppercase tracking-widest font-bold mb-1">3rd
+                        </div>
+                        <div class="font-outfit text-lg font-black text-amber-500">₹1000</div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ BANNER ═══ -->
+            <div class="mb-8 py-6 text-center">
+                <div class="text-center leading-[0.9] uppercase select-none">
+                    <div class="font-anton text-[2.5rem] md:text-[3.5rem] text-white tracking-wide">
+                        VISUALIZE
+                    </div>
+                    <div
+                        class="font-anton text-[2.5rem] md:text-[3.5rem] tracking-wide bg-gradient-to-r from-cyan-400 via-sky-500 to-blue-500 text-transparent bg-clip-text">
+                        INNOVATE.
+                    </div>
+                </div>
+                <p class="text-sm text-zinc-500 mt-3 font-outfit italic">Transform ideas into meaningful visual
+                    narratives</p>
+            </div>
+
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ ABOUT ═══ -->
+            <section class="mb-8">
+                <h2
+                    class="font-outfit text-xl font-extrabold text-white flex items-center gap-3 mb-4 uppercase tracking-wide">
+                    <div class="accent-bar"></div> About the Event
+                </h2>
+                <p class="text-[14px] text-zinc-400 leading-[1.9]">
+                    Poster Presentation at Virtuosic 2K26 is a National Level Competition that offers students a
+                    creative platform to visually present their ideas, research, and innovations. Participants can
+                    showcase concepts across domains like AI/ML, IoT, Web Development, and emerging technologies
+                    through impactful and well-designed posters. The event emphasizes clarity of thought, creativity,
+                    and effective communication of technical concepts. It provides an opportunity to engage with
+                    experts, receive constructive feedback, and gain valuable exposure. This competition aims to
+                    inspire students to transform ideas into meaningful visual narratives and foster a spirit of
+                    innovation.
+                </p>
+            </section>
+
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ RULES ═══ -->
+            <section class="mb-8">
+                <h2
+                    class="font-outfit text-xl font-extrabold text-white flex items-center gap-3 mb-5 uppercase tracking-wide">
+                    <div class="accent-bar"></div> Rules
+                </h2>
+                <div class="grid grid-cols-1 gap-3">
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #06B6D4;">01</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">College ID is compulsory for all participants.
+                        </p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #06B6D4;">02</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Each group will have a maximum of two
+                            participants.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #06B6D4;">03</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Font should be bold and properly visible.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #06B6D4;">04</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Size of poster should be <span
+                                class="text-cyan-400 font-semibold">A3</span>.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #06B6D4;">05</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Drawing should be properly visible.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #06B6D4;">06</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">The decisions of judges will be final.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #06B6D4;">07</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Any social relevant topic can be chosen for
+                            the poster presentation.</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ RESOURCES PROVIDED ═══ -->
+            <section class="mb-8">
+                <h2
+                    class="font-outfit text-xl font-extrabold text-white flex items-center gap-3 mb-5 uppercase tracking-wide">
+                    <div class="accent-bar"></div> Resources Provided
+                </h2>
+                <div class="space-y-3">
+                    <div class="resource-item pl-4 py-2">
+                        <p class="text-sm text-zinc-400 flex items-center gap-2"><span class="text-cyan-400">✦</span>
+                            Basic presentation setup</p>
+                    </div>
+                    <div class="resource-item pl-4 py-2">
+                        <p class="text-sm text-zinc-400 flex items-center gap-2"><span class="text-cyan-400">✦</span>
+                            Certificates for participants</p>
+                    </div>
+                    <div class="resource-item pl-4 py-2">
+                        <p class="text-sm text-zinc-400 flex items-center gap-2"><span class="text-cyan-400">✦</span>
+                            Judges panel for poster presentation</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ SUPPORT / COORDINATORS ═══ -->
+            <section class="mb-6">
+                <h2
+                    class="font-outfit text-xl font-extrabold text-white flex items-center gap-3 mb-5 uppercase tracking-wide">
+                    <div class="accent-bar"></div> Support
+                </h2>
+                <div class="space-y-4">
+                    <div
+                        class="coord-card glass-card rounded-2xl p-4 flex items-center gap-5 border border-cyan-500/10">
+                        <img src="profilephoto/Bhargawi-Kavatkar.jpeg" alt="Bhargawi Sanjay Kavatkar"
+                            class="w-28 h-28 rounded-2xl object-cover shrink-0"
+                            style="border: 1px solid rgba(6,182,212,0.3);">
+                        <div class="flex-1 min-w-0 text-left">
+                            <h4 class="font-outfit text-lg font-bold text-white mb-1 tracking-tight">Bhargawi Kavatkar
+                            </h4>
+                            <p class="font-space text-[10px] text-cyan-400 font-bold uppercase tracking-[2px] mb-2">
+                                Coordinator
+                            </p>
+                            <a href="tel:+919699702026"
+                                class="block text-[12px] text-zinc-500 mb-0.5 hover:text-cyan-400 transition-colors">
+                                📞 96997 02026
+                            </a>
+                            <a href="mailto:bhargawikavatkar@gmail.com"
+                                class="block text-[11px] text-zinc-500 break-all hover:text-sky-400 transition-colors">
+                                ✉️ bhargawikavatkar@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        class="coord-card glass-card rounded-2xl p-4 flex items-center gap-5 border border-cyan-500/10">
+                        <img src="profilephoto/Kamakshi-Keluskar.jpeg" alt="Kamakshi Rajendra Keluskar"
+                            class="w-28 h-28 rounded-2xl object-cover shrink-0"
+                            style="border: 1px solid rgba(6,182,212,0.3);">
+                        <div class="flex-1 min-w-0 text-left">
+                            <h4 class="font-outfit text-lg font-bold text-white mb-1 tracking-tight">Kamakshi Keluskar
+                            </h4>
+                            <p class="font-space text-[10px] text-cyan-400 font-bold uppercase tracking-[2px] mb-2">
+                                Co-Coordinator
+                            </p>
+                            <a href="tel:+918149584764"
+                                class="block text-[12px] text-zinc-500 mb-0.5 hover:text-cyan-400 transition-colors">
+                                📞 8149584764
+                            </a>
+                            <a href="mailto:kamakshikeluskar@gmail.com"
+                                class="block text-[11px] text-zinc-500 break-all hover:text-sky-400 transition-colors">
+                                ✉️ kamakshikeluskar@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
         </div>
 
         <!-- ═══ FLOATING REGISTER ═══ -->
         <button id="floating-register"
             class="fixed bottom-[88px] left-1/2 -translate-x-1/2 z-40 px-10 py-4 rounded-full font-outfit text-sm font-black uppercase tracking-[3px] overflow-hidden"
-            style="background: #06B6D4; color: #000; box-shadow: 0 0 25px #06B6D455, 0 0 60px #06B6D41F;"
+            style="background: linear-gradient(135deg, #06B6D4, #0EA5E9); color: #000; box-shadow: 0 0 25px rgba(6,182,212,0.35), 0 0 60px rgba(14,165,233,0.15);"
             onclick="window.open('https://forms.google.com', '_blank')">
             Register Now
         </button>
@@ -90,13 +351,13 @@
                 <span class="font-space text-[9px] font-bold uppercase tracking-widest text-zinc-600">Home</span>
             </a>
             <a href="competition.html" class="relative flex flex-col items-center gap-1 px-4 py-2 nav-active">
-                <svg class="w-[22px] h-[22px] text-purple-400"
-                    style="filter: drop-shadow(0 0 8px rgba(168,85,247,0.5));" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg class="w-[22px] h-[22px] text-cyan-400" style="filter: drop-shadow(0 0 8px rgba(6,182,212,0.5));"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
                     <polygon
                         points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
                 </svg>
-                <span class="font-space text-[9px] font-bold uppercase tracking-widest text-purple-400">Events</span>
+                <span class="font-space text-[9px] font-bold uppercase tracking-widest text-cyan-400">Events</span>
             </a>
             <a href="contact.html" class="flex flex-col items-center gap-1 px-4 py-2">
                 <svg class="w-[22px] h-[22px] text-zinc-600" viewBox="0 0 24 24" fill="none" stroke="currentColor"
