@@ -1,5 +1,5 @@
 /* ============================================
-   VIRTUOSIC 2K26 — Quantexera-Inspired Logic
+   VIRTUOSIC 2K26
    ============================================ */
 
 // ─── Event Data ───
@@ -8,7 +8,7 @@ const EVENTS_DATA = [
     id: 'evolution', name: 'Evolution', shortDesc: 'Coding battle — evolve or get eliminated',
     description: 'A multi-round coding competition where each round raises the bar. Only the strongest coders survive the evolution.',
     icon: '💻', accent: '#F43F5E',
-    location: 'Computer Lab 1', time: '10:00 AM – 1:00 PM', fee: '₹100', teamSize: '1–2',
+    location: 'Respective Dept', time: '10:00 AM – 1:00 PM', fee: '₹100', teamSize: '1–2',
     about: 'Evolution is a survival-style coding competition. Participants face progressively harder algorithmic challenges across multiple rounds. Each round eliminates the weakest — only the most adaptable coders make it to the final.',
     rules: ['Teams of 1–2 members allowed.', 'Internet access is strictly prohibited.', 'Use of AI tools (ChatGPT, Copilot) is banned.', 'Solutions must be original — plagiarism = disqualification.', 'Multiple elimination rounds — survive to win.', 'Languages: C, C++, Java, Python.', 'Decision of judges is final.'],
     judging: [{ name: 'Correctness', marks: 40 }, { name: 'Efficiency', marks: 25 }, { name: 'Code Quality', marks: 20 }, { name: 'Speed Bonus', marks: 15 }],
@@ -20,7 +20,7 @@ const EVENTS_DATA = [
     id: 'project-exhibition', name: 'Project Exhibition', shortDesc: 'Showcase your degree-level innovation',
     description: 'A National Level Project Exhibition providing a platform for students to showcase innovative ideas and technical skills.',
     icon: '🔬', accent: '#8B5CF6',
-    location: 'SSPM\'s College of Engineering, Kankavli', time: '10:00 AM – 4:00 PM', fee: '₹200', teamSize: 'Max 4',
+    location: 'ClassRoom No:29,30,119,120', time: '10:00 AM – 4:00 PM', fee: '₹200', teamSize: 'Max 4',
     about: 'Virtuosic 2K26 is a National Level Project Exhibition Competition that provides a platform for students to showcase their innovative ideas and technical skills. The event encourages participants to present real-world problem-solving projects across domains like AI/ML, IoT, Web Development, and more. It aims to foster creativity, collaboration, and engineering excellence among students. Participants will get an opportunity to interact with experts and gain valuable exposure. This competition is designed to inspire future innovators and leaders in technology.',
     rules: ['Each team can have a maximum of 4 members.', 'Participants must belong to eligible departments (ELECT/EXTC, MECH/METX, COMP, CSE-AIML).', 'Each team must register by filling out the official registration form.', 'Projects must be original and not copied from existing work.', 'Teams should bring their own required setup (laptop, hardware, etc.).', 'Each team will be given a fixed time to present their project.', 'Judges\' decisions will be final and binding.', 'Misconduct or plagiarism will lead to disqualification.'],
     judging: [{ name: 'Innovation & Creativity', marks: 20 }, { name: 'Technical Implementation', marks: 20 }, { name: 'Practical Application', marks: 15 }, { name: 'Presentation & Explanation', marks: 15 }, { name: 'Problem-Solving Approach', marks: 15 }, { name: 'Teamwork & Clarity', marks: 15 }],
@@ -39,7 +39,7 @@ const EVENTS_DATA = [
     id: 'debate', name: 'Debate', shortDesc: 'Argue, convince, dominate',
     description: 'Battle with words on trending tech and societal topics. Logic, facts, and charisma win.',
     icon: '🎤', accent: '#F59E0B',
-    location: 'Auditorium', time: '2:00 PM – 5:00 PM', fee: '₹50', teamSize: '2',
+    location: 'Seminar Hall No. 1', time: '2:00 PM – 5:00 PM', fee: '₹50', teamSize: '2',
     about: 'The Debate competition brings together articulate thinkers to argue on contemporary tech and social topics. Quick thinking, solid logic, and presentation skills are key.',
     rules: ['Teams of 2 members.', 'Topics revealed 15 min before.', 'Each side: 5 min argument + 2 min rebuttal.', 'English and Hindi both allowed.', 'No props or visual aids.', 'Personal attacks = disqualification.', 'Judge decision is final.'],
     judging: [{ name: 'Content & Logic', marks: 35 }, { name: 'Presentation', marks: 25 }, { name: 'Rebuttal', marks: 25 }, { name: 'Teamwork', marks: 15 }],
@@ -51,7 +51,7 @@ const EVENTS_DATA = [
     id: 'directo', name: 'Directo', shortDesc: 'Direct a short film masterpiece',
     description: 'Create a compelling short film within the time limit. Storytelling, cinematography, and editing matter.',
     icon: '🎬', accent: '#EC4899',
-    location: 'Media Room', time: '9:00 AM – 5:00 PM', fee: '₹200', teamSize: '3–5',
+    location: 'Seminar Hall No. 1', time: '9:00 AM – 5:00 PM', fee: '₹200', teamSize: '3–5',
     about: 'Directo is the ultimate short film competition. Teams receive a theme and must conceptualize, shoot, and edit a 3–5 minute short film within the event duration.',
     rules: ['Teams of 3–5 members.', 'Theme revealed at the start.', 'Film duration: 3–5 minutes (strict).', 'Any genre allowed.', 'Mobile or DSLR cameras only.', 'Background music must be royalty-free.', 'Submit final file in MP4 format.'],
     judging: [{ name: 'Story & Script', marks: 30 }, { name: 'Cinematography', marks: 25 }, { name: 'Editing', marks: 25 }, { name: 'Overall Impact', marks: 20 }],
@@ -63,7 +63,7 @@ const EVENTS_DATA = [
     id: 'robotics', name: 'Robotics', shortDesc: 'Build, race, conquer the arena',
     description: 'Design and build a robot to navigate the obstacle course. Speed, precision, and engineering win.',
     icon: '🤖', accent: '#10B981',
-    location: 'Ground Floor Arena', time: '11:00 AM – 4:00 PM', fee: '₹200', teamSize: '2–4',
+    location: 'Corridor (Near Physics Lab)', time: '11:00 AM – 4:00 PM', fee: '₹200', teamSize: '1-2',
     about: 'The Robotics competition challenges teams to build a robot that can navigate a complex obstacle course in the shortest time. A true test of embedded systems and mechanical design.',
     rules: ['Teams of 2–4 members.', 'Robot max size: 30×30×30 cm.', 'Wired and wireless control both allowed.', 'Self-powered only (max 12V).', 'Three attempts — best time counts.', 'Damaging the arena = disqualification.', 'Ready-made kits not allowed.'],
     judging: [{ name: 'Completion Time', marks: 50 }, { name: 'Obstacle Clearance', marks: 30 }, { name: 'Robot Design', marks: 20 }],
@@ -75,7 +75,7 @@ const EVENTS_DATA = [
     id: 'poster-presentation', name: 'Poster Presentation', shortDesc: 'Visualize your research brilliantly',
     description: 'Present your research or project through a visually compelling poster. Clarity and creativity are key.',
     icon: '📊', accent: '#06B6D4',
-    location: 'Seminar Hall', time: '10:00 AM – 1:00 PM', fee: '₹80', teamSize: '1–3',
+    location: 'Classroom No. 121', time: '10:00 AM – 1:00 PM', fee: '₹80', teamSize: '1',
     about: 'Poster Presentation lets students communicate their research, ideas, or projects through a single visual poster. Judges evaluate clarity, visual quality, and knowledge depth.',
     rules: ['Teams of 1–3 members.', 'Poster size: A1 (594 × 841 mm).', 'Hand-made or digitally printed.', '5 min explanation + 3 min Q&A.', 'Any technical or research topic.', 'Must include abstract, methodology, conclusion.', 'Bring your own poster.'],
     judging: [{ name: 'Visual Design', marks: 25 }, { name: 'Content Depth', marks: 30 }, { name: 'Presentation', marks: 25 }, { name: 'Q&A', marks: 20 }],
@@ -87,7 +87,7 @@ const EVENTS_DATA = [
     id: 'lan-gaming', name: 'LAN Gaming', shortDesc: 'Dominate the virtual battleground',
     description: 'Compete in intense multiplayer LAN gaming tournaments. Reflexes, strategy, and teamwork decide the champion.',
     icon: '🎮', accent: '#EF4444',
-    location: 'Computer Lab 3', time: '10:00 AM – 6:00 PM', fee: '₹150', teamSize: '4–5',
+    location: 'Classroom No: 101,102,103', time: '10:00 AM – 6:00 PM', fee: 'Respective to the event', teamSize: '4',
     about: 'LAN Gaming brings competitive esports to Virtuosic 2K26. Teams compete in popular multiplayer titles. Quick reflexes, team coordination, and strategy are essential.',
     rules: ['Teams of 4–5 members.', 'Game title announced before event.', 'Bring your own peripherals.', 'No cheats, hacks, or exploits.', 'Single elimination bracket.', 'Latecomers disqualified.', 'Admin decisions are final.'],
     judging: [{ name: 'Match Wins', marks: 60 }, { name: 'Sportsmanship', marks: 20 }, { name: 'Team Coordination', marks: 20 }],
@@ -99,7 +99,7 @@ const EVENTS_DATA = [
     id: 'hacksprint', name: 'HackSprint', shortDesc: '6-hour hackathon — build something epic',
     description: 'A fast-paced mini hackathon. Ideate, build, and pitch a working prototype in just 6 hours.',
     icon: '⚡', accent: '#A855F7',
-    location: 'Innovation Lab', time: '10:00 AM – 4:00 PM', fee: '₹200', teamSize: '2–4',
+    location: 'CAD Lab(M-206)', time: '10:00 AM – 4:00 PM', fee: '₹200', teamSize: '4',
     about: 'HackSprint is a concentrated 6-hour hackathon where teams ideate, develop, and present a working solution to a real-world problem. Bring your laptops, creativity, and caffeine.',
     rules: ['Teams of 2–4 members.', 'Theme announced at 10:00 AM.', 'Any tech stack allowed.', 'Pre-built code not permitted.', 'Must present a working demo.', 'Pitch: 5 min + 3 min Q&A.', 'Open-source libraries/APIs allowed.'],
     judging: [{ name: 'Innovation', marks: 30 }, { name: 'Technical Implementation', marks: 30 }, { name: 'UI/UX', marks: 20 }, { name: 'Pitch Quality', marks: 20 }],
@@ -122,22 +122,167 @@ const EVENTS_DATA = [
 ];
 
 const CONTACT_DATA = {
-  gs: { name: 'Aditya Sharma', phone: '+91 98765 43200', email: 'gs.virtuosic@example.com', initials: 'AS' },
+  gs: {
+    name: 'Vishnu Vejare',
+    phone: '+91 84128 60728',
+    email: 'vishnuvejare@gmail.com',
+    initials: 'VV'
+  },
   core: [
-    { name: 'Uzair Shaikh', event: 'Project Exhibition', phone: '+91 86007 30728', email: '', initials: 'US', photo: '' },
-    { name: 'Vaishnavi Ghare', event: 'Project Exhibition', phone: '+91 93075 35959', email: 'vaishnavighare531@gmail.com', initials: 'VG', photo: 'profilephoto/vaishnavi-ghare.jpeg' },
-    { name: 'Jigisha Mhapasekar', event: 'Evolution', phone: '+91 96994 24099', email: 'jigishadmhapasekar@gmail.com', initials: 'JM', photo: 'profilephoto/Jigisha-Mhapasekar.jpeg' },
-    { name: 'Vasudev Narvekar', event: 'Evolution', phone: '+91 94208 63918', email: 'vasudevnarvekar737@gmail.com', initials: 'VN', photo: 'profilephoto/Vasudev-Narvekar.jpeg' },
-    { name: 'Rahul Patil', event: 'Evolution', phone: '+91 98765 43210', email: 'rahul@example.com', initials: 'RP' },
-    { name: 'Sneha Desai', event: 'Debate', phone: '+91 98765 43211', email: 'sneha@example.com', initials: 'SD' },
-    { name: 'Vikram Jadhav', event: 'Robotics', phone: '+91 98765 43214', email: 'vikram@example.com', initials: 'VJ' },
-    { name: 'Manish Gawde', event: 'Poster Presentation', phone: '+91 98765 43216', email: 'manish@example.com', initials: 'MG' },
-    { name: 'Vicky Rathod', event: 'LAN Gaming', phone: '+91 81692 22207', email: 'rathodvickey71@gmail.com', initials: 'VR', photo: 'profilephoto/vicky-rathod.jpeg' },
-    { name: 'Saurabh More', event: 'LAN Gaming', phone: '+91 98765 43218', email: 'saurabh@example.com', initials: 'SM' },
-    { name: 'Omkar Shet', event: 'Debate', phone: '+91 98765 43220', email: 'omkar@example.com', initials: 'OS' }
+    {
+      name: 'Uzair Abdulla Shaikh',
+      event: 'Project Exhibition',
+      phone: '+918600730728',
+      email: 'uzairshaikh.2034@gmail.com',
+      initials: 'US',
+      photo: 'profilephoto/uzair-shaikh.jpeg'
+    },
+    {
+      name: 'Vaishnavi Shivprasad Ghare',
+      event: 'Project Exhibition',
+      phone: '+919307535959',
+      email: 'vaishnavighare531@gmail.com',
+      initials: 'VG',
+      photo: 'profilephoto/vaishnavi-ghare.jpeg'
+    },
+    {
+      name: 'Jigisha Darshan Mhapasekar',
+      event: 'Evolution',
+      phone: '+919699424099',
+      email: 'jigishadmhapasekar@gmail.com',
+      initials: 'JM',
+      photo: 'profilephoto/jigisha-mhapasekar.jpeg'
+    },
+    {
+      name: 'Vasudev Santosh Narvekar',
+      event: 'Evolution',
+      phone: '+919420863918',
+      email: 'vasudevnarvekar737@gmail.com',
+      initials: 'VN',
+      photo: 'profilephoto/vasudev-narvekar.jpeg'
+    },
+    {
+      name: 'Sanika Suhas Sawant',
+      event: 'Debate',
+      phone: '+917208108501',
+      email: 'sanikasawant1735@gmail.com',
+      initials: 'SS',
+      photo: 'profilephoto/sanika-sawant.jpeg'
+    },
+    {
+      name: 'Xavier Agnel Fernandes',
+      event: 'Debate',
+      phone: '+919307863916',
+      email: 'xavierfernandis276@gmail.com',
+      initials: 'XF',
+      photo: 'profilephoto/Xavier-Fernandes .jpeg'
+    },
+    {
+      name: 'Vicky Ishwar Rathod',
+      event: 'LAN Gaming',
+      phone: '+918169222207',
+      email: 'rathodvickey71@gmail.com',
+      initials: 'VR',
+      photo: 'profilephoto/vicky-rathod.jpeg'
+    },
+    {
+      name: 'Roshan Bhikaji Sawant',
+      event: 'LAN Gaming (Mini Militia)',
+      phone: '+919321658580',
+      email: 'sawantroshan642@gmail.com',
+      initials: 'RS',
+      photo: 'profilephoto/Roshan-Sawant .jpeg'
+    },
+    {
+      name: 'Danesh Parab',
+      event: 'LAN Gaming (Mini Militia)',
+      phone: '+919421536963',
+      email: 'parabdanesh9@gmail.com',
+      initials: 'DP',
+      photo: 'profilephoto/danish-parab.jpeg'
+    },
+    {
+      name: 'Maaz AbuTalib Khan',
+      event: 'BGMI LAN',
+      phone: '+9193325579949',
+      email: 'khanmaaz7684@gmail.com',
+      initials: 'MK',
+      photo: 'profilephoto/maaz-khan.jpeg'
+    },
+    {
+      name: 'Kamakshi Rajendra Keluskar',
+      event: 'Poster Presentation',
+      phone: '+918149584764',
+      email: 'kamakshikeluskar@gmail.com',
+      initials: 'KK',
+      photo: 'profilephoto/kamakshi-keluskar.jpeg'
+    },
+    {
+      name: 'Bhargawi Sanjay Kavatkar',
+      event: 'Poster Presentation',
+      phone: '+9196997020262',
+      email: 'bhargawikavatkar@gmail.com',
+      initials: 'BK',
+      photo: 'profilephoto/bhargawi-kavatkar.jpeg'
+    },
+    {
+      name: 'Govind Mahesh Sawant',
+      event: 'Robotics',
+      phone: '+919421287164',
+      email: 'sawantgovind76@gmail.com',
+      initials: 'GS',
+      photo: 'profilephoto/govind-sawant.jpeg'
+    },
+    {
+      name: 'Mufid Rizwan Shaikh',
+      event: 'Auto Expo',
+      phone: '+919561941586',
+      email: 'mufidshaikh9421145786@gmail.com',
+      initials: 'MS',
+      photo: 'profilephoto/Mufid-Shaikh .jpeg'
+    },
+    {
+      name: 'Rahul Narayan Gawas',
+      event: 'Auto Expo',
+      phone: '+917038683384',
+      email: 'rahulgawas790@gmail.com',
+      initials: 'RG',
+      photo: 'profilephoto/rahul-gawas.jpeg'
+    },
+    {
+      name: 'Sanika Shashikant Mhatugade',
+      event: 'Ladies Representative',
+      phone: '+917774010816',
+      email: 'sanumhatugade2411@gmail.com',
+      initials: 'SM',
+      photo: 'profilephoto/sanika-mhatugade.jpeg'
+    },
+    {
+      name: 'Narendra Ratnakar Gurav',
+      event: 'HackSprint',
+      phone: '+919137663880',
+      email: 'narendragurav2005@gmail.com',
+      initials: 'NG',
+      photo: 'profilephoto/Narendra-gurav.jpg'
+    },
+    {
+      name: 'Rajas Taneshwar Gawas',
+      event: 'HackSprint',
+      phone: '+919890959211',
+      email: 'narendragurav2005@gmail.com',
+      initials: 'RG',
+      photo: 'profilephoto/rajas-gawas.jpeg'
+    },
+    {
+      name: 'Varun Prabhakar Karle',
+      event: 'Cultural Co-ordinator',
+      phone: '+91 95296 65461',
+      email: 'karlevarun@gmail.com',
+      initials: 'VK',
+      photo: 'profilephoto/varun-karle.jpeg'
+    }
   ]
 };
-
 const SOCIAL_DATA = [
   { platform: 'Instagram', handle: '@virtuosic2k26', url: 'https://instagram.com/virtuosic2k26', iconClass: 'instagram' },
   { platform: 'LinkedIn', handle: 'Virtuosic 2K26', url: 'https://linkedin.com/company/virtuosic2k26', iconClass: 'linkedin' },
@@ -493,21 +638,19 @@ function initEventPage() {
 }
 
 
-/* ═══ CONTACT PAGE ═══ */
+//* ═══ CONTACT PAGE ═══ */
 function renderContactPage() {
   const gsEl = document.getElementById('gs-section');
   if (gsEl) {
     const gs = CONTACT_DATA.gs;
     gsEl.innerHTML = `
-      <img src="profilephoto/Narendra-gurav.jpg" alt="${gs.name}" class="w-full max-w-[280px] aspect-square rounded-2xl object-cover mb-6 neon-purple" style="box-shadow: 0 0 40px rgba(124,58,237,0.35), 0 20px 60px rgba(0,0,0,0.5);">
+      <img src="profilephoto/Vishnu-vejare.jpeg" alt="${gs.name}" class="w-full max-w-[280px] aspect-square rounded-2xl object-cover mb-6 neon-purple" style="box-shadow: 0 0 40px rgba(124,58,237,0.35), 0 20px 60px rgba(0,0,0,0.5);">
       <h3 class="font-outfit text-2xl font-extrabold text-white mb-3 tracking-tight">${gs.name}</h3>
       <a href="tel:${gs.phone}" class="flex items-center gap-2.5 text-base text-cyan-400 hover:text-cyan-300 transition-colors mb-2">
-        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-        ${gs.phone}
+        📱 ${gs.phone}
       </a>
       <a href="mailto:${gs.email}" class="flex items-center gap-2.5 text-sm text-zinc-500 hover:text-purple-400 transition-colors">
-        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        ${gs.email}
+        ✉️ ${gs.email}
       </a>
     `;
   }
@@ -516,16 +659,25 @@ function renderContactPage() {
   if (coreEl) {
     coreEl.innerHTML = CONTACT_DATA.core.map((m, i) => {
       const isReversed = i % 2 !== 0;
+
       return `
         <div class="glass-card rounded-2xl p-4 flex items-center gap-5 ${isReversed ? 'flex-row-reverse' : ''} border-gradient">
-          <img src="${m.photo || 'profilephoto/Narendra-gurav.jpg'}" alt="${m.name}"
-               class="w-32 h-32 rounded-2xl object-cover shrink-0 neon-purple">
+
+          ${m.photo 
+            ? `<img src="${m.photo}" alt="${m.name}"
+                 class="w-32 h-32 rounded-2xl object-cover shrink-0 neon-purple">`
+            : `<div class="w-32 h-32 rounded-2xl flex items-center justify-center bg-zinc-800 text-white text-2xl font-bold neon-purple">
+                 ${m.initials}
+               </div>`
+          }
+
           <div class="flex-1 min-w-0 text-left">
             <h4 class="font-outfit text-xl font-bold text-white mb-1 tracking-tight">${m.name}</h4>
             <p class="font-space text-[10px] text-cyan-400 font-bold uppercase tracking-[2px] mb-2">${m.event}</p>
             <p class="text-[11px] text-zinc-500 mb-0.5">📱 ${m.phone}</p>
-            <p class="text-[11px] text-zinc-500 break-all">✉️ ${m.email}</p>
+            <p class="text-[11px] text-zinc-500 break-all">✉️ ${m.email || '-'}</p>
           </div>
+
         </div>
       `;
     }).join('');
