@@ -176,7 +176,7 @@ const EVENTS_DATA = [
     page: 'lan-gaming.html'
   },
   {
-    id: 'hacksprint', name: 'HackSprint', shortDesc: '6-hour hackathon — build something epic',
+    id: 'hacksprint', name: 'HackSprint', shortDesc: '4-hour hackathon — build something epic',
     description: 'A fast-paced mini hackathon. Ideate, build, and pitch a working prototype in just 6 hours.',
     icon: '⚡', accent: '#A855F7',
     location: 'CAD Lab(M-206)', time: '10:00 AM – 4:00 PM', fee: '₹200', teamSize: '4',
