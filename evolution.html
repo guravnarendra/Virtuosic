@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Evolution — Virtuosic 2K26</title>
+    <meta name="description"
+        content="Evolution — Technical Paper Presentation Competition — Virtuosic 2K26, SSPM's College of Engineering, Kankavli.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { theme: { extend: { colors: { dark: { 900: '#000000', 800: '#0A0A0A', 700: '#111111' } } } } }</script>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+    <style>
+        .prize-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .prize-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .prize-gold {
+            border-color: #FBBF24;
+            box-shadow: 0 0 25px rgba(251, 191, 36, 0.2);
+        }
+
+        .prize-silver {
+            border-color: #94A3B8;
+            box-shadow: 0 0 25px rgba(148, 163, 184, 0.15);
+        }
+
+        .prize-bronze {
+            border-color: #D97706;
+            box-shadow: 0 0 25px rgba(217, 119, 6, 0.15);
+        }
+
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(244, 63, 94, 0.3), transparent);
+        }
+
+        .accent-bar {
+            width: 40px;
+            height: 3px;
+            background: linear-gradient(90deg, #F43F5E, #8B5CF6);
+            border-radius: 2px;
+        }
+
+        .resource-item {
+            border-left: 2px solid #F43F5E;
+        }
+
+        .coord-card {
+            transition: transform 0.3s ease;
+        }
+
+        .coord-card:hover {
+            transform: scale(1.02);
+        }
+
+        .group-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .group-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .topic-item {
+            border-left: 2px solid rgba(244, 63, 94, 0.3);
+            transition: border-color 0.3s ease;
+        }
+
+        .topic-item:hover {
+            border-left-color: #F43F5E;
+        }
+    </style>
+</head>
+
+<body class="bg-black text-white min-h-screen overflow-x-hidden">
+    <div class="star-field" id="starField"></div>
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+
+    <div class="mobile-frame relative z-10 page-enter min-h-screen pb-28">
+
+        <!-- ═══ TOP BAR ═══ -->
+        <header class="flex items-center justify-between px-5 py-4">
+            <a href="competition.html"
+                class="flex items-center gap-2 text-zinc-500 hover:text-rose-400 transition-colors">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6" />
+                </svg>
+                <span class="font-space text-xs font-bold uppercase tracking-widest">Back to Events</span>
+            </a>
+        </header>
+
+        <!-- ═══ CONTENT ═══ -->
+        <div class="px-6 pt-1">
+
+            <!-- Title -->
+            <div class="mb-2">
+                <span
+                    class="inline-block px-3 py-1 rounded-full text-[10px] font-bold font-space uppercase tracking-widest mb-3"
+                    style="background: rgba(244,63,94,0.15); color: #F43F5E; border: 1px solid rgba(244,63,94,0.25);">
+                    📄 Technical Paper Presentation
+                </span>
+            </div>
+            <h1 class="font-anton text-[2.5rem] leading-[0.95] text-white uppercase tracking-wide mb-2"
+                style="text-shadow: 0 0 40px rgba(244,63,94,0.3);">
+                Evolution
+            </h1>
+            <p class="text-[14px] text-zinc-400 leading-relaxed mb-6">
+                Showcase your research, creativity, and technical knowledge through structured paper presentations.
+                Branch-wise competition with top recognition.
+            </p>
+
+            <!-- Info Blocks -->
+            <div class="flex gap-3 overflow-x-auto pb-3 mb-6"
+                style="scrollbar-width:none;-webkit-overflow-scrolling:touch;">
+                <div
+                    class="flex-shrink-0 rounded-xl p-4 min-w-[130px] bg-rose-500/[0.04] border border-rose-500/20 backdrop-blur-sm">
+                    <div class="text-2xl mb-2">📍</div>
+                    <div class="font-space text-[9px] text-zinc-600 uppercase tracking-[2px] font-bold mb-1">Location
+                    </div>
+                    <div class="font-outfit text-sm font-extrabold text-white leading-tight">Respective<br>Departments
+                    </div>
+                </div>
+                <div
+                    class="flex-shrink-0 rounded-xl p-4 min-w-[120px] bg-pink-500/[0.04] border border-pink-500/20 backdrop-blur-sm">
+                    <div class="text-2xl mb-2">💰</div>
+                    <div class="font-space text-[9px] text-zinc-600 uppercase tracking-[2px] font-bold mb-1">Entry Fee
+                    </div>
+                    <div class="font-outfit text-lg font-extrabold text-white">₹100</div>
+                    <div class="text-[10px] text-zinc-600">per group (2 authors)</div>
+                    <div class="text-[9px] text-zinc-600 mt-0.5">+₹50 per extra author</div>
+                </div>
+                <div
+                    class="flex-shrink-0 rounded-xl p-4 min-w-[120px] bg-purple-500/[0.04] border border-purple-500/20 backdrop-blur-sm">
+                    <div class="text-2xl mb-2">👥</div>
+                    <div class="font-space text-[9px] text-zinc-600 uppercase tracking-[2px] font-bold mb-1">Team Size
+                    </div>
+                    <div class="font-outfit text-lg font-extrabold text-white">Max 2</div>
+                    <div class="text-[10px] text-zinc-600">authors</div>
+                </div>
+                <div
+                    class="flex-shrink-0 rounded-xl p-4 min-w-[120px] bg-red-500/[0.04] border border-red-500/20 backdrop-blur-sm">
+                    <div class="text-2xl mb-2">📅</div>
+                    <div class="font-space text-[9px] text-zinc-600 uppercase tracking-[2px] font-bold mb-1">Date
+                    </div>
+                    <div class="font-outfit text-lg font-extrabold text-white">08 Apr</div>
+                    <div class="text-[10px] text-zinc-600">2026</div>
+                </div>
+            </div>
+
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ PRIZES ═══ -->
+            <section class="mb-8">
+                <h2
+                    class="font-outfit text-xl font-extrabold text-white flex items-center gap-3 mb-5 uppercase tracking-wide">
+                    <span class="text-2xl">🏆</span> Prizes
+                </h2>
+                <p class="text-[12px] text-zinc-500 mb-4 italic">Each group will have 3 winners based on highest scores
+                    within their respective group.</p>
+                <div class="grid grid-cols-3 gap-3">
+                    <!-- 1st -->
+                    <div class="prize-card prize-gold rounded-2xl p-4 text-center border-2 bg-yellow-500/[0.04]">
+                        <div class="text-3xl mb-2">🥇</div>
+                        <div class="font-space text-[9px] text-zinc-500 uppercase tracking-widest font-bold mb-1">1st
+                            Prize</div>
+                        <div class="font-outfit text-xl font-black text-yellow-400">₹2000</div>
+                    </div>
+                    <!-- 2nd -->
+                    <div class="prize-card prize-silver rounded-2xl p-4 text-center border-2 bg-slate-500/[0.04]">
+                        <div class="text-3xl mb-2">🥈</div>
+                        <div class="font-space text-[9px] text-zinc-500 uppercase tracking-widest font-bold mb-1">2nd
+                            Prize</div>
+                        <div class="font-outfit text-xl font-black text-slate-300">₹1500</div>
+                    </div>
+                    <!-- 3rd -->
+                    <div class="prize-card prize-bronze rounded-2xl p-4 text-center border-2 bg-amber-500/[0.04]">
+                        <div class="text-3xl mb-2">🥉</div>
+                        <div class="font-space text-[9px] text-zinc-500 uppercase tracking-widest font-bold mb-1">3rd
+                            Prize</div>
+                        <div class="font-outfit text-xl font-black text-amber-500">₹1000</div>
+                    </div>
+                </div>
+                <div class="glass-card rounded-xl p-3 text-center mt-3 border border-rose-500/10">
+                    <p class="text-[11px] text-rose-400 font-bold">× 4 Groups = 12 Winners Total!</p>
+                </div>
+            </section>
+
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ DEPARTMENT GROUPS & TOPICS ═══ -->
+            <section class="mb-8">
+                <h2
+                    class="font-outfit text-xl font-extrabold text-white flex items-center gap-3 mb-5 uppercase tracking-wide">
+                    <div class="accent-bar"></div> Groups & Topics
+                </h2>
+
+                <!-- Group 1 -->
+                <div class="group-card glass-card rounded-2xl p-5 mb-4 border border-rose-500/10">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span
+                            class="w-8 h-8 rounded-lg flex items-center justify-center text-sm font-black bg-rose-500/20 text-rose-400">1</span>
+                        <div>
+                            <h3 class="font-outfit text-base font-bold text-white">ELECT / EXTC</h3>
+                            <p class="font-space text-[9px] text-zinc-600 uppercase tracking-widest">Electrical &
+                                Electronics</p>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="topic-item pl-3 py-1.5">
+                            <p class="text-[13px] text-zinc-400">AI-Driven Smart Grids</p>
+                        </div>
+                        <div class="topic-item pl-3 py-1.5">
+                            <p class="text-[13px] text-zinc-400">Smart Lighting Systems with Sensors</p>
+                        </div>
+                        <div class="topic-item pl-3 py-1.5">
+                            <p class="text-[13px] text-zinc-400">Renewable Energy with Machine Learning</p>
+                        </div>
+                        <div class="topic-item pl-3 py-1.5">
+                            <p class="text-[13px] text-zinc-400">Energy Efficiency Optimization Techniques</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Group 2 -->
+                <div class="group-card glass-card rounded-2xl p-5 mb-4 border border-orange-500/10">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span
+                            class="w-8 h-8 rounded-lg flex items-center justify-center text-sm font-black bg-orange-500/20 text-orange-400">2</span>
+                        <div>
+                            <h3 class="font-outfit text-base font-bold text-white">MECH / METX</h3>
+                            <p class="font-space text-[9px] text-zinc-600 uppercase tracking-widest">Mechanical &
+                                Mechatronics</p>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="topic-item pl-3 py-1.5" style="border-left-color: rgba(249,115,22,0.3);">
+                            <p class="text-[13px] text-zinc-400">Advanced Materials and Processing</p>
+                        </div>
+                        <div class="topic-item pl-3 py-1.5" style="border-left-color: rgba(249,115,22,0.3);">
+                            <p class="text-[13px] text-zinc-400">Advances in CAD/CAM</p>
+                        </div>
+                        <div class="topic-item pl-3 py-1.5" style="border-left-color: rgba(249,115,22,0.3);">
+                            <p class="text-[13px] text-zinc-400">Additive Manufacturing</p>
+                        </div>
+                        <div class="topic-item pl-3 py-1.5" style="border-left-color: rgba(249,115,22,0.3);">
+                            <p class="text-[13px] text-zinc-400">Industry 4.0</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Group 3 -->
+                <div class="group-card glass-card rounded-2xl p-5 mb-4 border border-cyan-500/10">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span
+                            class="w-8 h-8 rounded-lg flex items-center justify-center text-sm font-black bg-cyan-500/20 text-cyan-400">3</span>
+                        <div>
+                            <h3 class="font-outfit text-base font-bold text-white">COMP / ECS</h3>
+                            <p class="font-space text-[9px] text-zinc-600 uppercase tracking-widest">Computer Science
+                            </p>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="topic-item pl-3 py-1.5" style="border-left-color: rgba(6,182,212,0.3);">
+                            <p class="text-[13px] text-zinc-400">Data Warehousing & Mining</p>
+                        </div>
+                        <div class="topic-item pl-3 py-1.5" style="border-left-color: rgba(6,182,212,0.3);">
+                            <p class="text-[13px] text-zinc-400">System Security / Cyber Security</p>
+                        </div>
+                        <div class="topic-item pl-3 py-1.5" style="border-left-color: rgba(6,182,212,0.3);">
+                            <p class="text-[13px] text-zinc-400">Machine Learning</p>
+                        </div>
+                        <div class="topic-item pl-3 py-1.5" style="border-left-color: rgba(6,182,212,0.3);">
+                            <p class="text-[13px] text-zinc-400">Ubiquitous Computing</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Group 4 -->
+                <div class="group-card glass-card rounded-2xl p-5 mb-4 border border-violet-500/10">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span
+                            class="w-8 h-8 rounded-lg flex items-center justify-center text-sm font-black bg-violet-500/20 text-violet-400">4</span>
+                        <div>
+                            <h3 class="font-outfit text-base font-bold text-white">CSE (AIML) / CS</h3>
+                            <p class="font-space text-[9px] text-zinc-600 uppercase tracking-widest">AI & Machine
+                                Learning</p>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="topic-item pl-3 py-1.5" style="border-left-color: rgba(139,92,246,0.3);">
+                            <p class="text-[13px] text-zinc-400">Machine Learning</p>
+                        </div>
+                        <div class="topic-item pl-3 py-1.5" style="border-left-color: rgba(139,92,246,0.3);">
+                            <p class="text-[13px] text-zinc-400">Data Science</p>
+                        </div>
+                        <div class="topic-item pl-3 py-1.5" style="border-left-color: rgba(139,92,246,0.3);">
+                            <p class="text-[13px] text-zinc-400">Quantum Computing</p>
+                        </div>
+                        <div class="topic-item pl-3 py-1.5" style="border-left-color: rgba(139,92,246,0.3);">
+                            <p class="text-[13px] text-zinc-400">AI Applications</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ INNOVATION BANNER ═══ -->
+            <div class="mb-8 py-6 text-center">
+                <div class="text-center leading-[0.9] uppercase select-none">
+                    <div class="font-anton text-[3rem] md:text-[4rem] text-white tracking-wide">
+                        INNOVATION
+                    </div>
+                    <div
+                        class="font-anton text-[3rem] md:text-[4rem] tracking-wide bg-gradient-to-r from-rose-500 via-pink-500 to-purple-500 text-transparent bg-clip-text">
+                        RESEARCH.
+                    </div>
+                </div>
+                <p class="text-sm text-zinc-500 mt-3 font-outfit italic">Where Ideas Evolve into Solutions</p>
+            </div>
+
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ ABOUT ═══ -->
+            <section class="mb-8">
+                <h2
+                    class="font-outfit text-xl font-extrabold text-white flex items-center gap-3 mb-4 uppercase tracking-wide">
+                    <div class="accent-bar"></div> About the Event
+                </h2>
+                <p class="text-[14px] text-zinc-400 leading-[1.9]">
+                    Evolution is a technical paper presentation competition designed to encourage students to showcase
+                    their research, creativity, and technical knowledge. Participants will present innovative ideas or
+                    research findings based on given topics. The event promotes analytical thinking, communication
+                    skills, and academic excellence. It also provides a platform to explore real-world problems through
+                    structured research. Students from different departments compete branch-wise to achieve top
+                    recognition.
+                </p>
+            </section>
+
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ RULES ═══ -->
+            <section class="mb-8">
+                <h2
+                    class="font-outfit text-xl font-extrabold text-white flex items-center gap-3 mb-5 uppercase tracking-wide">
+                    <div class="accent-bar"></div> Competition Rules
+                </h2>
+                <div class="grid grid-cols-1 gap-3">
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #F43F5E;">01</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Each team must have a minimum of 2 authors.
+                        </p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #F43F5E;">02</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Registration fee is ₹100 for up to 2 authors;
+                            ₹50 for each additional author (non-refundable).</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #F43F5E;">03</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Participants can select topics from the
+                            provided list or choose relevant topics independently.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #F43F5E;">04</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Paper must follow IEEE format and be submitted
+                            in Word or PDF (LaTeX).</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #F43F5E;">05</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Paper must include: Abstract, Introduction,
+                            Methodology, Results & Discussion, Conclusion, References.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #F43F5E;">06</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Abstract should not exceed 100 words and full
+                            paper should not exceed 5 pages.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #F43F5E;">07</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Participants must bring one soft copy and one
+                            hard copy of the paper.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #F43F5E;">08</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Each team gets 6 minutes for presentation and
+                            2 minutes for Q&A.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #F43F5E;">09</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Presentation must be in PowerPoint (PPT)
+                            format.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #F43F5E;">10</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Judges' decision will be final.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #F43F5E;">11</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Branch-wise winners will be declared.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start border border-rose-500/20">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #F43F5E;">12</span>
+                        <p class="text-sm text-rose-400 leading-relaxed font-semibold">Last date of submission:
+                            6/04/2026</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ RESOURCES PROVIDED ═══ -->
+            <section class="mb-8">
+                <h2
+                    class="font-outfit text-xl font-extrabold text-white flex items-center gap-3 mb-5 uppercase tracking-wide">
+                    <div class="accent-bar"></div> Resources Provided
+                </h2>
+                <div class="space-y-3">
+                    <div class="resource-item pl-4 py-2">
+                        <p class="text-sm text-zinc-400 flex items-center gap-2"><span class="text-rose-400">✦</span>
+                            Projector & Presentation Setup</p>
+                    </div>
+                    <div class="resource-item pl-4 py-2">
+                        <p class="text-sm text-zinc-400 flex items-center gap-2"><span class="text-rose-400">✦</span>
+                            Laptop / System for presentation</p>
+                    </div>
+                    <div class="resource-item pl-4 py-2">
+                        <p class="text-sm text-zinc-400 flex items-center gap-2"><span class="text-rose-400">✦</span>
+                            Basic stationery support</p>
+                    </div>
+                    <div class="resource-item pl-4 py-2">
+                        <p class="text-sm text-zinc-400 flex items-center gap-2"><span class="text-rose-400">✦</span>
+                            Certificates for participants</p>
+                    </div>
+                    <div class="resource-item pl-4 py-2">
+                        <p class="text-sm text-zinc-400 flex items-center gap-2"><span class="text-rose-400">✦</span>
+                            IEEE template reference</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ SUPPORT / COORDINATORS ═══ -->
+            <section class="mb-6">
+                <h2
+                    class="font-outfit text-xl font-extrabold text-white flex items-center gap-3 mb-5 uppercase tracking-wide">
+                    <div class="accent-bar"></div> Support
+                </h2>
+
+                <div class="space-y-4">
+                     <!-- Vasudev -->
+                    <div
+                        class="coord-card glass-card rounded-2xl p-4 flex items-center gap-5 flex-row-reverse border-gradient">
+                        <img src="profilephoto/Vasudev-Narvekar.jpeg" alt="Vasudev Narvekar"
+                            class="w-28 h-28 rounded-2xl object-cover shrink-0"
+                            style="border: 1px solid rgba(244,63,94,0.3);">
+                        <div class="flex-1 min-w-0 text-left">
+                            <h4 class="font-outfit text-lg font-bold text-white mb-1 tracking-tight">Vasudev Narvekar
+                            </h4>
+                            <p class="font-space text-[10px] text-rose-400 font-bold uppercase tracking-[2px] mb-2">
+                                Coordinator</p>
+                            <a href="tel:+919420863918"
+                                class="block text-[12px] text-zinc-500 mb-0.5 hover:text-rose-400 transition-colors">📞
+                                9420863918</a>
+                            <a href="mailto:vasudevnarvekar737@gmail.com"
+                                class="block text-[11px] text-zinc-500 break-all hover:text-pink-400 transition-colors">✉️
+                                vasudevnarvekar737@gmail.com</a>
+                        </div>
+                    </div>
+                    <!-- Jigisha -->
+                    <div class="coord-card glass-card rounded-2xl p-4 flex items-center gap-5 border-gradient">
+                        <img src="profilephoto/Jigisha-Mhapasekar.jpeg" alt="Jigisha Mhapasekar"
+                            class="w-28 h-28 rounded-2xl object-cover shrink-0"
+                            style="border: 1px solid rgba(244,63,94,0.3);">
+                        <div class="flex-1 min-w-0 text-left">
+                            <h4 class="font-outfit text-lg font-bold text-white mb-1 tracking-tight">Jigisha
+                                Mhapasekar</h4>
+                            <p class="font-space text-[10px] text-rose-400 font-bold uppercase tracking-[2px] mb-2">
+                                Coordinator</p>
+                            <a href="tel:+919699424099"
+                                class="block text-[12px] text-zinc-500 mb-0.5 hover:text-rose-400 transition-colors">📞
+                                9699424099</a>
+                            <a href="mailto:jigishadmhapasekar@gmail.com"
+                                class="block text-[11px] text-zinc-500 break-all hover:text-pink-400 transition-colors">✉️
+                                jigishadmhapasekar@gmail.com</a>
+                        </div>
+                    </div>
+                   
+                </div>
+            </section>
+
+        </div>
+
+        <!-- ═══ FLOATING REGISTER ═══ -->
+        <button id="floating-register"
+            class="fixed bottom-[88px] left-1/2 -translate-x-1/2 z-40 px-10 py-4 rounded-full font-outfit text-sm font-black uppercase tracking-[3px] overflow-hidden"
+            style="background: linear-gradient(135deg, #F43F5E, #8B5CF6); color: #fff; box-shadow: 0 0 25px rgba(244,63,94,0.35), 0 0 60px rgba(139,92,246,0.15);"
+            onclick="window.open('https://forms.gle/pXbt2FFpABVcqNSS8', '_blank')">
+            Register Now
+        </button>
+
+        <!-- ═══ BOTTOM NAV ═══ -->
+        <nav class="nav-bar-fixed fixed bottom-0 left-0 right-0 h-[72px] bg-black/90 backdrop-blur-2xl border-t border-white/[0.04] flex items-center justify-around px-2 z-50"
+            style="padding-bottom: env(safe-area-inset-bottom, 0px);">
+            <a href="index.html" class="flex flex-col items-center gap-1 px-4 py-2">
+                <svg class="w-[22px] h-[22px] text-zinc-600" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                    <polyline points="9 22 9 12 15 12 15 22" />
+                </svg>
+                <span class="font-space text-[9px] font-bold uppercase tracking-widest text-zinc-600">Home</span>
+            </a>
+            <a href="competition.html" class="relative flex flex-col items-center gap-1 px-4 py-2 nav-active">
+                <svg class="w-[22px] h-[22px] text-rose-400" style="filter: drop-shadow(0 0 8px rgba(244,63,94,0.5));"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
+                <span class="font-space text-[9px] font-bold uppercase tracking-widest text-rose-400">Events</span>
+            </a>
+            <a href="contact.html" class="flex flex-col items-center gap-1 px-4 py-2">
+                <svg class="w-[22px] h-[22px] text-zinc-600" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                        d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                </svg>
+                <span class="font-space text-[9px] font-bold uppercase tracking-widest text-zinc-600">Contact</span>
+            </a>
+            <a href="social.html" class="flex flex-col items-center gap-1 px-4 py-2">
+                <svg class="w-[22px] h-[22px] text-zinc-600" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="18" cy="5" r="3" />
+                    <circle cx="6" cy="12" r="3" />
+                    <circle cx="18" cy="19" r="3" />
+                    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+                    <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+                </svg>
+                <span class="font-space text-[9px] font-bold uppercase tracking-widest text-zinc-600">Social</span>
+            </a>
+        </nav>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

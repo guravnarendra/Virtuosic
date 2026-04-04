@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Robotics — Virtuosic 2K26</title>
+    <meta name="description" content="Robotics event details — Virtuosic 2K26, SSPM's College of Engineering, Kankavli.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { theme: { extend: { colors: { dark: { 900: '#000000', 800: '#0A0A0A', 700: '#111111' } } } } }</script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        .accent-bar { width: 40px; height: 3px; background: linear-gradient(90deg, #10B981, #06B6D4); border-radius: 2px; }
+        .bar-fill { transition: width 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+        .section-divider { height: 1px; background: linear-gradient(90deg, transparent, #10B9814D, transparent); }
+    </style>
+</head>
+
+<body class="bg-black text-white min-h-screen overflow-x-hidden">
+    <div class="star-field" id="starField"></div>
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+
+    <div class="mobile-frame relative z-10 page-enter min-h-screen pb-28">
+
+        <!-- ═══ TOP BAR ═══ -->
+        <header class="flex items-center justify-between px-5 py-4">
+            <a href="competition.html"
+                class="flex items-center gap-2 text-zinc-500 hover:text-purple-400 transition-colors">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6" />
+                </svg>
+                <span class="font-space text-xs font-bold uppercase tracking-widest">Back to Events</span>
+            </a>
+        </header>
+
+        <!-- ═══ CONTENT ═══ -->
+        <div class="px-6 pt-1">
+
+            <!-- Title -->
+            <div class="mb-2">
+                <span class="inline-block px-3 py-1 rounded-full text-[10px] font-bold font-space uppercase tracking-widest mb-3"
+                    style="background: #10B98126; color: #10B981; border: 1px solid #10B98140;">
+                    🤖 Coming Soon
+                </span>
+            </div>
+            <h1 class="font-anton text-[2.5rem] leading-[0.95] text-white uppercase tracking-wide mb-4"
+                style="text-shadow: 0 0 40px #10B9814D;">
+                Robotics
+            </h1>
+
+            <div class="section-divider mb-8"></div>
+
+            <!-- Coming Soon Banner -->
+            <div class="mb-8 py-16 text-center">
+                <div class="text-6xl mb-6">🤖</div>
+                <div class="font-anton text-3xl text-white uppercase tracking-wider mb-4"
+                    style="text-shadow: 0 0 40px #10B9814D;">
+                    DETAILS<br>
+                    <span class="font-outfit font-thin text-2xl italic tracking-tight" style="color: #10B981;">coming soon.</span>
+                </div>
+                <p class="text-sm text-zinc-600 mt-4 max-w-[280px] mx-auto leading-relaxed">
+                    Full event details, rules, judging criteria, and coordinator info will be updated shortly.
+                </p>
+            </div>
+
+            <div class="section-divider mb-8"></div>
+
+        </div>
+
+        <!-- ═══ FLOATING REGISTER ═══ -->
+        <button id="floating-register"
+            class="fixed bottom-[88px] left-1/2 -translate-x-1/2 z-40 px-10 py-4 rounded-full font-outfit text-sm font-black uppercase tracking-[3px] overflow-hidden"
+            style="background: #10B981; color: #000; box-shadow: 0 0 25px #10B98155, 0 0 60px #10B9811F;"
+            onclick="window.open('https://forms.google.com', '_blank')">
+            Register Now
+        </button>
+
+        <!-- ═══ BOTTOM NAV ═══ -->
+        <nav class="nav-bar-fixed fixed bottom-0 left-0 right-0 h-[72px] bg-black/90 backdrop-blur-2xl border-t border-white/[0.04] flex items-center justify-around px-2 z-50"
+            style="padding-bottom: env(safe-area-inset-bottom, 0px);">
+            <a href="index.html" class="flex flex-col items-center gap-1 px-4 py-2">
+                <svg class="w-[22px] h-[22px] text-zinc-600" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                    <polyline points="9 22 9 12 15 12 15 22" />
+                </svg>
+                <span class="font-space text-[9px] font-bold uppercase tracking-widest text-zinc-600">Home</span>
+            </a>
+            <a href="competition.html" class="relative flex flex-col items-center gap-1 px-4 py-2 nav-active">
+                <svg class="w-[22px] h-[22px] text-purple-400"
+                    style="filter: drop-shadow(0 0 8px rgba(168,85,247,0.5));" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
+                <span class="font-space text-[9px] font-bold uppercase tracking-widest text-purple-400">Events</span>
+            </a>
+            <a href="contact.html" class="flex flex-col items-center gap-1 px-4 py-2">
+                <svg class="w-[22px] h-[22px] text-zinc-600" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                        d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                </svg>
+                <span class="font-space text-[9px] font-bold uppercase tracking-widest text-zinc-600">Contact</span>
+            </a>
+            <a href="social.html" class="flex flex-col items-center gap-1 px-4 py-2">
+                <svg class="w-[22px] h-[22px] text-zinc-600" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="18" cy="5" r="3" />
+                    <circle cx="6" cy="12" r="3" />
+                    <circle cx="18" cy="19" r="3" />
+                    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+                    <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+                </svg>
+                <span class="font-space text-[9px] font-bold uppercase tracking-widest text-zinc-600">Social</span>
+            </a>
+        </nav>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

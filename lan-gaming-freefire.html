@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Free Fire — LAN Gaming — Virtuosic 2K26</title>
+    <meta name="description" content="LAN Gaming: Free Fire — Virtuosic 2K26, SSPM's College of Engineering, Kankavli.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { theme: { extend: { colors: { dark: { 900: '#000000', 800: '#0A0A0A', 700: '#111111' } } } } }</script>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+    <style>
+        .prize-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .prize-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .prize-gold {
+            border-color: #FBBF24;
+            box-shadow: 0 0 25px rgba(251, 191, 36, 0.2);
+        }
+
+        .prize-silver {
+            border-color: #94A3B8;
+            box-shadow: 0 0 25px rgba(148, 163, 184, 0.15);
+        }
+
+        .prize-bronze {
+            border-color: #D97706;
+            box-shadow: 0 0 25px rgba(217, 119, 6, 0.15);
+        }
+
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(239, 68, 68, 0.3), transparent);
+        }
+
+        .accent-bar {
+            width: 40px;
+            height: 3px;
+            background: linear-gradient(90deg, #EF4444, #F97316);
+            border-radius: 2px;
+        }
+
+        .resource-item {
+            border-left: 2px solid #EF4444;
+        }
+
+        .coord-card {
+            transition: transform 0.3s ease;
+        }
+
+        .coord-card:hover {
+            transform: scale(1.02);
+        }
+
+        .point-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .point-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(239, 68, 68, 0.15);
+        }
+    </style>
+</head>
+
+<body class="bg-black text-white min-h-screen overflow-x-hidden">
+    <div class="star-field" id="starField"></div>
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+
+    <div class="mobile-frame relative z-10 page-enter min-h-screen pb-28">
+
+        <!-- ═══ TOP BAR ═══ -->
+        <header class="flex items-center justify-between px-5 py-4">
+            <a href="lan-gaming.html"
+                class="flex items-center gap-2 text-zinc-500 hover:text-red-400 transition-colors">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6" />
+                </svg>
+                <span class="font-space text-xs font-bold uppercase tracking-widest">Back to LAN Gaming</span>
+            </a>
+        </header>
+
+        <!-- ═══ CONTENT ═══ -->
+        <div class="px-6 pt-1">
+
+            <!-- Title -->
+            <div class="mb-2">
+                <span
+                    class="inline-block px-3 py-1 rounded-full text-[10px] font-bold font-space uppercase tracking-widest mb-3"
+                    style="background: rgba(239,68,68,0.15); color: #EF4444; border: 1px solid rgba(239,68,68,0.25);">
+                    🔥 Battle Royale
+                </span>
+            </div>
+            <div class="mb-4">
+
+    <!-- MAIN TITLE -->
+    <h1 class="font-anton text-[2.8rem] leading-[0.9] uppercase tracking-wide flex flex-wrap items-center gap-3"
+        style="text-shadow: 0 0 40px rgba(239,68,68,0.35);">
+
+        <span class="text-white">FREE</span>
+
+        <span class="bg-gradient-to-r from-red-500 via-orange-500 to-yellow-400 text-transparent bg-clip-text">
+            FIRE
+        </span>
+
+    </h1>
+
+    <!-- SUB TITLE -->
+    <div class="flex items-center gap-3 mt-2">
+        <div class="h-[2px] w-8 bg-gradient-to-r from-red-500 to-orange-400"></div>
+
+        <p class="text-[11px] font-space uppercase tracking-[3px] text-zinc-500">
+            LAN GAMING EVENT
+        </p>
+
+        <div class="h-[2px] w-8 bg-gradient-to-r from-orange-400 to-red-500"></div>
+    </div>
+
+</div>
+            <p class="text-[14px] text-zinc-400 leading-relaxed mb-6">
+                Drop in. Survive. Dominate the battleground. Squad-based Free Fire LAN tournament with
+                multiple rounds on different maps.
+            </p>
+
+            <!-- Info Blocks -->
+            <div class="flex gap-3 overflow-x-auto pb-3 mb-6"
+                style="scrollbar-width:none;-webkit-overflow-scrolling:touch;">
+                <div
+                    class="flex-shrink-0 rounded-xl p-4 min-w-[130px] bg-red-500/[0.04] border border-red-500/20 backdrop-blur-sm">
+                    <div class="text-2xl mb-2">🏫</div>
+                    <div class="font-space text-[9px] text-zinc-600 uppercase tracking-[2px] font-bold mb-1">Venue
+                    </div>
+                    <div class="font-outfit text-sm font-extrabold text-white leading-tight">Classroom<br>No. 101</div>
+                </div>
+                <div
+                    class="flex-shrink-0 rounded-xl p-4 min-w-[120px] bg-orange-500/[0.04] border border-orange-500/20 backdrop-blur-sm">
+                    <div class="text-2xl mb-2">💰</div>
+                    <div class="font-space text-[9px] text-zinc-600 uppercase tracking-[2px] font-bold mb-1">Entry Fee
+                    </div>
+                    <div class="font-outfit text-lg font-extrabold text-white">₹400</div>
+                    <div class="text-[10px] text-zinc-600">per group</div>
+                </div>
+                <div
+                    class="flex-shrink-0 rounded-xl p-4 min-w-[120px] bg-amber-500/[0.04] border border-amber-500/20 backdrop-blur-sm">
+                    <div class="text-2xl mb-2">👥</div>
+                    <div class="font-space text-[9px] text-zinc-600 uppercase tracking-[2px] font-bold mb-1">Team Size
+                    </div>
+                    <div class="font-outfit text-lg font-extrabold text-white">Max 4</div>
+                    <div class="text-[10px] text-zinc-600">members</div>
+                </div>
+                <div
+                    class="flex-shrink-0 rounded-xl p-4 min-w-[120px] bg-red-500/[0.04] border border-red-500/20 backdrop-blur-sm">
+                    <div class="text-2xl mb-2">📅</div>
+                    <div class="font-space text-[9px] text-zinc-600 uppercase tracking-[2px] font-bold mb-1">Date
+                    </div>
+                    <div class="font-outfit text-lg font-extrabold text-white">08 Apr</div>
+                    <div class="text-[10px] text-zinc-600">2026</div>
+                </div>
+            </div>
+
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ PRIZES ═══ -->
+            <section class="mb-8">
+                <h2
+                    class="font-outfit text-xl font-extrabold text-white flex items-center gap-3 mb-5 uppercase tracking-wide">
+                    <span class="text-2xl">🏆</span> Prize Pool
+                </h2>
+                <div class="grid grid-cols-2 gap-3">
+                    <!-- 1st -->
+                    <div class="prize-card prize-gold rounded-2xl p-5 text-center border-2 bg-yellow-500/[0.04]">
+                        <div class="text-4xl mb-2">🥇</div>
+                        <div class="font-space text-[9px] text-zinc-500 uppercase tracking-widest font-bold mb-1">1st
+                            Prize</div>
+                        <div class="font-outfit text-2xl font-black text-yellow-400">₹3000</div>
+                    </div>
+                    <!-- 2nd -->
+                    <div class="prize-card prize-silver rounded-2xl p-5 text-center border-2 bg-slate-500/[0.04]">
+                        <div class="text-4xl mb-2">🥈</div>
+                        <div class="font-space text-[9px] text-zinc-500 uppercase tracking-widest font-bold mb-1">2nd
+                            Prize</div>
+                        <div class="font-outfit text-2xl font-black text-slate-300">₹1500</div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ BATTLE ZONE BANNER ═══ -->
+            <div class="mb-8 py-6 text-center">
+                <div class="text-center leading-[0.9] uppercase select-none">
+                    <div class="font-anton text-[3rem] md:text-[4rem] text-white tracking-wide">
+                        BATTLE
+                    </div>
+                    <div
+                        class="font-anton text-[3rem] md:text-[4rem] tracking-wide bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 text-transparent bg-clip-text">
+                        ZONE.
+                    </div>
+                </div>
+                <p class="text-sm text-zinc-500 mt-3 font-outfit italic">Where strategy meets survival</p>
+            </div>
+
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ ABOUT ═══ -->
+            <section class="mb-8">
+                <h2
+                    class="font-outfit text-xl font-extrabold text-white flex items-center gap-3 mb-4 uppercase tracking-wide">
+                    <div class="accent-bar"></div> About the Event
+                </h2>
+                <p class="text-[14px] text-zinc-400 leading-[1.9]">
+                    LAN Gaming: Free Fire is an action-packed competitive event designed for gamers who thrive on
+                    teamwork, strategy, and survival skills. Players will compete in squads in a LAN-based setup
+                    ensuring smooth and fair gameplay. The number of rounds will depend on total team participation, and
+                    each round will feature a different map to test adaptability. Winners will be decided based on total
+                    accumulated points across all rounds. The more you fight, survive, and dominate — the higher your
+                    chances to win!
+                </p>
+            </section>
+
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ RULES ═══ -->
+            <section class="mb-8">
+                <h2
+                    class="font-outfit text-xl font-extrabold text-white flex items-center gap-3 mb-5 uppercase tracking-wide">
+                    <div class="accent-bar"></div> Competition Rules
+                </h2>
+                <div class="grid grid-cols-1 gap-3">
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #EF4444;">01</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Each team must consist of a maximum of 4
+                            players.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #EF4444;">02</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Event will be conducted on 08/04/2026 at
+                            Classroom No. 101.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #EF4444;">03</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Number of rounds will depend on total
+                            participating teams.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #EF4444;">04</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Each round will be played on a different map.
+                        </p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #EF4444;">05</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Points from all rounds will be added to decide
+                            the winner.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #EF4444;">06</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">In case of a tie, a Clash Squad match will be
+                            conducted.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #EF4444;">07</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">The team winning the Clash Squad will be
+                            declared the final winner.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #EF4444;">08</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Use of hacks or unfair means will lead to
+                            disqualification.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #EF4444;">09</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Players must maintain discipline and follow
+                            organizer instructions.</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ POINT SYSTEM ═══ -->
+            <section class="mb-8">
+                <h2
+                    class="font-outfit text-xl font-extrabold text-white flex items-center gap-3 mb-5 uppercase tracking-wide">
+                    <div class="accent-bar"></div> Point System
+                </h2>
+                <div class="grid grid-cols-2 gap-3 mb-5">
+                    <div class="point-card glass-card rounded-xl p-4 text-center border border-red-500/20">
+                        <div class="text-2xl mb-2">🎯</div>
+                        <div class="font-space text-[9px] text-zinc-500 uppercase tracking-widest font-bold mb-1">Per
+                            Kill</div>
+                        <div class="font-outfit text-2xl font-black text-red-400">5 pts</div>
+                    </div>
+                    <div class="point-card glass-card rounded-xl p-4 text-center border border-amber-500/20">
+                        <div class="text-2xl mb-2">🥉</div>
+                        <div class="font-space text-[9px] text-zinc-500 uppercase tracking-widest font-bold mb-1">Top 3
+                        </div>
+                        <div class="font-outfit text-2xl font-black text-amber-400">20 pts</div>
+                    </div>
+                    <div class="point-card glass-card rounded-xl p-4 text-center border border-slate-400/20">
+                        <div class="text-2xl mb-2">🥈</div>
+                        <div class="font-space text-[9px] text-zinc-500 uppercase tracking-widest font-bold mb-1">Top 2
+                        </div>
+                        <div class="font-outfit text-2xl font-black text-slate-300">30 pts</div>
+                    </div>
+                    <div class="point-card glass-card rounded-xl p-4 text-center border border-yellow-500/20">
+                        <div class="text-2xl mb-2">🥇</div>
+                        <div class="font-space text-[9px] text-zinc-500 uppercase tracking-widest font-bold mb-1">
+                            Booyah!</div>
+                        <div class="font-outfit text-2xl font-black text-yellow-400">50 pts</div>
+                    </div>
+                </div>
+                <div class="glass-card rounded-xl p-4 text-center border border-red-500/10">
+                    <p class="text-[12px] text-zinc-500 mb-1">🔥 Total points calculated across all rounds</p>
+                    <p class="text-[12px] text-red-400 font-bold">🏆 Team with highest points wins!</p>
+                </div>
+            </section>
+
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ RESOURCES PROVIDED ═══ -->
+            <section class="mb-8">
+                <h2
+                    class="font-outfit text-xl font-extrabold text-white flex items-center gap-3 mb-5 uppercase tracking-wide">
+                    <div class="accent-bar"></div> Resources Provided
+                </h2>
+                <div class="space-y-3">
+                    <div class="resource-item pl-4 py-2">
+                        <p class="text-sm text-zinc-400 flex items-center gap-2"><span class="text-red-400">✦</span>
+                            LAN / Internet connectivity</p>
+                    </div>
+                    <div class="resource-item pl-4 py-2">
+                        <p class="text-sm text-zinc-400 flex items-center gap-2"><span class="text-red-400">✦</span>
+                            Power supply arrangements</p>
+                    </div>
+                    <div class="resource-item pl-4 py-2">
+                        <p class="text-sm text-zinc-400 flex items-center gap-2"><span class="text-red-400">✦</span>
+                            Gaming setup environment</p>
+                    </div>
+                    <div class="resource-item pl-4 py-2">
+                        <p class="text-sm text-zinc-400 flex items-center gap-2"><span class="text-red-400">✦</span>
+                            Technical support</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ SUPPORT / COORDINATOR ═══ -->
+            <section class="mb-6">
+                <h2
+                    class="font-outfit text-xl font-extrabold text-white flex items-center gap-3 mb-5 uppercase tracking-wide">
+                    <div class="accent-bar"></div> Support
+                </h2>
+                <div class="space-y-4">
+                    <div class="coord-card glass-card rounded-2xl p-4 flex items-center gap-5 border-gradient">
+                        <img src="profilephoto/vicky-rathod.jpeg" alt="Vicky Rathod"
+                            class="w-28 h-28 rounded-2xl object-cover shrink-0"
+                            style="border: 1px solid rgba(239,68,68,0.3);">
+                        <div class="flex-1 min-w-0 text-left">
+                            <h4 class="font-outfit text-lg font-bold text-white mb-1 tracking-tight">Vicky Rathod</h4>
+                            <p class="font-space text-[10px] text-red-400 font-bold uppercase tracking-[2px] mb-2">
+                                Coordinator</p>
+                            <a href="tel:+918169222207"
+                                class="block text-[12px] text-zinc-500 mb-0.5 hover:text-red-400 transition-colors">📞
+                                8169222207</a>
+                            <a href="mailto:rathodvickey71@gmail.com"
+                                class="block text-[11px] text-zinc-500 break-all hover:text-orange-400 transition-colors">✉️
+                                rathodvickey71@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- ═══ FLOATING REGISTER ═══ -->
+        <button id="floating-register"
+            class="fixed bottom-[88px] left-1/2 -translate-x-1/2 z-40 px-10 py-4 rounded-full font-outfit text-sm font-black uppercase tracking-[3px] overflow-hidden"
+            style="background: linear-gradient(135deg, #EF4444, #F97316); color: #fff; box-shadow: 0 0 25px rgba(239,68,68,0.35), 0 0 60px rgba(249,115,22,0.15);"
+            onclick="window.open('https://forms.google.com', '_blank')">
+            Register Now
+        </button>
+
+        <!-- ═══ BOTTOM NAV ═══ -->
+        <nav class="nav-bar-fixed fixed bottom-0 left-0 right-0 h-[72px] bg-black/90 backdrop-blur-2xl border-t border-white/[0.04] flex items-center justify-around px-2 z-50"
+            style="padding-bottom: env(safe-area-inset-bottom, 0px);">
+            <a href="index.html" class="flex flex-col items-center gap-1 px-4 py-2">
+                <svg class="w-[22px] h-[22px] text-zinc-600" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                    <polyline points="9 22 9 12 15 12 15 22" />
+                </svg>
+                <span class="font-space text-[9px] font-bold uppercase tracking-widest text-zinc-600">Home</span>
+            </a>
+            <a href="competition.html" class="relative flex flex-col items-center gap-1 px-4 py-2 nav-active">
+                <svg class="w-[22px] h-[22px] text-red-400" style="filter: drop-shadow(0 0 8px rgba(239,68,68,0.5));"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
+                <span class="font-space text-[9px] font-bold uppercase tracking-widest text-red-400">Events</span>
+            </a>
+            <a href="contact.html" class="flex flex-col items-center gap-1 px-4 py-2">
+                <svg class="w-[22px] h-[22px] text-zinc-600" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                        d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                </svg>
+                <span class="font-space text-[9px] font-bold uppercase tracking-widest text-zinc-600">Contact</span>
+            </a>
+            <a href="social.html" class="flex flex-col items-center gap-1 px-4 py-2">
+                <svg class="w-[22px] h-[22px] text-zinc-600" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="18" cy="5" r="3" />
+                    <circle cx="6" cy="12" r="3" />
+                    <circle cx="18" cy="19" r="3" />
+                    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+                    <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+                </svg>
+                <span class="font-space text-[9px] font-bold uppercase tracking-widest text-zinc-600">Social</span>
+            </a>
+        </nav>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
