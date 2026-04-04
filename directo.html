@@ -4,16 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Directo — Virtuosic 2K26</title>
-    <meta name="description" content="Directo event details — Virtuosic 2K26, SSPM's College of Engineering, Kankavli.">
+    <title>Directo — Photography & Videography — Virtuosic 2K26</title>
+    <meta name="description"
+        content="DIRECTO — Photography & Videography Contest — Virtuosic 2K26, SSPM's College of Engineering, Kankavli.">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>tailwind.config = { theme: { extend: { colors: { dark: { 900: '#000000', 800: '#0A0A0A', 700: '#111111' } } } } }</script>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
     <style>
-        .accent-bar { width: 40px; height: 3px; background: linear-gradient(90deg, #EC4899, #06B6D4); border-radius: 2px; }
-        .bar-fill { transition: width 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
-        .section-divider { height: 1px; background: linear-gradient(90deg, transparent, #EC48994D, transparent); }
+        .prize-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .prize-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(244, 63, 94, 0.3), transparent);
+        }
+
+        .accent-bar {
+            width: 40px;
+            height: 3px;
+            background: linear-gradient(90deg, #F43F5E, #EC4899);
+            border-radius: 2px;
+        }
+
+        .resource-item {
+            border-left: 2px solid #F43F5E;
+        }
+
+        .coord-card {
+            transition: transform 0.3s ease;
+        }
+
+        .coord-card:hover {
+            transform: scale(1.02);
+        }
+
+        .judging-bar {
+            transition: width 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .category-card {
+            transition: transform 0.3s ease;
+        }
+
+        .category-card:hover {
+            transform: translateY(-3px);
+        }
     </style>
 </head>
 
@@ -27,7 +70,7 @@
         <!-- ═══ TOP BAR ═══ -->
         <header class="flex items-center justify-between px-5 py-4">
             <a href="competition.html"
-                class="flex items-center gap-2 text-zinc-500 hover:text-purple-400 transition-colors">
+                class="flex items-center gap-2 text-zinc-500 hover:text-rose-400 transition-colors">
                 <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
                     stroke-linecap="round" stroke-linejoin="round">
                     <polyline points="15 18 9 12 15 6" />
@@ -41,39 +84,385 @@
 
             <!-- Title -->
             <div class="mb-2">
-                <span class="inline-block px-3 py-1 rounded-full text-[10px] font-bold font-space uppercase tracking-widest mb-3"
-                    style="background: #EC489926; color: #EC4899; border: 1px solid #EC489940;">
-                    🎬 Coming Soon
+                <span
+                    class="inline-block px-3 py-1 rounded-full text-[10px] font-bold font-space uppercase tracking-widest mb-3"
+                    style="background: rgba(244,63,94,0.15); color: #F43F5E; border: 1px solid rgba(244,63,94,0.25);">
+                    📸 Photo & Video
                 </span>
             </div>
-            <h1 class="font-anton text-[2.5rem] leading-[0.95] text-white uppercase tracking-wide mb-4"
-                style="text-shadow: 0 0 40px #EC48994D;">
-                Directo
-            </h1>
+            <div class="mb-4">
 
-            <div class="section-divider mb-8"></div>
+                <!-- MAIN TITLE -->
+                <h1 class="font-anton text-[2.8rem] leading-[0.9] uppercase tracking-wide"
+                    style="text-shadow: 0 0 40px rgba(244,63,94,0.3);">
+                    <span
+                        class="bg-gradient-to-r from-rose-400 via-pink-500 to-fuchsia-500 text-transparent bg-clip-text">DIRECTO</span>
+                </h1>
 
-            <!-- Coming Soon Banner -->
-            <div class="mb-8 py-16 text-center">
-                <div class="text-6xl mb-6">🎬</div>
-                <div class="font-anton text-3xl text-white uppercase tracking-wider mb-4"
-                    style="text-shadow: 0 0 40px #EC48994D;">
-                    DETAILS<br>
-                    <span class="font-outfit font-thin text-2xl italic tracking-tight" style="color: #EC4899;">coming soon.</span>
+                <!-- SUB TITLE -->
+                <div class="flex items-center gap-3 mt-2">
+                    <div class="h-[2px] w-8 bg-gradient-to-r from-rose-500 to-pink-400"></div>
+                    <p class="text-[11px] font-space uppercase tracking-[3px] text-zinc-500">CAPTURE • CREATE • INSPIRE
+                    </p>
+                    <div class="h-[2px] w-8 bg-gradient-to-r from-pink-400 to-rose-500"></div>
                 </div>
-                <p class="text-sm text-zinc-600 mt-4 max-w-[280px] mx-auto leading-relaxed">
-                    Full event details, rules, judging criteria, and coordinator info will be updated shortly.
-                </p>
+
+            </div>
+            <p class="text-[14px] text-zinc-400 leading-relaxed mb-6">
+                Capture Moments, Create Stories. Turn your perspective into powerful visual storytelling through
+                photography and videography.
+            </p>
+
+            <!-- Info Blocks -->
+            <div class="flex gap-3 overflow-x-auto pb-3 mb-6"
+                style="scrollbar-width:none;-webkit-overflow-scrolling:touch;">
+                <div
+                    class="flex-shrink-0 rounded-xl p-4 min-w-[130px] bg-rose-500/[0.04] border border-rose-500/20 backdrop-blur-sm">
+                    <div class="text-2xl mb-2">🏫</div>
+                    <div class="font-space text-[9px] text-zinc-600 uppercase tracking-[2px] font-bold mb-1">Venue
+                    </div>
+                    <div class="font-outfit text-sm font-extrabold text-white leading-tight">Seminar<br>Hall No. 1</div>
+                </div>
+                <div
+                    class="flex-shrink-0 rounded-xl p-4 min-w-[120px] bg-pink-500/[0.04] border border-pink-500/20 backdrop-blur-sm">
+                    <div class="text-2xl mb-2">💰</div>
+                    <div class="font-space text-[9px] text-zinc-600 uppercase tracking-[2px] font-bold mb-1">Entry Fee
+                    </div>
+                    <div class="font-outfit text-lg font-extrabold text-white">₹100</div>
+                    <div class="text-[10px] text-zinc-600">per category</div>
+                </div>
+                <div
+                    class="flex-shrink-0 rounded-xl p-4 min-w-[120px] bg-fuchsia-500/[0.04] border border-fuchsia-500/20 backdrop-blur-sm">
+                    <div class="text-2xl mb-2">👤</div>
+                    <div class="font-space text-[9px] text-zinc-600 uppercase tracking-[2px] font-bold mb-1">Type
+                    </div>
+                    <div class="font-outfit text-sm font-extrabold text-white leading-tight">Individual</div>
+                    <div class="text-[10px] text-zinc-600">participation</div>
+                </div>
+                <div
+                    class="flex-shrink-0 rounded-xl p-4 min-w-[120px] bg-rose-500/[0.04] border border-rose-500/20 backdrop-blur-sm">
+                    <div class="text-2xl mb-2">⏰</div>
+                    <div class="font-space text-[9px] text-zinc-600 uppercase tracking-[2px] font-bold mb-1">Deadline
+                    </div>
+                    <div class="font-outfit text-sm font-extrabold text-white leading-tight">8 Apr</div>
+                    <div class="text-[10px] text-zinc-600">till 4:30 PM</div>
+                </div>
             </div>
 
-            <div class="section-divider mb-8"></div>
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ PRIZES ═══ -->
+            <section class="mb-8">
+                <h2
+                    class="font-outfit text-xl font-extrabold text-white flex items-center gap-3 mb-5 uppercase tracking-wide">
+                    <span class="text-2xl">🏆</span> Prizes
+                </h2>
+
+                <!-- Photography Prizes -->
+                <div class="mb-4">
+                    <div
+                        class="font-space text-[10px] text-rose-400 uppercase tracking-[2px] font-bold mb-3 flex items-center gap-2">
+                        <span class="text-lg">📷</span> Photography
+                    </div>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="prize-card rounded-2xl p-4 text-center border-2 border-yellow-500/30 bg-yellow-500/[0.04]"
+                            style="box-shadow: 0 0 20px rgba(251,191,36,0.15);">
+                            <div class="text-3xl mb-1">🥇</div>
+                            <div class="font-outfit text-xl font-black text-yellow-400">₹1000</div>
+                        </div>
+                        <div class="prize-card rounded-2xl p-4 text-center border-2 border-slate-400/30 bg-slate-500/[0.04]"
+                            style="box-shadow: 0 0 20px rgba(148,163,184,0.1);">
+                            <div class="text-3xl mb-1">🥈</div>
+                            <div class="font-outfit text-xl font-black text-slate-300">₹750</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Videography Prizes -->
+                <div>
+                    <div
+                        class="font-space text-[10px] text-pink-400 uppercase tracking-[2px] font-bold mb-3 flex items-center gap-2">
+                        <span class="text-lg">🎥</span> Videography
+                    </div>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="prize-card rounded-2xl p-4 text-center border-2 border-yellow-500/30 bg-yellow-500/[0.04]"
+                            style="box-shadow: 0 0 20px rgba(251,191,36,0.15);">
+                            <div class="text-3xl mb-1">🥇</div>
+                            <div class="font-outfit text-xl font-black text-yellow-400">₹1000</div>
+                        </div>
+                        <div class="prize-card rounded-2xl p-4 text-center border-2 border-slate-400/30 bg-slate-500/[0.04]"
+                            style="box-shadow: 0 0 20px rgba(148,163,184,0.1);">
+                            <div class="text-3xl mb-1">🥈</div>
+                            <div class="font-outfit text-xl font-black text-slate-300">₹750</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ BANNER ═══ -->
+            <div class="mb-8 py-6 text-center">
+                <div class="text-center leading-[0.9] uppercase select-none">
+                    <div class="font-anton text-[2.2rem] md:text-[3rem] text-white tracking-wide">
+                        CREATIVE
+                    </div>
+                    <div
+                        class="font-anton text-[2.2rem] md:text-[3rem] tracking-wide bg-gradient-to-r from-rose-400 via-pink-500 to-fuchsia-500 text-transparent bg-clip-text">
+                        VISION.
+                    </div>
+                </div>
+                <p class="text-sm text-zinc-500 mt-3 font-outfit italic">Turn your perspective into powerful visual
+                    storytelling</p>
+            </div>
+
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ ABOUT ═══ -->
+            <section class="mb-8">
+                <h2
+                    class="font-outfit text-xl font-extrabold text-white flex items-center gap-3 mb-4 uppercase tracking-wide">
+                    <div class="accent-bar"></div> About the Event
+                </h2>
+                <p class="text-[14px] text-zinc-400 leading-[1.9]">
+                    DIRECTO is an exciting Photography and Videography contest organized under Virtuosic, the
+                    Techfest of SSPM's College of Engineering, Kankavli. This event gives participants a platform to
+                    showcase their creativity, storytelling, and technical skills through visual media. Whether
+                    capturing a single powerful moment or crafting a compelling video, participants are encouraged to
+                    express their unique perspective. The contest emphasizes originality, creativity, and impactful
+                    presentation. It is perfect for students passionate about photography and videography.
+                </p>
+            </section>
+
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ GENERAL RULES ═══ -->
+            <section class="mb-8">
+                <h2
+                    class="font-outfit text-xl font-extrabold text-white flex items-center gap-3 mb-5 uppercase tracking-wide">
+                    <div class="accent-bar"></div> Competition Rules
+                </h2>
+                <div class="grid grid-cols-1 gap-3">
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #F43F5E;">01</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Participation is open to all students.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #F43F5E;">02</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Individual participation only for photography.
+                        </p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #F43F5E;">03</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Participants can register for Photography,
+                            Videography, or both (separate fees applicable).</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #F43F5E;">04</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Only one entry per participant per category is
+                            allowed.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #F43F5E;">05</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Content must be original. Plagiarism is
+                            strictly prohibited.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #F43F5E;">06</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Submitted photo/video must be available on
+                            the participant's mobile device for verification.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #F43F5E;">07</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Last date for submission: <span
+                                class="text-rose-400 font-semibold">8 April 2026 till 4:30 PM</span>.</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ CATEGORY RULES ═══ -->
+            <section class="mb-8">
+                <h2
+                    class="font-outfit text-xl font-extrabold text-white flex items-center gap-3 mb-5 uppercase tracking-wide">
+                    <div class="accent-bar"></div> Category Rules
+                </h2>
+                <div class="space-y-3">
+                    <div class="category-card glass-card rounded-2xl p-5 border border-rose-500/15">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="text-2xl">📷</span>
+                            <h3 class="font-outfit text-base font-bold text-rose-400">Photography</h3>
+                        </div>
+                        <ul class="space-y-2 text-sm text-zinc-400">
+                            <li class="flex items-start gap-2"><span class="text-rose-400 shrink-0">•</span> Photos
+                                must be captured by the participant</li>
+                            <li class="flex items-start gap-2"><span class="text-rose-400 shrink-0">•</span> Only
+                                individual entries allowed</li>
+                        </ul>
+                    </div>
+                    <div class="category-card glass-card rounded-2xl p-5 border border-pink-500/15">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="text-2xl">🎥</span>
+                            <h3 class="font-outfit text-base font-bold text-pink-400">Videography</h3>
+                        </div>
+                        <ul class="space-y-2 text-sm text-zinc-400">
+                            <li class="flex items-start gap-2"><span class="text-pink-400 shrink-0">•</span> Videos
+                                must be created by the participant</li>
+                            <li class="flex items-start gap-2"><span class="text-pink-400 shrink-0">•</span> Duration
+                                must be between <span class="text-pink-400 font-semibold">30 seconds to 3 minutes</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ JUDGING CRITERIA ═══ -->
+            <section class="mb-8">
+                <h2
+                    class="font-outfit text-xl font-extrabold text-white flex items-center gap-3 mb-5 uppercase tracking-wide">
+                    <div class="accent-bar"></div> Judging Criteria
+                </h2>
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-sm font-semibold text-zinc-300">Creativity & Originality</span>
+                            <span class="font-outfit text-sm font-bold text-rose-400">30</span>
+                        </div>
+                        <div class="h-2.5 bg-white/[0.04] rounded-full overflow-hidden">
+                            <div class="h-full rounded-full bg-gradient-to-r from-rose-600 to-pink-400 judging-bar"
+                                style="width: 30%;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-sm font-semibold text-zinc-300">Storytelling & Impact</span>
+                            <span class="font-outfit text-sm font-bold text-pink-400">25</span>
+                        </div>
+                        <div class="h-2.5 bg-white/[0.04] rounded-full overflow-hidden">
+                            <div class="h-full rounded-full bg-gradient-to-r from-pink-600 to-fuchsia-400 judging-bar"
+                                style="width: 25%;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-sm font-semibold text-zinc-300">Technical Quality</span>
+                            <span class="font-outfit text-sm font-bold text-fuchsia-400">25</span>
+                        </div>
+                        <div class="h-2.5 bg-white/[0.04] rounded-full overflow-hidden">
+                            <div class="h-full rounded-full bg-gradient-to-r from-fuchsia-600 to-purple-400 judging-bar"
+                                style="width: 25%;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-sm font-semibold text-zinc-300">Presentation</span>
+                            <span class="font-outfit text-sm font-bold text-purple-400">20</span>
+                        </div>
+                        <div class="h-2.5 bg-white/[0.04] rounded-full overflow-hidden">
+                            <div class="h-full rounded-full bg-gradient-to-r from-purple-600 to-rose-400 judging-bar"
+                                style="width: 20%;"></div>
+                        </div>
+                    </div>
+                    <!-- Total -->
+                    <div class="flex justify-between items-center pt-4 mt-2 border-t border-white/[0.06]">
+                        <span class="font-outfit text-lg font-black text-white uppercase tracking-wide">Total</span>
+                        <span class="font-outfit text-lg font-black"
+                            style="color: #F43F5E; text-shadow: 0 0 15px rgba(244,63,94,0.4);">100 Points</span>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ RESOURCES PROVIDED ═══ -->
+            <section class="mb-8">
+                <h2
+                    class="font-outfit text-xl font-extrabold text-white flex items-center gap-3 mb-5 uppercase tracking-wide">
+                    <div class="accent-bar"></div> Resources Provided
+                </h2>
+                <div class="space-y-3">
+                    <div class="resource-item pl-4 py-2">
+                        <p class="text-sm text-zinc-400 flex items-center gap-2"><span class="text-rose-400">✦</span>
+                            Event venue (Seminar Hall No. 1)</p>
+                    </div>
+                    <div class="resource-item pl-4 py-2">
+                        <p class="text-sm text-zinc-400 flex items-center gap-2"><span class="text-rose-400">✦</span>
+                            Basic presentation setup (screen/projector if needed)</p>
+                    </div>
+                    <div class="resource-item pl-4 py-2">
+                        <p class="text-sm text-zinc-400 flex items-center gap-2"><span class="text-rose-400">✦</span>
+                            Verification support by coordinators</p>
+                    </div>
+                    <div class="resource-item pl-4 py-2">
+                        <p class="text-sm text-zinc-400 flex items-center gap-2"><span class="text-rose-400">✦</span>
+                            Participation platform under Virtuosic Techfest</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ SUPPORT / COORDINATORS ═══ -->
+            <section class="mb-6">
+                <h2
+                    class="font-outfit text-xl font-extrabold text-white flex items-center gap-3 mb-5 uppercase tracking-wide">
+                    <div class="accent-bar"></div> Support
+                </h2>
+                <div class="space-y-4">
+                    <div
+                        class="coord-card glass-card rounded-2xl p-4 flex items-center gap-5 border border-rose-500/10">
+                        <img src="profilephoto/Anushka-Sawant.jpeg" alt="Anushka Pandurang Sawant"
+                            class="w-28 h-28 rounded-2xl object-cover shrink-0"
+                            style="border: 1px solid rgba(244,63,94,0.3);">
+                        <div class="flex-1 min-w-0 text-left">
+                            <h4 class="font-outfit text-lg font-bold text-white mb-1 tracking-tight">Anushka Sawant
+                            </h4>
+                            <p class="font-space text-[10px] text-rose-400 font-bold uppercase tracking-[2px] mb-2">
+                                Coordinator
+                            </p>
+                            <a href="tel:+919356970062"
+                                class="block text-[12px] text-zinc-500 mb-0.5 hover:text-rose-400 transition-colors">
+                                📞 9356970062
+                            </a>
+                            <a href="mailto:anushka.s9642@gmail.com"
+                                class="block text-[11px] text-zinc-500 break-all hover:text-pink-400 transition-colors">
+                                ✉️ anushka.s9642@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        class="coord-card glass-card rounded-2xl p-4 flex items-center gap-5 border border-rose-500/10">
+                        <img src="profilephoto/Pallavi-Varake.jpeg" alt="Pallavi Parashram Varake"
+                            class="w-28 h-28 rounded-2xl object-cover shrink-0"
+                            style="border: 1px solid rgba(244,63,94,0.3);">
+                        <div class="flex-1 min-w-0 text-left">
+                            <h4 class="font-outfit text-lg font-bold text-white mb-1 tracking-tight">Pallavi Varake
+                            </h4>
+                            <p class="font-space text-[10px] text-rose-400 font-bold uppercase tracking-[2px] mb-2">
+                                Co-Coordinator
+                            </p>
+                            <a href="tel:+918010316075"
+                                class="block text-[12px] text-zinc-500 mb-0.5 hover:text-rose-400 transition-colors">
+                                📞 8010316075
+                            </a>
+                            <a href="mailto:pallavivarake6075@gmail.com"
+                                class="block text-[11px] text-zinc-500 break-all hover:text-pink-400 transition-colors">
+                                ✉️ pallavivarake6075@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
         </div>
 
         <!-- ═══ FLOATING REGISTER ═══ -->
         <button id="floating-register"
             class="fixed bottom-[88px] left-1/2 -translate-x-1/2 z-40 px-10 py-4 rounded-full font-outfit text-sm font-black uppercase tracking-[3px] overflow-hidden"
-            style="background: #EC4899; color: #000; box-shadow: 0 0 25px #EC489955, 0 0 60px #EC48991F;"
+            style="background: linear-gradient(135deg, #F43F5E, #EC4899); color: #000; box-shadow: 0 0 25px rgba(244,63,94,0.35), 0 0 60px rgba(236,72,153,0.15);"
             onclick="window.open('https://forms.google.com', '_blank')">
             Register Now
         </button>
@@ -90,13 +479,13 @@
                 <span class="font-space text-[9px] font-bold uppercase tracking-widest text-zinc-600">Home</span>
             </a>
             <a href="competition.html" class="relative flex flex-col items-center gap-1 px-4 py-2 nav-active">
-                <svg class="w-[22px] h-[22px] text-purple-400"
-                    style="filter: drop-shadow(0 0 8px rgba(168,85,247,0.5));" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg class="w-[22px] h-[22px] text-rose-400" style="filter: drop-shadow(0 0 8px rgba(244,63,94,0.5));"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
                     <polygon
                         points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
                 </svg>
-                <span class="font-space text-[9px] font-bold uppercase tracking-widest text-purple-400">Events</span>
+                <span class="font-space text-[9px] font-bold uppercase tracking-widest text-rose-400">Events</span>
             </a>
             <a href="contact.html" class="flex flex-col items-center gap-1 px-4 py-2">
                 <svg class="w-[22px] h-[22px] text-zinc-600" viewBox="0 0 24 24" fill="none" stroke="currentColor"
