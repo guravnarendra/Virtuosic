@@ -4,16 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Robotics — Virtuosic 2K26</title>
-    <meta name="description" content="Robotics event details — Virtuosic 2K26, SSPM's College of Engineering, Kankavli.">
+    <title>Robotics — Line Following Robot — Virtuosic 2K26</title>
+    <meta name="description"
+        content="Line Following Robot Competition — Virtuosic 2K26, SSPM's College of Engineering, Kankavli.">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>tailwind.config = { theme: { extend: { colors: { dark: { 900: '#000000', 800: '#0A0A0A', 700: '#111111' } } } } }</script>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
     <style>
-        .accent-bar { width: 40px; height: 3px; background: linear-gradient(90deg, #10B981, #06B6D4); border-radius: 2px; }
-        .bar-fill { transition: width 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
-        .section-divider { height: 1px; background: linear-gradient(90deg, transparent, #10B9814D, transparent); }
+        .prize-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .prize-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(16, 185, 129, 0.3), transparent);
+        }
+
+        .accent-bar {
+            width: 40px;
+            height: 3px;
+            background: linear-gradient(90deg, #10B981, #06B6D4);
+            border-radius: 2px;
+        }
+
+        .resource-item {
+            border-left: 2px solid #10B981;
+        }
+
+        .coord-card {
+            transition: transform 0.3s ease;
+        }
+
+        .coord-card:hover {
+            transform: scale(1.02);
+        }
+
+        .judging-bar {
+            transition: width 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
     </style>
 </head>
 
@@ -27,7 +62,7 @@
         <!-- ═══ TOP BAR ═══ -->
         <header class="flex items-center justify-between px-5 py-4">
             <a href="competition.html"
-                class="flex items-center gap-2 text-zinc-500 hover:text-purple-400 transition-colors">
+                class="flex items-center gap-2 text-zinc-500 hover:text-emerald-400 transition-colors">
                 <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
                     stroke-linecap="round" stroke-linejoin="round">
                     <polyline points="15 18 9 12 15 6" />
@@ -41,40 +76,318 @@
 
             <!-- Title -->
             <div class="mb-2">
-                <span class="inline-block px-3 py-1 rounded-full text-[10px] font-bold font-space uppercase tracking-widest mb-3"
-                    style="background: #10B98126; color: #10B981; border: 1px solid #10B98140;">
-                    🤖 Coming Soon
+                <span
+                    class="inline-block px-3 py-1 rounded-full text-[10px] font-bold font-space uppercase tracking-widest mb-3"
+                    style="background: rgba(16,185,129,0.15); color: #10B981; border: 1px solid rgba(16,185,129,0.25);">
+                    🤖 Line Follower
                 </span>
             </div>
-            <h1 class="font-anton text-[2.5rem] leading-[0.95] text-white uppercase tracking-wide mb-4"
-                style="text-shadow: 0 0 40px #10B9814D;">
-                Robotics
-            </h1>
+            <div class="mb-4">
 
-            <div class="section-divider mb-8"></div>
+                <!-- MAIN TITLE -->
+                <h1 class="font-anton text-[2.5rem] leading-[0.9] uppercase tracking-wide"
+                    style="text-shadow: 0 0 40px rgba(16,185,129,0.3);">
+                    <span class="text-white">LINE FOLLOWING</span><br>
+                    <span
+                        class="bg-gradient-to-r from-emerald-400 via-teal-500 to-cyan-500 text-transparent bg-clip-text">ROBOT</span>
+                </h1>
 
-            <!-- Coming Soon Banner -->
-            <div class="mb-8 py-16 text-center">
-                <div class="text-6xl mb-6">🤖</div>
-                <div class="font-anton text-3xl text-white uppercase tracking-wider mb-4"
-                    style="text-shadow: 0 0 40px #10B9814D;">
-                    DETAILS<br>
-                    <span class="font-outfit font-thin text-2xl italic tracking-tight" style="color: #10B981;">coming soon.</span>
+                <!-- SUB TITLE -->
+                <div class="flex items-center gap-3 mt-2">
+                    <div class="h-[2px] w-8 bg-gradient-to-r from-emerald-500 to-teal-400"></div>
+                    <p class="text-[11px] font-space uppercase tracking-[3px] text-zinc-500">PRECISION IN MOTION</p>
+                    <div class="h-[2px] w-8 bg-gradient-to-r from-teal-400 to-emerald-500"></div>
                 </div>
-                <p class="text-sm text-zinc-600 mt-4 max-w-[280px] mx-auto leading-relaxed">
-                    Full event details, rules, judging criteria, and coordinator info will be updated shortly.
+
+            </div>
+            <p class="text-[14px] text-zinc-400 leading-relaxed mb-6">
+                Intelligence in Action. Design and program autonomous robots to follow a predefined path with
+                accuracy and speed.
+            </p>
+
+            <!-- Info Blocks -->
+            <div class="flex gap-3 overflow-x-auto pb-3 mb-6"
+                style="scrollbar-width:none;-webkit-overflow-scrolling:touch;">
+                <div
+                    class="flex-shrink-0 rounded-xl p-4 min-w-[130px] bg-emerald-500/[0.04] border border-emerald-500/20 backdrop-blur-sm">
+                    <div class="text-2xl mb-2">🏫</div>
+                    <div class="font-space text-[9px] text-zinc-600 uppercase tracking-[2px] font-bold mb-1">Venue
+                    </div>
+                    <div class="font-outfit text-sm font-extrabold text-white leading-tight">Near Physics<br>Lab – FE
+                        Corridor</div>
+                </div>
+                <div
+                    class="flex-shrink-0 rounded-xl p-4 min-w-[120px] bg-teal-500/[0.04] border border-teal-500/20 backdrop-blur-sm">
+                    <div class="text-2xl mb-2">💰</div>
+                    <div class="font-space text-[9px] text-zinc-600 uppercase tracking-[2px] font-bold mb-1">Entry Fee
+                    </div>
+                    <div class="font-outfit text-lg font-extrabold text-white">₹150</div>
+                    <div class="text-[10px] text-zinc-600">per group</div>
+                </div>
+                <div
+                    class="flex-shrink-0 rounded-xl p-4 min-w-[120px] bg-cyan-500/[0.04] border border-cyan-500/20 backdrop-blur-sm">
+                    <div class="text-2xl mb-2">👥</div>
+                    <div class="font-space text-[9px] text-zinc-600 uppercase tracking-[2px] font-bold mb-1">Team Size
+                    </div>
+                    <div class="font-outfit text-lg font-extrabold text-white">Max 2</div>
+                    <div class="text-[10px] text-zinc-600">members</div>
+                </div>
+                <div
+                    class="flex-shrink-0 rounded-xl p-4 min-w-[120px] bg-emerald-500/[0.04] border border-emerald-500/20 backdrop-blur-sm">
+                    <div class="text-2xl mb-2">⚙️</div>
+                    <div class="font-space text-[9px] text-zinc-600 uppercase tracking-[2px] font-bold mb-1">Type
+                    </div>
+                    <div class="font-outfit text-sm font-extrabold text-white leading-tight">Fully<br>Autonomous</div>
+                </div>
+            </div>
+
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ PRIZES ═══ -->
+            <section class="mb-8">
+                <h2
+                    class="font-outfit text-xl font-extrabold text-white flex items-center gap-3 mb-5 uppercase tracking-wide">
+                    <span class="text-2xl">🏆</span> Prizes
+                </h2>
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="prize-card rounded-2xl p-5 text-center border-2 border-yellow-500/30 bg-yellow-500/[0.04]"
+                        style="box-shadow: 0 0 25px rgba(251,191,36,0.2);">
+                        <div class="text-4xl mb-2">🥇</div>
+                        <div class="font-space text-[9px] text-zinc-500 uppercase tracking-widest font-bold mb-1">1st
+                            Prize</div>
+                        <div class="font-outfit text-2xl font-black text-yellow-400">₹1500</div>
+                    </div>
+                    <div class="prize-card rounded-2xl p-5 text-center border-2 border-slate-400/30 bg-slate-500/[0.04]"
+                        style="box-shadow: 0 0 25px rgba(148,163,184,0.15);">
+                        <div class="text-4xl mb-2">🥈</div>
+                        <div class="font-space text-[9px] text-zinc-500 uppercase tracking-widest font-bold mb-1">2nd
+                            Prize</div>
+                        <div class="font-outfit text-2xl font-black text-slate-300">₹1000</div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ BANNER ═══ -->
+            <div class="mb-8 py-6 text-center">
+                <div class="text-center leading-[0.9] uppercase select-none">
+                    <div class="font-anton text-[2.5rem] md:text-[3.5rem] text-white tracking-wide">
+                        AUTOMATION
+                    </div>
+                    <div
+                        class="font-anton text-[2.5rem] md:text-[3.5rem] tracking-wide bg-gradient-to-r from-emerald-400 via-teal-500 to-cyan-500 text-transparent bg-clip-text">
+                        PRECISION.
+                    </div>
+                </div>
+                <p class="text-sm text-zinc-500 mt-3 font-outfit italic">Where machines follow the path to perfection
                 </p>
             </div>
 
-            <div class="section-divider mb-8"></div>
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ ABOUT ═══ -->
+            <section class="mb-8">
+                <h2
+                    class="font-outfit text-xl font-extrabold text-white flex items-center gap-3 mb-4 uppercase tracking-wide">
+                    <div class="accent-bar"></div> About the Event
+                </h2>
+                <p class="text-[14px] text-zinc-400 leading-[1.9]">
+                    The Line Following Robot Competition is an exciting technical event where participants design
+                    and program autonomous robots to follow a predefined path. The challenge tests accuracy, speed,
+                    and control of the robot while navigating through twists and turns. Participants get an
+                    opportunity to showcase their robotics skills, problem-solving ability, and innovation. This
+                    event encourages hands-on learning and practical implementation of engineering concepts. It's a
+                    perfect platform for budding engineers to compete and innovate.
+                </p>
+            </section>
+
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ RULES ═══ -->
+            <section class="mb-8">
+                <h2
+                    class="font-outfit text-xl font-extrabold text-white flex items-center gap-3 mb-5 uppercase tracking-wide">
+                    <div class="accent-bar"></div> Competition Rules
+                </h2>
+                <div class="grid grid-cols-1 gap-3">
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #10B981;">01</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Each team can have a maximum of 2 members.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #10B981;">02</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">The robot must be fully autonomous (no manual
+                            control allowed).</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #10B981;">03</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">The robot should strictly follow the given
+                            track.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #10B981;">04</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Any physical interference during the run will
+                            lead to disqualification.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #10B981;">05</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Time taken and accuracy will be considered for
+                            scoring.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #10B981;">06</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Teams must bring their own robot and
+                            components.</p>
+                    </div>
+                    <div class="glass-card rounded-xl p-4 flex gap-4 items-start">
+                        <span class="rule-number text-lg font-extrabold shrink-0 w-8" style="color: #10B981;">07</span>
+                        <p class="text-sm text-zinc-400 leading-relaxed">Judges' decision will be final and binding.</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ JUDGING CRITERIA ═══ -->
+            <section class="mb-8">
+                <h2
+                    class="font-outfit text-xl font-extrabold text-white flex items-center gap-3 mb-5 uppercase tracking-wide">
+                    <div class="accent-bar"></div> Judging Criteria
+                </h2>
+                <div class="space-y-4">
+                    <!-- Track Accuracy -->
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-sm font-semibold text-zinc-300">Track Accuracy</span>
+                            <span class="font-outfit text-sm font-bold text-emerald-400">40</span>
+                        </div>
+                        <div class="h-2.5 bg-white/[0.04] rounded-full overflow-hidden">
+                            <div class="h-full rounded-full bg-gradient-to-r from-emerald-600 to-teal-400 judging-bar"
+                                style="width: 40%;"></div>
+                        </div>
+                    </div>
+                    <!-- Completion Time -->
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-sm font-semibold text-zinc-300">Completion Time</span>
+                            <span class="font-outfit text-sm font-bold text-teal-400">30</span>
+                        </div>
+                        <div class="h-2.5 bg-white/[0.04] rounded-full overflow-hidden">
+                            <div class="h-full rounded-full bg-gradient-to-r from-teal-600 to-cyan-400 judging-bar"
+                                style="width: 30%;"></div>
+                        </div>
+                    </div>
+                    <!-- Stability & Control -->
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-sm font-semibold text-zinc-300">Stability & Control</span>
+                            <span class="font-outfit text-sm font-bold text-cyan-400">20</span>
+                        </div>
+                        <div class="h-2.5 bg-white/[0.04] rounded-full overflow-hidden">
+                            <div class="h-full rounded-full bg-gradient-to-r from-cyan-600 to-blue-400 judging-bar"
+                                style="width: 20%;"></div>
+                        </div>
+                    </div>
+                    <!-- Innovation/Design -->
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-sm font-semibold text-zinc-300">Innovation / Design</span>
+                            <span class="font-outfit text-sm font-bold text-blue-400">10</span>
+                        </div>
+                        <div class="h-2.5 bg-white/[0.04] rounded-full overflow-hidden">
+                            <div class="h-full rounded-full bg-gradient-to-r from-blue-600 to-indigo-400 judging-bar"
+                                style="width: 10%;"></div>
+                        </div>
+                    </div>
+                    <!-- Total -->
+                    <div class="flex justify-between items-center pt-4 mt-2 border-t border-white/[0.06]">
+                        <span class="font-outfit text-lg font-black text-white uppercase tracking-wide">Total</span>
+                        <span class="font-outfit text-lg font-black"
+                            style="color: #10B981; text-shadow: 0 0 15px rgba(16,185,129,0.4);">100 Points</span>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ RESOURCES PROVIDED ═══ -->
+            <section class="mb-8">
+                <h2
+                    class="font-outfit text-xl font-extrabold text-white flex items-center gap-3 mb-5 uppercase tracking-wide">
+                    <div class="accent-bar"></div> Resources Provided
+                </h2>
+                <div class="space-y-3">
+                    <div class="resource-item pl-4 py-2">
+                        <p class="text-sm text-zinc-400 flex items-center gap-2"><span class="text-emerald-400">✦</span>
+                            Competition Track</p>
+                    </div>
+                    <div class="resource-item pl-4 py-2">
+                        <p class="text-sm text-zinc-400 flex items-center gap-2"><span class="text-emerald-400">✦</span>
+                            Power Supply (if required)</p>
+                    </div>
+                    <div class="resource-item pl-4 py-2">
+                        <p class="text-sm text-zinc-400 flex items-center gap-2"><span class="text-emerald-400">✦</span>
+                            Basic Assistance from Volunteers</p>
+                    </div>
+                    <div class="resource-item pl-4 py-2">
+                        <p class="text-sm text-zinc-400 flex items-center gap-2"><span class="text-emerald-400">✦</span>
+                            Workspace for setup</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-divider mb-6"></div>
+
+            <!-- ═══ SUPPORT / COORDINATORS ═══ -->
+            <section class="mb-6">
+                <h2
+                    class="font-outfit text-xl font-extrabold text-white flex items-center gap-3 mb-5 uppercase tracking-wide">
+                    <div class="accent-bar"></div> Support
+                </h2>
+                <div class="space-y-4">
+                    <div
+                        class="coord-card glass-card rounded-2xl p-4 flex items-center gap-5 border border-emerald-500/10">
+                        <img src="profilephoto/Govind-Sawant.jpeg" alt="Govind Mahesh Sawant"
+                            class="w-28 h-28 rounded-2xl object-cover shrink-0"
+                            style="border: 1px solid rgba(16,185,129,0.3);">
+                        <div class="flex-1 min-w-0 text-left">
+                            <h4 class="font-outfit text-lg font-bold text-white mb-1 tracking-tight">Govind Sawant</h4>
+                            <p class="font-space text-[10px] text-emerald-400 font-bold uppercase tracking-[2px] mb-2">
+                                Coordinator
+                            </p>
+                            <a href="tel:+919421287164"
+                                class="block text-[12px] text-zinc-500 mb-0.5 hover:text-emerald-400 transition-colors">
+                                📞 9421287164
+                            </a>
+                            <a href="mailto:sawantgovind76@gmail.com"
+                                class="block text-[11px] text-zinc-500 break-all hover:text-teal-400 transition-colors">
+                                ✉️ sawantgovind76@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                    <div class="coord-card glass-card rounded-2xl p-5 border border-emerald-500/10">
+                        <div class="flex-1 min-w-0 text-left">
+                            <h4 class="font-outfit text-lg font-bold text-white mb-1 tracking-tight">Ankit Gaonkar</h4>
+                            <p class="font-space text-[10px] text-emerald-400 font-bold uppercase tracking-[2px] mb-2">
+                                Co-Coordinator
+                            </p>
+                            <a href="tel:+918766546077"
+                                class="block text-[12px] text-zinc-500 hover:text-emerald-400 transition-colors">
+                                📞 8766546077
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
         </div>
 
         <!-- ═══ FLOATING REGISTER ═══ -->
         <button id="floating-register"
             class="fixed bottom-[88px] left-1/2 -translate-x-1/2 z-40 px-10 py-4 rounded-full font-outfit text-sm font-black uppercase tracking-[3px] overflow-hidden"
-            style="background: #10B981; color: #000; box-shadow: 0 0 25px #10B98155, 0 0 60px #10B9811F;"
-            onclick="window.open('https://forms.google.com', '_blank')">
+            style="background: linear-gradient(135deg, #10B981, #06B6D4); color: #000; box-shadow: 0 0 25px rgba(16,185,129,0.35), 0 0 60px rgba(6,182,212,0.15);"
+            onclick="window.open('https://forms.gle/sfjAsBCrGBh9TmsE8', '_blank')">
             Register Now
         </button>
 
@@ -90,13 +403,13 @@
                 <span class="font-space text-[9px] font-bold uppercase tracking-widest text-zinc-600">Home</span>
             </a>
             <a href="competition.html" class="relative flex flex-col items-center gap-1 px-4 py-2 nav-active">
-                <svg class="w-[22px] h-[22px] text-purple-400"
-                    style="filter: drop-shadow(0 0 8px rgba(168,85,247,0.5));" viewBox="0 0 24 24" fill="none"
+                <svg class="w-[22px] h-[22px] text-emerald-400"
+                    style="filter: drop-shadow(0 0 8px rgba(16,185,129,0.5));" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <polygon
                         points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
                 </svg>
-                <span class="font-space text-[9px] font-bold uppercase tracking-widest text-purple-400">Events</span>
+                <span class="font-space text-[9px] font-bold uppercase tracking-widest text-emerald-400">Events</span>
             </a>
             <a href="contact.html" class="flex flex-col items-center gap-1 px-4 py-2">
                 <svg class="w-[22px] h-[22px] text-zinc-600" viewBox="0 0 24 24" fill="none" stroke="currentColor"
