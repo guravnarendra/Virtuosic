@@ -52,6 +52,31 @@
             }
         }
 
+        function ensureGsScrollbarStyle() {
+            if (document.getElementById('gs-team-scrollbar-style')) return;
+
+            const style = document.createElement('style');
+            style.id = 'gs-team-scrollbar-style';
+            style.textContent = `
+                .gs-team-scroll {
+                    scrollbar-width: thin;
+                    scrollbar-color: rgba(34, 211, 238, 0.9) rgba(39, 39, 42, 0.75);
+                }
+                .gs-team-scroll::-webkit-scrollbar {
+                    height: 8px;
+                }
+                .gs-team-scroll::-webkit-scrollbar-track {
+                    background: rgba(39, 39, 42, 0.75);
+                    border-radius: 9999px;
+                }
+                .gs-team-scroll::-webkit-scrollbar-thumb {
+                    background: linear-gradient(90deg, #22d3ee, #a78bfa);
+                    border-radius: 9999px;
+                }
+            `;
+            document.head.appendChild(style);
+        }
+
         // ─── Event Data ───
         const EVENTS_DATA = [
             { id: 'evolution', name: 'Evolution', shortDesc: 'Coding battle — evolve or get eliminated', description: 'A multi-round coding competition...', icon: '💻', accent: '#F43F5E', location: 'Respective Dept', time: '10:00 AM – 1:00 PM', fee: '₹100', teamSize: '1–2', about: 'Evolution is a survival-style coding competition...', rules: ['Teams of 1–2 members allowed.', 'Internet access is strictly prohibited.'], judging: [{ name: 'Correctness', marks: 40 }], coordinators: [{ name: 'Jigisha Mhapasekar', phone: '+91 96994 24099', email: 'jigishadmhapasekar@gmail.com', photo: 'profilephoto/Jigisha-Mhapasekar.jpeg' }], formUrl: 'https://forms.google.com', page: 'evolution.html' },
@@ -184,7 +209,7 @@
                     </div>
                     
                     <!-- 🔥 GS TEAM SCROLL - NOW WITH SAME BOLD/NEON STYLE AS GENERAL SECRETARY HEADER -->
-                    <div class="w-full overflow-x-auto no-scrollbar pb-4">
+                    <div class="w-full overflow-x-auto pb-4 gs-team-scroll">
                         <div class="flex gap-8 px-1 justify-start">
                             ${GS_TEAM.map(m => `
                                 <div class="min-w-[280px] md:min-w-[300px] flex flex-col items-center text-center gs-card transition-all duration-300">
@@ -202,6 +227,9 @@
                                 </div>
                             `).join('')}
                         </div>
+                    </div>
+                    <div class="flex items-center justify-end -mt-1 pr-1">
+                        <span class="text-cyan-400/90 text-lg leading-none">→</span>
                     </div>
                 `;
             }
@@ -248,6 +276,7 @@
 
         /* ═══ INIT ═══ */
         function initVirtuosicContactPage() {
+            ensureGsScrollbarStyle();
             generateStars();
             initCountdown();
             renderCompetitionCards();

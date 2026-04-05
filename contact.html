@@ -33,6 +33,25 @@
             scrollbar-width: none;
         }
 
+        .gs-team-scroll {
+            scrollbar-width: thin;
+            scrollbar-color: rgba(34, 211, 238, 0.9) rgba(39, 39, 42, 0.75);
+        }
+
+        .gs-team-scroll::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .gs-team-scroll::-webkit-scrollbar-track {
+            background: rgba(39, 39, 42, 0.75);
+            border-radius: 9999px;
+        }
+
+        .gs-team-scroll::-webkit-scrollbar-thumb {
+            background: linear-gradient(90deg, #22d3ee, #a78bfa);
+            border-radius: 9999px;
+        }
+
         .border-gradient {
             position: relative;
             border: 1px solid rgba(255, 255, 255, 0.05);
@@ -307,7 +326,7 @@
                     </div>
                     
                     <!-- 🔥 GS TEAM SCROLL - NOW WITH SAME BOLD/NEON STYLE AS GENERAL SECRETARY HEADER -->
-                    <div class="w-full overflow-x-auto no-scrollbar pb-4">
+                    <div class="w-full overflow-x-auto pb-4 gs-team-scroll">
                         <div class="flex gap-8 px-1 justify-start">
                             ${GS_TEAM.map(m => `
                                 <div class="min-w-[280px] md:min-w-[300px] flex flex-col items-center text-center gs-card transition-all duration-300">
@@ -325,6 +344,9 @@
                                 </div>
                             `).join('')}
                         </div>
+                    </div>
+                    <div class="flex items-center justify-end -mt-1 pr-1">
+                        <span class="text-cyan-400/90 text-lg leading-none">→</span>
                     </div>
                 `;
             }

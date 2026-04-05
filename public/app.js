@@ -89,7 +89,7 @@ const EVENTS_DATA = [
     id: 'evolution', name: 'Evolution', shortDesc: 'Coding battle — evolve or get eliminated',
     description: 'A multi-round coding competition where each round raises the bar. Only the strongest coders survive the evolution.',
     icon: '💻', accent: '#F43F5E',
-    location: 'Respective Dept', time: '10:00 AM – 1:00 PM', fee: '₹100', teamSize: '1–2',
+    location: 'Respective Dept', date: '8 April 2026', time: '10:00 AM – 1:00 PM', fee: '₹100', teamSize: '1–2',
     about: 'Evolution is a survival-style coding competition. Participants face progressively harder algorithmic challenges across multiple rounds. Each round eliminates the weakest — only the most adaptable coders make it to the final.',
     rules: ['Teams of 1–2 members allowed.', 'Internet access is strictly prohibited.', 'Use of AI tools (ChatGPT, Copilot) is banned.', 'Solutions must be original — plagiarism = disqualification.', 'Multiple elimination rounds — survive to win.', 'Languages: C, C++, Java, Python.', 'Decision of judges is final.'],
     judging: [{ name: 'Correctness', marks: 40 }, { name: 'Efficiency', marks: 25 }, { name: 'Code Quality', marks: 20 }, { name: 'Speed Bonus', marks: 15 }],
@@ -101,7 +101,7 @@ const EVENTS_DATA = [
     id: 'project-exhibition', name: 'Project Exhibition', shortDesc: 'Showcase your degree-level innovation',
     description: 'A National Level Project Exhibition providing a platform for students to showcase innovative ideas and technical skills.',
     icon: '🔬', accent: '#8B5CF6',
-    location: 'ClassRoom No:29,30,119,120', time: '10:00 AM – 4:00 PM', fee: '₹200', teamSize: 'Max 4',
+    location: 'ClassRoom No:29,30,119,120', date: '8 April 2026', time: '10:00 AM – 4:00 PM', fee: '₹200', teamSize: 'Max 4',
     about: 'Virtuosic 2K26 is a National Level Project Exhibition Competition that provides a platform for students to showcase their innovative ideas and technical skills. The event encourages participants to present real-world problem-solving projects across domains like AI/ML, IoT, Web Development, and more. It aims to foster creativity, collaboration, and engineering excellence among students. Participants will get an opportunity to interact with experts and gain valuable exposure. This competition is designed to inspire future innovators and leaders in technology.',
     rules: ['Each team can have a maximum of 4 members.', 'Participants must belong to eligible departments (ELECT/EXTC, MECH/METX, COMP, CSE-AIML).', 'Each team must register by filling out the official registration form.', 'Projects must be original and not copied from existing work.', 'Teams should bring their own required setup (laptop, hardware, etc.).', 'Each team will be given a fixed time to present their project.', 'Judges\' decisions will be final and binding.', 'Misconduct or plagiarism will lead to disqualification.'],
     judging: [{ name: 'Innovation & Creativity', marks: 20 }, { name: 'Technical Implementation', marks: 20 }, { name: 'Practical Application', marks: 15 }, { name: 'Presentation & Explanation', marks: 15 }, { name: 'Problem-Solving Approach', marks: 15 }, { name: 'Teamwork & Clarity', marks: 15 }],
@@ -120,7 +120,7 @@ const EVENTS_DATA = [
     id: 'debate', name: 'Debate', shortDesc: 'Argue, convince, dominate',
     description: 'Battle with words on trending tech and societal topics. Logic, facts, and charisma win.',
     icon: '🎤', accent: '#F59E0B',
-    location: 'Seminar Hall No. 1', time: '2:00 PM – 5:00 PM', fee: '₹100', teamSize: 'Max 2',
+    location: 'Seminar Hall No. 1', date: '8 April 2026', time: '11:00 AM – 4:00 PM', fee: '₹100', teamSize: 'Max 2',
     about: 'The Debate competition brings together articulate thinkers to argue on contemporary tech and social topics. Quick thinking, solid logic, and presentation skills are key.',
     rules: ['Teams of 2 members.', 'Topics revealed 15 min before.', 'Each side: 5 min argument + 2 min rebuttal.', 'English and Hindi both allowed.', 'No props or visual aids.', 'Personal attacks = disqualification.', 'Judge decision is final.'],
     judging: [{ name: 'Content & Logic', marks: 35 }, { name: 'Presentation', marks: 25 }, { name: 'Rebuttal', marks: 25 }, { name: 'Teamwork', marks: 15 }],
@@ -132,7 +132,7 @@ const EVENTS_DATA = [
     id: 'directo', name: 'Directo', shortDesc: 'Direct a short film masterpiece',
     description: 'Create a compelling short film within the time limit. Storytelling, cinematography, and editing matter.',
     icon: '🎬', accent: '#EC4899',
-    location: 'Seminar Hall No. 1', time: '9:00 AM – 5:00 PM', fee: '₹100', teamSize: 'Individual',
+    location: 'Seminar Hall No. 1', date: '9 April 2026', time: '9:00 AM – 5:00 PM', fee: '₹100', teamSize: 'Individual',
     about: 'Directo is the ultimate short film competition. Teams receive a theme and must conceptualize, shoot, and edit a 3–5 minute short film within the event duration.',
     rules: ['Teams of 3–5 members.', 'Theme revealed at the start.', 'Film duration: 3–5 minutes (strict).', 'Any genre allowed.', 'Mobile or DSLR cameras only.', 'Background music must be royalty-free.', 'Submit final file in MP4 format.'],
     judging: [{ name: 'Story & Script', marks: 30 }, { name: 'Cinematography', marks: 25 }, { name: 'Editing', marks: 25 }, { name: 'Overall Impact', marks: 20 }],
@@ -144,7 +144,7 @@ const EVENTS_DATA = [
     id: 'robotics', name: 'Robotics', shortDesc: 'Build, race, conquer the arena',
     description: 'Design and build a robot to navigate the obstacle course. Speed, precision, and engineering win.',
     icon: '🤖', accent: '#10B981',
-    location: 'Corridor (Near Physics Lab)', time: '11:00 AM – 4:00 PM', fee: '₹150', teamSize: 'Max 2',
+    location: 'Corridor (Near Physics Lab)', date: '8 April 2026', time: '11:00 AM – 4:00 PM', fee: '₹150', teamSize: 'Max 2',
     about: 'The Robotics competition challenges teams to build a robot that can navigate a complex obstacle course in the shortest time. A true test of embedded systems and mechanical design.',
     rules: ['Teams of 2–4 members.', 'Robot max size: 30×30×30 cm.', 'Wired and wireless control both allowed.', 'Self-powered only (max 12V).', 'Three attempts — best time counts.', 'Damaging the arena = disqualification.', 'Ready-made kits not allowed.'],
     judging: [{ name: 'Completion Time', marks: 50 }, { name: 'Obstacle Clearance', marks: 30 }, { name: 'Robot Design', marks: 20 }],
@@ -156,7 +156,7 @@ const EVENTS_DATA = [
     id: 'poster-presentation', name: 'Poster Presentation', shortDesc: 'Visualize your research brilliantly',
     description: 'Present your research or project through a visually compelling poster. Clarity and creativity are key.',
     icon: '📊', accent: '#06B6D4',
-    location: 'Classroom No. 121', time: '10:00 AM – 1:00 PM', fee: '₹100', teamSize: 'Individual',
+    location: 'Classroom No. 121', date: '8 April 2026', time: '10:00 AM – 1:00 PM', fee: '₹100', teamSize: 'Individual',
     about: 'Poster Presentation lets students communicate their research, ideas, or projects through a single visual poster. Judges evaluate clarity, visual quality, and knowledge depth.',
     rules: ['Teams of 1–3 members.', 'Poster size: A1 (594 × 841 mm).', 'Hand-made or digitally printed.', '5 min explanation + 3 min Q&A.', 'Any technical or research topic.', 'Must include abstract, methodology, conclusion.', 'Bring your own poster.'],
     judging: [{ name: 'Visual Design', marks: 25 }, { name: 'Content Depth', marks: 30 }, { name: 'Presentation', marks: 25 }, { name: 'Q&A', marks: 20 }],
@@ -168,7 +168,7 @@ const EVENTS_DATA = [
     id: 'lan-gaming', name: 'LAN Gaming', shortDesc: 'Dominate the virtual battleground',
     description: 'Compete in intense multiplayer LAN gaming tournaments. Reflexes, strategy, and teamwork decide the champion.',
     icon: '🎮', accent: '#EF4444',
-    location: 'Classroom No: 101,102,103', time: '10:00 AM – 6:00 PM', fee: 'Respective to the event', teamSize: '4',
+    location: 'Classroom No: 101,102,103', date: '8 April 2026', time: '10:00 AM – 6:00 PM', fee: 'Respective to the event', teamSize: '4',
     about: 'LAN Gaming brings competitive esports to Virtuosic 2K26. Teams compete in popular multiplayer titles. Quick reflexes, team coordination, and strategy are essential.',
     rules: ['Teams of 4–5 members.', 'Game title announced before event.', 'Bring your own peripherals.', 'No cheats, hacks, or exploits.', 'Single elimination bracket.', 'Latecomers disqualified.', 'Admin decisions are final.'],
     judging: [{ name: 'Match Wins', marks: 60 }, { name: 'Sportsmanship', marks: 20 }, { name: 'Team Coordination', marks: 20 }],
@@ -180,7 +180,7 @@ const EVENTS_DATA = [
     id: 'hacksprint', name: 'HackSprint', shortDesc: '4-hour hackathon — build something epic',
     description: 'A fast-paced mini hackathon. Ideate, build, and pitch a working prototype in just 6 hours.',
     icon: '⚡', accent: '#A855F7',
-    location: 'CAD Lab(M-206)', time: '10:00 AM – 4:00 PM', fee: '₹200', teamSize: '4',
+    location: 'CAD Lab(M-206)', date: '8 April 2026', time: '10:00 AM – 4:00 PM', fee: '₹200', teamSize: '4',
     about: 'HackSprint is a concentrated 6-hour hackathon where teams ideate, develop, and present a working solution to a real-world problem. Bring your laptops, creativity, and caffeine.',
     rules: ['Teams of 2–4 members.', 'Theme announced at 10:00 AM.', 'Any tech stack allowed.', 'Pre-built code not permitted.', 'Must present a working demo.', 'Pitch: 5 min + 3 min Q&A.', 'Open-source libraries/APIs allowed.'],
     judging: [{ name: 'Innovation', marks: 30 }, { name: 'Technical Implementation', marks: 30 }, { name: 'UI/UX', marks: 20 }, { name: 'Pitch Quality', marks: 20 }],
@@ -192,7 +192,7 @@ const EVENTS_DATA = [
     id: 'auto-expo', name: 'Auto Expo', shortDesc: 'Showcase your automotive engineering',
     description: 'Display your modified vehicles, custom builds, or automotive engineering projects. Innovation meets horsepower.',
     icon: '🏎️', accent: '#F97316',
-    location: 'Sports Ground (Near Open Theatre)', time: '9:00 AM – 5:00 PM', fee: 'Not specified', teamSize: 'Not specified',
+    location: 'Sports Ground (Near Open Theatre)', date: '9 April 2026', time: '9:00 AM – 5:00 PM', fee: 'Not specified', teamSize: 'Not specified',
     about: 'Auto Expo is the stage for automobile enthusiasts to showcase custom-built vehicles, modified bikes/cars, or innovative automotive projects. If it has wheels and engineering — it belongs here.',
     rules: ['Teams of 2–5 members.', 'Vehicles must be road-safe and functional.', 'Custom modifications must be documented.', 'Electric and IC engine both welcome.', '8 min presentation to judges.', 'Vehicles at venue by 9 AM.', 'Safety compliance mandatory.'],
     judging: [{ name: 'Innovation', marks: 30 }, { name: 'Engineering Quality', marks: 30 }, { name: 'Aesthetics', marks: 20 }, { name: 'Presentation', marks: 20 }],
@@ -642,6 +642,7 @@ function renderCompetitionCards() {
       <div class="flex items-center gap-2 flex-wrap mb-4">
         <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[11px] font-bold font-space uppercase tracking-wider" style="background: ${ev.accent}0D; border: 1px solid ${ev.accent}22; color: ${ev.accent};">📍 ${ev.location}</span>
         <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-cyan-500/[0.06] border border-cyan-500/[0.12] text-cyan-300 text-[11px] font-bold font-space uppercase tracking-wider">⏰ ${ev.time}</span>
+        <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-fuchsia-500/[0.06] border border-fuchsia-500/[0.12] text-fuchsia-300 text-[11px] font-bold font-space uppercase tracking-wider">📅 ${ev.date}</span>
       </div>
       <div class="flex items-center gap-2 flex-wrap">
         <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-500/[0.06] border border-emerald-500/[0.12] text-emerald-300 text-[11px] font-bold font-space uppercase tracking-wider">💰 ${ev.fee}</span>
@@ -676,6 +677,8 @@ function initEventPage() {
   // Info blocks — Quantexera style with colored icons
   const infos = [
     { icon: '📍', label: 'Location', value: ev.location, borderColor: 'border-purple-500/20', bg: 'bg-purple-500/[0.03]' },
+    { icon: '📅', label: 'Date', value: ev.date, borderColor: 'border-fuchsia-500/20', bg: 'bg-fuchsia-500/[0.03]' },
+    { icon: '⏰', label: 'Time', value: ev.time, borderColor: 'border-emerald-500/20', bg: 'bg-emerald-500/[0.03]' },
     { icon: '💰', label: 'Entry Fee', value: ev.fee, borderColor: 'border-cyan-500/20', bg: 'bg-cyan-500/[0.03]' },
     { icon: '👥', label: 'Team Size', value: ev.teamSize, borderColor: 'border-amber-500/20', bg: 'bg-amber-500/[0.03]' }
   ];
