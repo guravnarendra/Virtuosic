@@ -1,128 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Contact — Virtuosic 2K26</title>
-    <meta name="description" content="Contact the organizing team of Virtuosic 2K26.">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>tailwind.config = { theme: { extend: { colors: { dark: { 900: '#000000', 800: '#0A0A0A', 700: '#111111' } } } } }</script>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* additional custom overrides for consistent neon and boldness */
-        .neon-glow {
-            text-shadow: 0 0 12px rgba(124, 58, 237, 0.5);
-        }
-
-        .gs-card {
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        .gs-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(168, 85, 247, 0.2);
-        }
-
-        .no-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-
-        .no-scrollbar {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-
-        .border-gradient {
-            position: relative;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-        }
-    </style>
-</head>
-
-<body class="bg-black text-white min-h-screen overflow-x-hidden">
-    <div class="star-field" id="starField"></div>
-    <div class="glow-orb glow-orb-1"></div>
-    <div class="glow-orb glow-orb-2"></div>
-
-    <div class="mobile-frame relative z-10 page-enter min-h-screen pb-24">
-
-        <header class="flex items-center justify-between px-5 py-4">
-            <a href="index.html" class="shrink-0 block"><img src="profilephoto/logo.png" alt="Virtuosic"
-                class="w-24 h-24 rounded-2xl object-cover shimmer"></a>
-            <div class="text-right">
-                <p
-                    class="font-outfit text-[13px] font-extrabold text-white tracking-wide leading-tight uppercase whitespace-nowrap">
-                    SSPM's College of Engineering</p>
-                <p class="text-[11px] text-zinc-500 font-medium tracking-widest mt-0.5 uppercase">Kankavli · Sindhudurg
-                </p>
-            </div>
-        </header>
-
-        <!-- GS Heading -->
-        <div class="px-6 pt-4 pb-2">
-            <h1 class="font-anton text-[2rem] leading-none text-white uppercase tracking-wide mb-2"
-                style="text-shadow: 0 0 40px rgba(124,58,237,0.2);">
-                General Secretary
-            </h1>
-            <p class="text-sm text-zinc-500">The point of contact for everything Virtuosic.</p>
-        </div>
-
-        <!-- GS Section (JS-rendered) - now with unified bold/neon styling & redundant title removed -->
-        <div class="flex flex-col items-center px-6 pt-6 pb-8" id="gs-section"></div>
-
-        <!-- Core Team -->
-        <div class="px-6 pb-8">
-            <h2 class="font-anton text-3xl text-white uppercase tracking-wide mb-6"
-                style="text-shadow: 0 0 30px rgba(6,182,212,0.2);">
-                The Core
-            </h2>
-            <div class="flex flex-col gap-4" id="core-grid"></div>
-        </div>
-
-        <!-- Bottom Nav -->
-        <nav class="nav-bar-fixed fixed bottom-0 left-0 right-0 h-[72px] bg-black/90 backdrop-blur-2xl border-t border-white/[0.04] flex items-center justify-around px-2 z-50"
-            style="padding-bottom: env(safe-area-inset-bottom, 0px);">
-            <a href="index.html" class="flex flex-col items-center gap-1 px-4 py-2">
-                <svg class="w-[22px] h-[22px] text-zinc-600" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
-                    <polyline points="9 22 9 12 15 12 15 22" />
-                </svg>
-                <span class="font-space text-[9px] font-bold uppercase tracking-widest text-zinc-600">Home</span>
-            </a>
-            <a href="competition.html" class="flex flex-col items-center gap-1 px-4 py-2">
-                <svg class="w-[22px] h-[22px] text-zinc-600" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                    <polygon
-                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                </svg>
-                <span class="font-space text-[9px] font-bold uppercase tracking-widest text-zinc-600">Events</span>
-            </a>
-            <a href="contact.html" class="relative flex flex-col items-center gap-1 px-4 py-2 nav-active">
-                <svg class="w-[22px] h-[22px] text-purple-400"
-                    style="filter: drop-shadow(0 0 8px rgba(168,85,247,0.5));" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path
-                        d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
-                </svg>
-                <span class="font-space text-[9px] font-bold uppercase tracking-widest text-purple-400">Contact</span>
-            </a>
-            <a href="social.html" class="flex flex-col items-center gap-1 px-4 py-2">
-                <svg class="w-[22px] h-[22px] text-zinc-600" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="18" cy="5" r="3" />
-                    <circle cx="6" cy="12" r="3" />
-                    <circle cx="18" cy="19" r="3" />
-                    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
-                    <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
-                </svg>
-                <span class="font-space text-[9px] font-bold uppercase tracking-widest text-zinc-600">Social</span>
-            </a>
-        </nav>
-    </div>
-    <script>
-        /* ============================================
+(function () {
+/* ============================================
            VIRTUOSIC 2K26 - ENHANCED GS STYLING
         ============================================ */
 
@@ -285,7 +162,7 @@
                 // Team members list (representatives + sports + cultural) but with style identical to "General Secretary" heading boldness
                 // also no redundant "General Secretary" text below Vishnu's name.
                 const GS_TEAM = [
-                    { name: 'Varun Karle', role: 'College Cultural Representative', phone: '+91 95296 65461', email: 'karlevarun@gmail.com', photo: 'profilephoto/Varun-Karle.jpeg' },
+                    { name: 'Varun Karle', role: 'College-Cultural Representative', phone: '+91 95296 65461', email: 'karlevarun@gmail.com', photo: 'profilephoto/Varun-Karle.jpeg' },
                     { name: 'Sanika Mhatugade', role: 'Ladies Representative', phone: '+91 77740 10816', email: 'sanumhatugade2411@gmail.com', photo: 'profilephoto/Sanika-Mhatugade.jpeg' },
                     { name: 'Govind Sawant', role: 'Sports Representative', phone: '+91 94212 87164', email: 'sawantgovind76@gmail.com', photo: 'profilephoto/Govind-Sawant.jpeg' }
                 ];
@@ -370,7 +247,7 @@
         }
 
         /* ═══ INIT ═══ */
-        document.addEventListener('DOMContentLoaded', () => {
+        function initVirtuosicContactPage() {
             generateStars();
             initCountdown();
             renderCompetitionCards();
@@ -378,7 +255,9 @@
             renderContactPage();
             renderSocialPage();
             setTimeout(animateStats, 500);
-        });
+        }
+
+        window.__VIRTUOSIC_CONTACT_INIT = initVirtuosicContactPage;
 
         /* ═══ BFCache Blackout Fix ═══ */
         window.addEventListener('pageshow', (event) => {
@@ -390,7 +269,4 @@
                 if (content) content.classList.remove('fade-out-content');
             }
         });
-    </script>
-</body>
-
-</html>
+})();
