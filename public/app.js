@@ -178,10 +178,10 @@ const EVENTS_DATA = [
   },
   {
     id: 'hacksprint', name: 'HackSprint', shortDesc: '4-hour hackathon — build something epic',
-    description: 'A fast-paced mini hackathon. Ideate, build, and pitch a working prototype in just 6 hours.',
+    description: 'A fast-paced mini hackathon. Ideate, build, and pitch a working prototype in just 4 hours.',
     icon: '⚡', accent: '#A855F7',
-    location: 'CAD Lab(M-206)', date: '8 April 2026', time: '10:00 AM – 4:00 PM', fee: '₹200', teamSize: '4',
-    about: 'HackSprint is a concentrated 6-hour hackathon where teams ideate, develop, and present a working solution to a real-world problem. Bring your laptops, creativity, and caffeine.',
+    location: 'CAD Lab(M-206)', date: '8 April 2026', time: '10:30 AM – 2:30 PM', fee: '₹200', teamSize: '4',
+    about: 'HackSprint is a concentrated 4-hour hackathon where teams ideate, develop, and present a working solution to a real-world problem. Bring your laptops, creativity, and caffeine.',
     rules: ['Teams of 2–4 members.', 'Theme announced at 10:00 AM.', 'Any tech stack allowed.', 'Pre-built code not permitted.', 'Must present a working demo.', 'Pitch: 5 min + 3 min Q&A.', 'Open-source libraries/APIs allowed.'],
     judging: [{ name: 'Innovation', marks: 30 }, { name: 'Technical Implementation', marks: 30 }, { name: 'UI/UX', marks: 20 }, { name: 'Pitch Quality', marks: 20 }],
     coordinators: [{ name: 'Rohan Deshmukh', phone: '+91 98765 43224', email: 'rohan@example.com' }, { name: 'Neha Kamat', phone: '+91 98765 43225', email: 'neha@example.com' }],
