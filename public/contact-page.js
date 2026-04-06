@@ -79,58 +79,58 @@
 
         // ─── Event Data ───
         const EVENTS_DATA = [
-            { id: 'evolution', name: 'Evolution', shortDesc: 'Coding battle — evolve or get eliminated', description: 'A multi-round coding competition...', icon: '💻', accent: '#F43F5E', location: 'Respective Dept', time: '10:00 AM – 1:00 PM', fee: '₹100', teamSize: '1–2', about: 'Evolution is a survival-style coding competition...', rules: ['Teams of 1–2 members allowed.', 'Internet access is strictly prohibited.'], judging: [{ name: 'Correctness', marks: 40 }], coordinators: [{ name: 'Jigisha Mhapasekar', phone: '+91 96994 24099', email: 'jigishadmhapasekar@gmail.com', photo: 'profilephoto/Jigisha-Mhapasekar.jpeg' }], formUrl: 'https://forms.google.com', page: 'evolution.html' },
+            { id: 'evolution', name: 'Evolution', shortDesc: 'Coding battle — evolve or get eliminated', description: 'A multi-round coding competition...', icon: '💻', accent: '#F43F5E', location: 'Respective Dept', time: '10:00 AM – 1:00 PM', fee: '₹100', teamSize: '1–2', about: 'Evolution is a survival-style coding competition...', rules: ['Teams of 1–2 members allowed.', 'Internet access is strictly prohibited.'], judging: [{ name: 'Correctness', marks: 40 }], coordinators: [{ name: 'Jigisha Mhapasekar', phone: '+91 96994 24099', email: 'jigishadmhapasekar@gmail.com', photo: '/images/jigisha-mhapasekar.jpeg' }], formUrl: 'https://forms.google.com', page: 'evolution.html' },
             { id: 'project-exhibition', name: 'Project Exhibition', shortDesc: 'Showcase your degree-level innovation', icon: '🔬', accent: '#8B5CF6', location: 'ClassRoom No:29,30,119,120', time: '10:00 AM – 4:00 PM', fee: '₹200', teamSize: 'Max 4', about: 'National Level Project Exhibition', rules: ['Each team can have a maximum of 4 members.'], judging: [{ name: 'Innovation', marks: 20 }], coordinators: [{ name: 'Uzair Shaikh', phone: '+91 86007 30728', email: '', photo: '' }], formUrl: 'https://forms.google.com', page: 'project-exhibition.html' }
         ];
 
         const CONTACT_DATA = {
-            gs: { name: 'Vishnu Vejare', phone: '+91 84128 60728', email: 'vishnuvejare@gmail.com', initials: 'VV', photo: 'profilephoto/Vishnu-vejare.jpeg' },
+            gs: { name: 'Vishnu Vejare', phone: '+91 84128 60728', email: 'vishnuvejare@gmail.com', initials: 'VV', photo: '/images/vishnu-vejare.jpeg' },
             core: [
 
                 // 🔥 CORE DEV (Special)
-                { name: 'Narendra Ratnakar Gurav', event: 'Core Dev', phone: '+91 91376 63880', email: 'narendragurav2004@gmail.com', initials: 'NG', photo: 'profilephoto/Narendra-Gurav.jpg' },
+                { name: 'Narendra Ratnakar Gurav', event: 'Core Dev', phone: '+91 91376 63880', email: 'narendragurav2004@gmail.com', initials: 'NG', photo: '/images/narendra-gurav.jpg' },
 
                 // 1️⃣ Evolution
-                { name: 'Jigisha Darshan Mhapasekar', event: 'Evolution', phone: '+91 96994 24099', email: 'jigishadmhapasekar@gmail.com', initials: 'JM', photo: 'profilephoto/Jigisha-Mhapasekar.jpeg' },
-                { name: 'Vasudev Santosh Narvekar', event: 'Evolution', phone: '+91 94208 63918', email: 'vasudevnarvekar737@gmail.com', initials: 'VN', photo: 'profilephoto/Vasudev-Narvekar.jpeg' },
+                { name: 'Jigisha Darshan Mhapasekar', event: 'Evolution', phone: '+91 96994 24099', email: 'jigishadmhapasekar@gmail.com', initials: 'JM', photo: '/images/jigisha-mhapasekar.jpeg' },
+                { name: 'Vasudev Santosh Narvekar', event: 'Evolution', phone: '+91 94208 63918', email: 'vasudevnarvekar737@gmail.com', initials: 'VN', photo: '/images/vasudev-narvekar.jpeg' },
 
                 // 2️⃣ Project Exhibition
-                { name: 'Vaishnavi Shivprasad Ghare', event: 'Project Exhibition', phone: '+91 93075 35959', email: 'vaishnavighare531@gmail.com', initials: 'VG', photo: 'profilephoto/Vaishnavi-Ghare.jpeg' },
+                { name: 'Vaishnavi Shivprasad Ghare', event: 'Project Exhibition', phone: '+91 93075 35959', email: 'vaishnavighare531@gmail.com', initials: 'VG', photo: '/images/vaishnavi-ghare.jpeg' },
 
                 // 3️⃣ Debate
-                { name: 'Sanika Suhas Sawant', event: 'Debate', phone: '+91 72081 08501', email: 'sanikasawant1735@gmail.com', initials: 'SS', photo: 'profilephoto/Sanika-Sawant.jpeg' },
-                { name: 'Xavier Agnel Fernandes', event: 'Debate', phone: '+91 93078 63916', email: 'xavierfernandis276@gmail.com', initials: 'XF', photo: 'profilephoto/Xavier-Fernandes.png' },
+                { name: 'Sanika Suhas Sawant', event: 'Debate', phone: '+91 72081 08501', email: 'sanikasawant1735@gmail.com', initials: 'SS', photo: '/images/sanika-sawant.jpeg' },
+                { name: 'Xavier Agnel Fernandes', event: 'Debate', phone: '+91 93078 63916', email: 'xavierfernandis276@gmail.com', initials: 'XF', photo: '/images/xavier-fernandes.png' },
 
                 // 4️⃣ Directo
-                { name: 'Anushka Pandurang Sawant', event: 'Directo', phone: '+91 93569 70062', email: 'anushka.s9642@gmail.com', initials: 'AS', photo: 'profilephoto/Anushka-Sawant.jpeg' },
-                { name: 'Pallavi Parashram Varake', event: 'Directo', phone: '+91 80103 16075', email: 'pallavivarake6075@gmail.com', initials: 'PV', photo: 'profilephoto/Pallavi-Varake.jpeg' },
+                { name: 'Anushka Pandurang Sawant', event: 'Directo', phone: '+91 93569 70062', email: 'anushka.s9642@gmail.com', initials: 'AS', photo: '/images/anushka-sawant.jpeg' },
+                { name: 'Pallavi Parashram Varake', event: 'Directo', phone: '+91 80103 16075', email: 'pallavivarake6075@gmail.com', initials: 'PV', photo: '/images/pallavi-varake.jpeg' },
 
                 // 5️⃣ Robotics
-                { name: 'Govind Mahesh Sawant', event: 'Robotics', phone: '+91 94212 87164', email: 'sawantgovind76@gmail.com', initials: 'GS', photo: 'profilephoto/Govind-Sawant.jpeg' },
-                { name: 'Ankit Bhiva Gaonkar', event: 'Robotics', phone: '+91 87665 46077', email: 'ankitgaonka007@gmail.com', initials: 'AG', photo: 'profilephoto/Ankit-Gaonkar.jpeg' },
+                { name: 'Govind Mahesh Sawant', event: 'Robotics', phone: '+91 94212 87164', email: 'sawantgovind76@gmail.com', initials: 'GS', photo: '/images/govind-sawant.jpeg' },
+                { name: 'Ankit Bhiva Gaonkar', event: 'Robotics', phone: '+91 87665 46077', email: 'ankitgaonka007@gmail.com', initials: 'AG', photo: '/images/ankit-gaonkar.jpeg' },
 
                 // 6️⃣ Poster Presentation
-                { name: 'Kamakshi Rajendra Keluskar', event: 'Poster Presentation', phone: '+91 81495 84764', email: 'kamakshikeluskar@gmail.com', initials: 'KK', photo: 'profilephoto/Kamakshi-Keluskar.jpeg' },
-                { name: 'Bhargawi Sanjay Kavatkar', event: 'Poster Presentation', phone: '+91 96997 02026', email: 'bhargawikavatkar@gmail.com', initials: 'BK', photo: 'profilephoto/Bhargawi-Kavatkar.jpeg' },
+                { name: 'Kamakshi Rajendra Keluskar', event: 'Poster Presentation', phone: '+91 81495 84764', email: 'kamakshikeluskar@gmail.com', initials: 'KK', photo: '/images/kamakshi-keluskar.jpeg' },
+                { name: 'Bhargawi Sanjay Kavatkar', event: 'Poster Presentation', phone: '+91 96997 02026', email: 'bhargawikavatkar@gmail.com', initials: 'BK', photo: '/images/bhargawi-kavatkar.jpeg' },
 
                 // 7️⃣ Gaming
-                { name: 'Vicky Ishwar Rathod', event: 'Gaming (Free Fire)', phone: '+91 81692 22207', email: 'rathodvickey71@gmail.com', initials: 'VR', photo: 'profilephoto/Vicky-Rathod.jpeg' },
-                { name: 'Maaz AbuTalib Khan', event: 'Gaming (BGMI)', phone: '+91 93325 579949', email: 'khanmaaz7684@gmail.com', initials: 'MK', photo: 'profilephoto/Maaz-Khan.jpeg' },
-                { name: 'Roshan Bhikaji Sawant', event: 'Gaming (Mini Militia)', phone: '+91 93216 58580', email: 'sawantroshan642@gmail.com', initials: 'RS', photo: 'profilephoto/Roshan-Sawant.jpeg' },
-                { name: 'Danesh Parab', event: 'Gaming (Mini Militia)', phone: '+91 94215 36963', email: 'parabdanesh9@gmail.com', initials: 'DP', photo: 'profilephoto/Danesh-Parab.jpeg' },
+                { name: 'Vicky Ishwar Rathod', event: 'Gaming (Free Fire)', phone: '+91 81692 22207', email: 'rathodvickey71@gmail.com', initials: 'VR', photo: '/images/vicky-rathod.jpeg' },
+                { name: 'Maaz AbuTalib Khan', event: 'Gaming (BGMI)', phone: '+91 93325 579949', email: 'khanmaaz7684@gmail.com', initials: 'MK', photo: '/images/maaz-khan.jpeg' },
+                { name: 'Roshan Bhikaji Sawant', event: 'Gaming (Mini Militia)', phone: '+91 93216 58580', email: 'sawantroshan642@gmail.com', initials: 'RS', photo: '/images/roshan-sawant.jpeg' },
+                { name: 'Danesh Parab', event: 'Gaming (Mini Militia)', phone: '+91 94215 36963', email: 'parabdanesh9@gmail.com', initials: 'DP', photo: '/images/danesh-parab.jpeg' },
 
                 // 8️⃣ HackSprint
-                { name: 'Rajas Taneshwar Gawas', event: 'HackSprint', phone: '+91 98909 59211', email: 'rajasgavas748@gmail.com', initials: 'RG', photo: 'profilephoto/Rajas-Gawas.png' },
-                { name: 'Rutuja Sagar Chougule', event: 'HackSprint', phone: '+91 84828 31815', email: 'rutujachougule1825@gmail.com', initials: 'RC', photo: 'profilephoto/Rutuja-Chougule.jpeg' },
+                { name: 'Rajas Taneshwar Gawas', event: 'HackSprint', phone: '+91 98909 59211', email: 'rajasgavas748@gmail.com', initials: 'RG', photo: '/images/rajas-gawas.png' },
+                { name: 'Rutuja Sagar Chougule', event: 'HackSprint', phone: '+91 84828 31815', email: 'rutujachougule1825@gmail.com', initials: 'RC', photo: '/images/rutuja-chougule.jpeg' },
 
                 // 9️⃣ Auto Expo
-                { name: 'Mufid Rizwan Shaikh', event: 'Auto Expo', phone: '+91 95619 41586', email: 'mufidshaikh9421145786@gmail.com', initials: 'MS', photo: 'profilephoto/Mufid-Shaikh.jpeg' },
-                { name: 'Rahul Narayan Gawas', event: 'Auto Expo', phone: '+91 70386 83384', email: 'rahulgawas790@gmail.com', initials: 'RG', photo: 'profilephoto/Rahul-Gawas.jpeg' },
+                { name: 'Mufid Rizwan Shaikh', event: 'Auto Expo', phone: '+91 95619 41586', email: 'mufidshaikh9421145786@gmail.com', initials: 'MS', photo: '/images/mufid-shaikh.jpeg' },
+                { name: 'Rahul Narayan Gawas', event: 'Auto Expo', phone: '+91 70386 83384', email: 'rahulgawas790@gmail.com', initials: 'RG', photo: '/images/rahul-gawas.jpeg' },
 
                 // 🔟 Other Committees
-                { name: 'Disha Vinayak Prabhu', event: 'Registration Committee', phone: '+91 82630 21411', email: 'dishaprabhu8@gmail.com', initials: 'DP', photo: 'profilephoto/Disha-Prabhu.png' },
-                { name: 'Vaibhavi Shrikrishna Girkar', event: 'Prize Distribution', phone: '+91 74987 19676', email: 'vaibhavigirkar@gmail.com', initials: 'VG', photo: 'profilephoto/Vaibhavi-Girkar.jpeg' },
-                { name: 'Kale Parshuram Santosh', event: 'Inauguration', phone: '+91 90670 68347', email: 'kaleparshuram90@gmail.com', initials: 'KP', photo: 'profilephoto/Parshuram-Kale.jpeg' }
+                { name: 'Disha Vinayak Prabhu', event: 'Registration Committee', phone: '+91 82630 21411', email: 'dishaprabhu8@gmail.com', initials: 'DP', photo: '/images/disha-prabhu.png' },
+                { name: 'Vaibhavi Shrikrishna Girkar', event: 'Prize Distribution', phone: '+91 74987 19676', email: 'vaibhavigirkar@gmail.com', initials: 'VG', photo: '/images/vaibhavi-girkar.jpeg' },
+                { name: 'Kale Parshuram Santosh', event: 'Inauguration', phone: '+91 90670 68347', email: 'kaleparshuram90@gmail.com', initials: 'KP', photo: '/images/parshuram-kale.jpeg' }
 
             ]
         };
@@ -187,9 +187,9 @@
                 // Team members list (representatives + sports + cultural) but with style identical to "General Secretary" heading boldness
                 // also no redundant "General Secretary" text below Vishnu's name.
                 const GS_TEAM = [
-                    { name: 'Varun Karle', role: 'College-Cultural Representative', phone: '+91 95296 65461', email: 'karlevarun@gmail.com', photo: 'profilephoto/Varun-Karle.jpeg' },
-                    { name: 'Sanika Mhatugade', role: 'Ladies Representative', phone: '+91 77740 10816', email: 'sanumhatugade2411@gmail.com', photo: 'profilephoto/Sanika-Mhatugade.jpeg' },
-                    { name: 'Govind Sawant', role: 'Sports Representative', phone: '+91 94212 87164', email: 'sawantgovind76@gmail.com', photo: 'profilephoto/Govind-Sawant.jpeg' }
+                    { name: 'Varun Karle', role: 'College-Cultural Representative', phone: '+91 95296 65461', email: 'karlevarun@gmail.com', photo: '/images/varun-karle.jpeg' },
+                    { name: 'Sanika Mhatugade', role: 'Ladies Representative', phone: '+91 77740 10816', email: 'sanumhatugade2411@gmail.com', photo: '/images/sanika-mhatugade.jpeg' },
+                    { name: 'Govind Sawant', role: 'Sports Representative', phone: '+91 94212 87164', email: 'sawantgovind76@gmail.com', photo: '/images/govind-sawant.jpeg' }
                 ];
 
                 // MAIN GS (Vishnu) with same boldness but WITHOUT the extra "General Secretary" text below name
@@ -197,7 +197,7 @@
                 gsEl.innerHTML = `
                     <!-- 🔥 GS HERO - SAME STYLE, NO REDUNDANT "General Secretary" TEXT -->
                     <div class="flex flex-col items-center mb-14 w-full">
-                        <img src="${gs.photo || 'profilephoto/Vishnu-vejare.jpeg'}" 
+                        <img src="${gs.photo || '/images/vishnu-vejare.jpeg'}" 
                             class="w-full max-w-[280px] aspect-square rounded-2xl object-cover mb-6 neon-purple gs-card"
                             style="box-shadow: 0 0 45px rgba(124,58,237,0.45), 0 20px 40px rgba(0,0,0,0.5);">
                         <h3 class="font-outfit text-2xl md:text-3xl font-extrabold text-white mb-1 tracking-tight neon-glow">

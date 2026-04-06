@@ -93,7 +93,7 @@ const EVENTS_DATA = [
     about: 'Evolution is a survival-style coding competition. Participants face progressively harder algorithmic challenges across multiple rounds. Each round eliminates the weakest — only the most adaptable coders make it to the final.',
     rules: ['Teams of 1–2 members allowed.', 'Internet access is strictly prohibited.', 'Use of AI tools (ChatGPT, Copilot) is banned.', 'Solutions must be original — plagiarism = disqualification.', 'Multiple elimination rounds — survive to win.', 'Languages: C, C++, Java, Python.', 'Decision of judges is final.'],
     judging: [{ name: 'Correctness', marks: 40 }, { name: 'Efficiency', marks: 25 }, { name: 'Code Quality', marks: 20 }, { name: 'Speed Bonus', marks: 15 }],
-    coordinators: [{ name: 'Jigisha Mhapasekar', phone: '+91 96994 24099', email: 'jigishadmhapasekar@gmail.com', photo: 'profilephoto/Jigisha-Mhapasekar.jpeg' }, { name: 'Vasudev Narvekar', phone: '+91 94208 63918', email: 'vasudevnarvekar737@gmail.com', photo: 'profilephoto/Vasudev-Narvekar.jpeg' }],
+    coordinators: [{ name: 'Jigisha Mhapasekar', phone: '+91 96994 24099', email: 'jigishadmhapasekar@gmail.com', photo: '/images/jigisha-mhapasekar.jpeg' }, { name: 'Vasudev Narvekar', phone: '+91 94208 63918', email: 'vasudevnarvekar737@gmail.com', photo: '/images/vasudev-narvekar.jpeg' }],
     formUrl: 'https://forms.google.com',
     page: 'evolution.html'
   },
@@ -111,7 +111,7 @@ const EVENTS_DATA = [
     bannerSubtitle: 'Transforming Ideas into Impactful Solutions',
     coordinators: [
       { name: 'Uzair Shaikh', phone: '+91 86007 30728', email: '', photo: '' },
-      { name: 'Vaishnavi Ghare', phone: '+91 93075 35959', email: 'vaishnavighare531@gmail.com', photo: 'profilephoto/Vaishnavi-Ghare.jpeg' }
+      { name: 'Vaishnavi Ghare', phone: '+91 93075 35959', email: 'vaishnavighare531@gmail.com', photo: '/images/vaishnavi-ghare.jpeg' }
     ],
     formUrl: 'https://forms.google.com',
     page: 'project-exhibition.html'
@@ -172,7 +172,7 @@ const EVENTS_DATA = [
     about: 'LAN Gaming brings competitive esports to Virtuosic 2K26. Teams compete in popular multiplayer titles. Quick reflexes, team coordination, and strategy are essential.',
     rules: ['Teams of 4–5 members.', 'Game title announced before event.', 'Bring your own peripherals.', 'No cheats, hacks, or exploits.', 'Single elimination bracket.', 'Latecomers disqualified.', 'Admin decisions are final.'],
     judging: [{ name: 'Match Wins', marks: 60 }, { name: 'Sportsmanship', marks: 20 }, { name: 'Team Coordination', marks: 20 }],
-    coordinators: [{ name: 'Vicky Rathod', phone: '+91 81692 22207', email: 'rathodvickey71@gmail.com', photo: 'profilephoto/Vicky-Rathod.jpeg' }],
+    coordinators: [{ name: 'Vicky Rathod', phone: '+91 81692 22207', email: 'rathodvickey71@gmail.com', photo: '/images/vicky-rathod.jpeg' }],
     formUrl: 'https://forms.google.com',
     page: 'lan-gaming.html'
   },
@@ -216,7 +216,7 @@ const CONTACT_DATA = {
       phone: '+918600730728',
       email: 'uzairshaikh.2034@gmail.com',
       initials: 'US',
-      photo: 'profilephoto/Uzair-Shaikh.jpeg'
+      photo: '/images/uzair-shaikh.jpeg'
     },
     {
       name: 'Vaishnavi Shivprasad Ghare',
@@ -224,7 +224,7 @@ const CONTACT_DATA = {
       phone: '+919307535959',
       email: 'vaishnavighare531@gmail.com',
       initials: 'VG',
-      photo: 'profilephoto/Vaishnavi-Ghare.jpeg'
+      photo: '/images/vaishnavi-ghare.jpeg'
     },
     {
       name: 'Jigisha Darshan Mhapasekar',
@@ -232,7 +232,7 @@ const CONTACT_DATA = {
       phone: '+919699424099',
       email: 'jigishadmhapasekar@gmail.com',
       initials: 'JM',
-      photo: 'profilephoto/Jigisha-Mhapasekar.jpeg'
+      photo: '/images/jigisha-mhapasekar.jpeg'
     },
     {
       name: 'Vasudev Santosh Narvekar',
@@ -240,7 +240,7 @@ const CONTACT_DATA = {
       phone: '+919420863918',
       email: 'vasudevnarvekar737@gmail.com',
       initials: 'VN',
-      photo: 'profilephoto/Vasudev-Narvekar.jpeg'
+      photo: '/images/vasudev-narvekar.jpeg'
     },
     {
       name: 'Sanika Suhas Sawant',
@@ -248,7 +248,7 @@ const CONTACT_DATA = {
       phone: '+917208108501',
       email: 'sanikasawant1735@gmail.com',
       initials: 'SS',
-      photo: 'profilephoto/Sanika-Sawant.jpeg'
+      photo: '/images/sanika-sawant.jpeg'
     },
     {
       name: 'Xavier Agnel Fernandes',
@@ -256,7 +256,7 @@ const CONTACT_DATA = {
       phone: '+919307863916',
       email: 'xavierfernandis276@gmail.com',
       initials: 'XF',
-      photo: 'profilephoto/Xavier-Fernandes.png'
+      photo: '/images/xavier-fernandes.png'
     },
     {
       name: 'Vicky Ishwar Rathod',
@@ -264,7 +264,7 @@ const CONTACT_DATA = {
       phone: '+918169222207',
       email: 'rathodvickey71@gmail.com',
       initials: 'VR',
-      photo: 'profilephoto/Vicky-Rathod.jpeg'
+      photo: '/images/vicky-rathod.jpeg'
     },
     {
       name: 'Roshan Bhikaji Sawant',
@@ -272,7 +272,7 @@ const CONTACT_DATA = {
       phone: '+919321658580',
       email: 'sawantroshan642@gmail.com',
       initials: 'RS',
-      photo: 'profilephoto/Roshan-Sawant.jpeg'
+      photo: '/images/roshan-sawant.jpeg'
     },
     {
       name: 'Danesh Parab',
@@ -280,7 +280,7 @@ const CONTACT_DATA = {
       phone: '+919421536963',
       email: 'parabdanesh9@gmail.com',
       initials: 'DP',
-      photo: 'profilephoto/Danesh-Parab.jpeg'
+      photo: '/images/danesh-parab.jpeg'
     },
     {
       name: 'Maaz AbuTalib Khan',
@@ -288,7 +288,7 @@ const CONTACT_DATA = {
       phone: '+9193325579949',
       email: 'khanmaaz7684@gmail.com',
       initials: 'MK',
-      photo: 'profilephoto/Maaz-Khan.jpeg'
+      photo: '/images/maaz-khan.jpeg'
     },
     {
       name: 'Kamakshi Rajendra Keluskar',
@@ -296,7 +296,7 @@ const CONTACT_DATA = {
       phone: '+918149584764',
       email: 'kamakshikeluskar@gmail.com',
       initials: 'KK',
-      photo: 'profilephoto/Kamakshi-Keluskar.jpeg'
+      photo: '/images/kamakshi-keluskar.jpeg'
     },
     {
       name: 'Bhargawi Sanjay Kavatkar',
@@ -304,7 +304,7 @@ const CONTACT_DATA = {
       phone: '+9196997020262',
       email: 'bhargawikavatkar@gmail.com',
       initials: 'BK',
-      photo: 'profilephoto/Bhargawi-Kavatkar.jpeg'
+      photo: '/images/bhargawi-kavatkar.jpeg'
     },
     {
       name: 'Govind Mahesh Sawant',
@@ -312,7 +312,7 @@ const CONTACT_DATA = {
       phone: '+919421287164',
       email: 'sawantgovind76@gmail.com',
       initials: 'GS',
-      photo: 'profilephoto/Govind-Sawant.jpeg'
+      photo: '/images/govind-sawant.jpeg'
     },
     {
       name: 'Mufid Rizwan Shaikh',
@@ -320,7 +320,7 @@ const CONTACT_DATA = {
       phone: '+919561941586',
       email: 'mufidshaikh9421145786@gmail.com',
       initials: 'MS',
-      photo: 'profilephoto/Mufid-Shaikh.jpeg'
+      photo: '/images/mufid-shaikh.jpeg'
     },
     {
       name: 'Rahul Narayan Gawas',
@@ -328,7 +328,7 @@ const CONTACT_DATA = {
       phone: '+917038683384',
       email: 'rahulgawas790@gmail.com',
       initials: 'RG',
-      photo: 'profilephoto/Rahul-Gawas.jpeg'
+      photo: '/images/rahul-gawas.jpeg'
     },
     {
       name: 'Sanika Shashikant Mhatugade',
@@ -336,7 +336,7 @@ const CONTACT_DATA = {
       phone: '+917774010816',
       email: 'sanumhatugade2411@gmail.com',
       initials: 'SM',
-      photo: 'profilephoto/Sanika-Mhatugade.jpeg'
+      photo: '/images/sanika-mhatugade.jpeg'
     },
     {
       name: 'Narendra Ratnakar Gurav',
@@ -344,7 +344,7 @@ const CONTACT_DATA = {
       phone: '+919137663880',
       email: 'narendragurav2005@gmail.com',
       initials: 'NG',
-      photo: 'profilephoto/Narendra-Gurav.jpg'
+      photo: '/images/narendra-gurav.jpg'
     },
     {
       name: 'Rajas Taneshwar Gawas',
@@ -352,7 +352,7 @@ const CONTACT_DATA = {
       phone: '+919890959211',
       email: 'narendragurav2005@gmail.com',
       initials: 'RG',
-      photo: 'profilephoto/Rajas-Gawas.png'
+      photo: '/images/rajas-gawas.png'
     },
     {
       name: 'Varun Prabhakar Karle',
@@ -360,7 +360,7 @@ const CONTACT_DATA = {
       phone: '+91 95296 65461',
       email: 'karlevarun@gmail.com',
       initials: 'VK',
-      photo: 'profilephoto/Varun-Karle.jpeg'
+      photo: '/images/varun-karle.jpeg'
     },
     {
       name: 'Anushka Pandurang Sawant',
@@ -368,7 +368,7 @@ const CONTACT_DATA = {
       phone: '+91 93569 70062',
       email: 'anushka.s9642@gmail.com',
       initials: 'AS',
-      photo: 'profilephoto/Anushka-Sawant.jpeg'
+      photo: '/images/anushka-sawant.jpeg'
     },
     {
       name: 'Pallavi Parashram Varake',
@@ -376,7 +376,7 @@ const CONTACT_DATA = {
       phone: '+91 80103 16075',
       email: 'pallavivarake6075@gmail.com',
       initials: 'AS',
-      photo: 'profilephoto/Pallavi-Varake.jpeg'
+      photo: '/images/pallavi-varake.jpeg'
     }
   ]
 };
@@ -729,7 +729,7 @@ function initEventPage() {
     const isReversed = i % 2 !== 0;
     return `
       <div class="glass-card rounded-2xl p-4 flex items-center gap-5 ${isReversed ? 'flex-row-reverse' : ''} border-gradient">
-        <img src="${c.photo || 'profilephoto/Narendra-Gurav.jpg'}" alt="${c.name}"
+        <img src="${c.photo || '/images/narendra-gurav.jpg'}" alt="${c.name}"
              class="w-32 h-32 rounded-2xl object-cover shrink-0 neon-purple">
         <div class="flex-1 min-w-0 text-left">
           <h4 class="font-outfit text-xl font-bold text-white mb-1 tracking-tight">${c.name}</h4>
@@ -752,7 +752,7 @@ function renderContactPage() {
   if (gsEl) {
     const gs = CONTACT_DATA.gs;
     gsEl.innerHTML = `
-      <img src="profilephoto/Vishnu-vejare.jpeg" alt="${gs.name}" class="w-full max-w-[280px] aspect-square rounded-2xl object-cover mb-6 neon-purple" style="box-shadow: 0 0 40px rgba(124,58,237,0.35), 0 20px 60px rgba(0,0,0,0.5);">
+      <img src="/images/vishnu-vejare.jpeg" alt="${gs.name}" class="w-full max-w-[280px] aspect-square rounded-2xl object-cover mb-6 neon-purple" style="box-shadow: 0 0 40px rgba(124,58,237,0.35), 0 20px 60px rgba(0,0,0,0.5);">
       <h3 class="font-outfit text-2xl font-extrabold text-white mb-3 tracking-tight">${gs.name}</h3>
       <a href="tel:${gs.phone}" class="flex items-center gap-2.5 text-base text-cyan-400 hover:text-cyan-300 transition-colors mb-2">
         📱 ${gs.phone}

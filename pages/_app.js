@@ -180,13 +180,15 @@ export default function App({ Component, pageProps }) {
           }
         }
       `}</Script>
-      <Script id="virtuosic-app-script" src="/app.js" strategy="afterInteractive" />
-      <Script id="virtuosic-contact-script" src="/contact-page.js" strategy="afterInteractive" />
+      {!isContactRoute ? <Script id="virtuosic-app-script" src="/app.js" strategy="afterInteractive" /> : null}
+      {isContactRoute ? (
+        <Script id="virtuosic-contact-script" src="/contact-page.js" strategy="afterInteractive" />
+      ) : null}
 
       {bootLoading ? (
         <div className={`vir-loader-overlay ${loaderExiting ? 'vir-loader-overlay-exit' : ''}`}>
           <div className="vir-loader-card">
-            <img src="/profilephoto/logo.png" alt="Virtuosic" className="vir-loader-logo" />
+            <img src="/images/logo.png" alt="Virtuosic" className="vir-loader-logo" />
             <div className="vir-loader-title">VIRTUOSIC 2K26</div>
             <p className="vir-loader-text">{preloaderText}</p>
             <div className="vir-loader-bar-shell">
